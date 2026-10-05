@@ -1,0 +1,42 @@
+{
+  "brand_name": "Share Samadhan",
+  "slug": "share-samadhan",
+  "website": "https://sharesamadhan.com",
+  "business_model": "HIGH_TICKET_LEAD_GEN",
+  "industry_vertical": "Fintech & Unclaimed Investment Recovery Consultancy",
+  "target_geos": ["IN", "AE", "US", "UK"],
+  "currency": "INR",
+  "unit_economics": {
+    "aov_or_acv": 75000.0,
+    "gross_margin_pct": 80,
+    "target_cpa": 1200.0,
+    "max_acceptable_cpa": 2200.0,
+    "target_roas": 5.0,
+    "target_monthly_budget": 500000.0
+  },
+  "brand_voice": {
+    "tone": "Trustworthy, legally sound, empathetic, institutional authority",
+    "primary_angle": "Recover your family's lost, forgotten, or disputed shares and physical certificates with India's pioneering legal & advisory team",
+    "forbidden_claims": ["Guaranteed recovery in 24 hours", "Illegal loopholes", "Unrealistic timelines"]
+  },
+  "channels": {
+    "google_ads": {
+      "active": true,
+      "budget_pct": 55,
+      "campaign_types": ["SEARCH_ALPHA_EXACT", "SEARCH_BETA_DISCOVERY"]
+    },
+    "meta_ads": {
+      "active": true,
+      "budget_pct": 35,
+      "campaign_types": ["LEAD_GEN_INSTANT_FORMS", "VIDEO_CASE_STUDIES"]
+    },
+    "organic_seo": {
+      "active": true,
+      "budget_pct": 10
+    }
+  },
+  "compliance": {
+    "sebi_financial_advertising_guidelines": true,
+    "eu_ai_act_article_50": false
+  }
+}

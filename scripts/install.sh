@@ -23,6 +23,7 @@ cp -rf "${REPO_ROOT}/rules" "${GEMINI_CONFIG_DIR}/"
 cp -rf "${REPO_ROOT}/subagents" "${GEMINI_CONFIG_DIR}/"
 cp -rf "${REPO_ROOT}/templates" "${GEMINI_CONFIG_DIR}/"
 cp -rf "${REPO_ROOT}/workflows" "${GEMINI_CONFIG_DIR}/"
+cp -rf "${REPO_ROOT}/brands" "${GEMINI_CONFIG_DIR}/"
 
 # 2. Populate Knowledge Base
 echo "[2/3] Installing Knowledge Base to ${GEMINI_KNOWLEDGE_DIR}..."

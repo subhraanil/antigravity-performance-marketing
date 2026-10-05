@@ -1,0 +1,44 @@
+{
+  "brand_name": "Airdog",
+  "slug": "airdog",
+  "website": "https://airdogusa.com",
+  "business_model": "DTC_ECOMMERCE",
+  "industry_vertical": "Consumer Electronics & Clean Air Technology",
+  "target_geos": ["US", "CA", "EU"],
+  "currency": "USD",
+  "unit_economics": {
+    "aov_or_acv": 450.0,
+    "gross_margin_pct": 58,
+    "target_cpa": 75.0,
+    "max_acceptable_cpa": 110.0,
+    "target_roas": 4.0,
+    "breakeven_roas": 1.72,
+    "target_monthly_budget": 25000.0
+  },
+  "brand_voice": {
+    "tone": "Innovative, disruptive, engineering-focused, premium health lifestyle",
+    "primary_angle": "Washable TPA filter technology — zero replacement filter costs forever, destroys ultrafine particles down to 0.0146 microns",
+    "forbidden_claims": ["100% virus protection without ventilation", "Immunity from disease"]
+  },
+  "channels": {
+    "meta_ads": {
+      "active": true,
+      "budget_pct": 55,
+      "campaign_types": ["ADVANTAGE_PLUS_SHOPPING", "DCT_SANDBOX", "FOUNDER_DEMO_REELS"]
+    },
+    "google_ads": {
+      "active": true,
+      "budget_pct": 35,
+      "campaign_types": ["PERFORMANCE_MAX", "SEARCH_ALPHA_EXACT", "YOUTUBE_ACTION"]
+    },
+    "retention_email": {
+      "active": true,
+      "budget_pct": 10
+    }
+  },
+  "compliance": {
+    "carb_air_cleaner_certification": true,
+    "eu_ai_act_article_50": true,
+    "require_c2pa_metadata": true
+  }
+}

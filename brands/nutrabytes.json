@@ -1,0 +1,45 @@
+{
+  "brand_name": "Nutrabytes",
+  "slug": "nutrabytes",
+  "website": "https://nutrabytes.co.uk",
+  "business_model": "DTC_ECOMMERCE",
+  "industry_vertical": "Health, Wellness & Dietary Supplements",
+  "target_geos": ["UK", "EU"],
+  "currency": "GBP",
+  "unit_economics": {
+    "aov_or_acv": 45.0,
+    "gross_margin_pct": 72,
+    "target_cpa": 22.0,
+    "max_acceptable_cpa": 32.0,
+    "target_roas": 3.5,
+    "breakeven_roas": 1.39,
+    "target_monthly_budget": 12000.0
+  },
+  "brand_voice": {
+    "tone": "Clinical, transparent, evidence-based, premium British health standard",
+    "primary_angle": "Pure, bioavailable collagen and essential vitamins with third-party lab verification",
+    "forbidden_claims": ["Medical cures", "Reverses aging completely", "Prevents all disease"]
+  },
+  "channels": {
+    "meta_ads": {
+      "active": true,
+      "budget_pct": 65,
+      "campaign_types": ["ADVANTAGE_PLUS_SHOPPING", "DCT_SANDBOX", "WARM_RETARGETING"]
+    },
+    "google_ads": {
+      "active": true,
+      "budget_pct": 25,
+      "campaign_types": ["SEARCH_ALPHA_EXACT", "PERFORMANCE_MAX"]
+    },
+    "retention_email": {
+      "active": true,
+      "budget_pct": 10,
+      "platform": "Klaviyo"
+    }
+  },
+  "compliance": {
+    "eu_ai_act_article_50": true,
+    "require_c2pa_metadata": true,
+    "uk_asa_health_claims": true
+  }
+}

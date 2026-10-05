@@ -1,0 +1,45 @@
+{
+  "$schema": "brand-profile-v1",
+  "brand_name": "Brand Name",
+  "slug": "brand-slug",
+  "website": "https://example.com",
+  "business_model": "DTC_ECOMMERCE | B2B_SAAS | HIGH_TICKET_LEAD_GEN | LOCAL_SERVICES",
+  "industry_vertical": "Beauty & Personal Care / Health / Fintech / B2B Software",
+  "target_geos": ["US", "UK", "IN"],
+  "currency": "USD",
+  "unit_economics": {
+    "aov_or_acv": 85.0,
+    "gross_margin_pct": 65,
+    "target_cpa": 28.0,
+    "max_acceptable_cpa": 38.0,
+    "target_roas": 3.5,
+    "breakeven_roas": 1.54,
+    "target_monthly_budget": 15000.0
+  },
+  "brand_voice": {
+    "tone": "Authoritative, educational, approachable, high-trust",
+    "primary_angle": "Clinical efficacy backed by clean ingredients",
+    "forbidden_claims": ["Cures disease", "Instant 100% guarantee", "Unsubstantiated superlative"]
+  },
+  "channels": {
+    "meta_ads": {
+      "active": true,
+      "budget_pct": 60,
+      "campaign_types": ["ADVANTAGE_PLUS_SHOPPING", "DCT_SANDBOX", "WARM_RETARGETING"]
+    },
+    "google_ads": {
+      "active": true,
+      "budget_pct": 30,
+      "campaign_types": ["SEARCH_ALPHA_EXACT", "PERFORMANCE_MAX"]
+    },
+    "retention_email": {
+      "active": true,
+      "budget_pct": 10,
+      "platform": "Klaviyo"
+    }
+  },
+  "compliance": {
+    "eu_ai_act_article_50": true,
+    "require_c2pa_metadata": true
+  }
+}
