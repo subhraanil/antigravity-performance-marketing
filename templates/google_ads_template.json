@@ -1,0 +1,54 @@
+{
+  "platform": "Google Ads",
+  "version": "v25.0",
+  "default_status": "PAUSED",
+  "campaign_structures": {
+    "search_alpha_exact": {
+      "name_convention": "[SEARCH-ALPHA] {{brand}} | Exact High-Intent | {{geo}}",
+      "advertising_channel_type": "SEARCH",
+      "bidding_strategy": "TARGET_CPA",
+      "target_cpa_guideline": "Vertical Target Benchmark",
+      "match_types": ["EXACT"],
+      "rsa_template": {
+        "headlines": [
+          { "position": "PINNED_1", "type": "KEYWORD_INTENT", "char_limit": 30 },
+          { "position": "PINNED_2", "type": "PRIMARY_VALUE_PROP", "char_limit": 30 },
+          { "position": "PINNED_3", "type": "BRAND_OR_GUARANTEE", "char_limit": 30 },
+          { "position": "ROTATIONAL", "count": 12, "char_limit": 30 }
+        ],
+        "descriptions": [
+          { "position": "ROTATIONAL", "count": 4, "char_limit": 90 }
+        ]
+      }
+    },
+    "search_beta_discovery": {
+      "name_convention": "[SEARCH-BETA] {{brand}} | Phrase Query Discovery | {{geo}}",
+      "advertising_channel_type": "SEARCH",
+      "bidding_strategy": "MAXIMIZE_CONVERSIONS",
+      "match_types": ["PHRASE"],
+      "negative_keyword_discipline": "All Alpha exact match queries added as negative exact"
+    },
+    "performance_max": {
+      "name_convention": "[PMAX] {{brand}} | {{category_or_cluster}} | {{geo}}",
+      "advertising_channel_type": "PERFORMANCE_MAX",
+      "bidding_strategy": "TARGET_ROAS",
+      "brand_negatives": "ACCOUNT_LEVEL_BRAND_EXCLUSION_LIST_MANDATORY",
+      "url_expansion": {
+        "enabled": true,
+        "exclusions": ["/blog/*", "/privacy-policy", "/terms", "/support/*", "/careers/*"]
+      },
+      "audience_signals": [
+        "customer_match_purchasers",
+        "custom_intent_search_queries_top15",
+        "competitor_domain_visitors"
+      ]
+    }
+  },
+  "utm_parameters": {
+    "utm_source": "google",
+    "utm_medium": "{ifsearch:paid_search}{ifpmax:pmax}{ifcontent:display}",
+    "utm_campaign": "{campaignid}",
+    "utm_content": "{creative}",
+    "utm_term": "{keyword}"
+  }
+}

@@ -1,0 +1,116 @@
+# Performance Marketing Global Workspace Rules
+# Version: 3.33.3 (DMP Integrated)
+# Scope: Global Workspace Rules for Digital Marketing, Paid Media, and Subagent Loop
+
+## 1. Operating Principles & Safety Gates
+
+1. **PAUSED on Creation**: All newly generated campaigns, ad sets, and ads MUST be created in `PAUSED` state. No automated script or agent action may publish live ads or increase spending without human confirmation.
+2. **Pacing & Budget Stability**:
+   - Limit budget scaling to maximum 20% increases every 72 hours per campaign to prevent breaking machine learning optimization windows on Meta and Google Ads.
+   - Budget split rule:
+     - **70% Core Scaled**: Proven winning creatives, high-performing CBO / PMax campaigns.
+     - **20% Testing Sandbox**: Iterative creative, audience, and offer testing (ABO).
+     - **10% Moonshot / Exploratory**: New channels, radically novel hooks, emerging AI formats.
+3. **Audience Hygiene & Negative Lists**:
+   - Every prospecting campaign MUST exclude past 30-day purchasers, active customers, and warm retargeting audiences.
+   - Maintain strict account-level negative keyword lists in Google Ads to prevent PMax brand cannibalization.
+4. **Attribution & Tracking Discipline**:
+   - Every destination URL MUST include full GA4-compliant UTM parameters:
+     - `utm_source={{site_source_name}}` (e.g., meta, google)
+     - `utm_medium=paid_social` | `paid_search` | `pmax` | `display`
+     - `utm_campaign={{campaign.name}}`
+     - `utm_content={{ad.name}}`
+     - `utm_term={{adset.name}}` or `{{keyword}}`
+   - Ensure Conversions API (CAPI) and Google Enhanced Conversions are verified before scaling any campaign.
+5. **Regulatory & AI Compliance (EU AI Act Article 50)**:
+   - All AI-generated visual or audio creative must carry C2PA provenance metadata.
+   - Synthetic influencer or avatar content must include visible and machine-readable AI disclosures per FTC and EU AI Act Article 50 guidelines.
+
+---
+
+## 2. Target CPAs & ROAS Benchmarks by Vertical
+
+| Vertical | Metric | Target Benchmark Range | Breakeven / Min Guardrail |
+| :--- | :--- | :--- | :--- |
+| **DTC E-Commerce** (Apparel / Beauty / CPG) | Target CPA | \$22.00 – \$42.00 | CPA ≤ \$38.00 (First Order) |
+| | Target ROAS | 3.2x – 4.5x | Blended ROAS ≥ 2.0x |
+| | CVR / AOV | CVR: 2.5% – 3.8% | AOV: \$65.00 – \$125.00 |
+| **B2B SaaS** (Product-Led / Self-Serve) | Trial / Signup CPA | \$35.00 – \$75.00 | CPA ≤ \$85.00 |
+| | Product Qualified Lead (PQL) | \$110.00 – \$240.00 | PQL ≤ \$280.00 |
+| | Blended CAC | \$450.00 – \$950.00 | CAC Payback < 12 months |
+| | LTV : CAC | 3.5x – 5.0x | LTV : CAC ≥ 3.0x |
+| **High-Ticket B2B & Lead Generation** | Cost Per Lead (CPL) | \$65.00 – \$160.00 | CPL ≤ \$180.00 |
+| | Sales Qualified Lead (SQL) | \$350.00 – \$850.00 | Lead-to-SQL Rate ≥ 15% |
+| **Local Services & Healthcare** | Cost Per Call / Booking | \$28.00 – \$58.00 | Booking Rate ≥ 25% |
+
+---
+
+## 3. Meta Ads Architecture & Template Structure
+
+### A. Campaign Hierarchy (Account Level)
+1. **[TOF-ASC] Advantage+ Shopping / Prospecting Campaign (CBO)**
+   - Objective: Sales / Conversions (Purchase optimization).
+   - Budget: 60-70% of total Meta budget.
+   - Targeting: Broad (Country / Age / Gender only, algorithmic audience discovery).
+   - Existing Customer Budget Cap: Set to 5%–10% max to preserve prospecting purity.
+2. **[TEST-SANDBOX] Creative Testing Engine (ABO)**
+   - Objective: Conversions (Purchase or Lead).
+   - Budget: 20% of Meta budget.
+   - Structure: Dynamic Creative Testing (DCT) ad sets — 3 videos/images, 2 primary texts, 2 headlines per ad set.
+   - Graduation Criteria: Winning creative with CPA ≤ \$35 and ≥ 35 purchases graduates into the TOF-ASC campaign.
+3. **[MOF/BOF] Warm Engagement & Cart Abandonment**
+   - Audiences: 30-day IG/FB engagers, 50%+ video viewers, 14-day Add-to-Cart non-buyers.
+   - Creative Angle: User-generated content (UGC), founder stories, risk-reversal guarantees, customer review carousels.
+4. **[RET-DPA] Catalog Sales (Dynamic Product Ads)**
+   - Audiences: Viewed content or Added to Cart in last 14 days (excluding 30-day purchasers).
+
+### B. Ad Creative Structure (The 3-Second Hook Rule)
+- **Format Mix**: 60% 9:16 vertical video (Reels/Stories), 30% 1:1 or 4:5 feed creatives, 10% multi-card carousel.
+- **Hook (0-3s)**: Stop-the-scroll visual pattern interrupt + on-screen caption hook.
+- **Hold (3-15s)**: Problem agitation, mechanism of action, before/after contrast.
+- **Offer (15-30s)**: Irresistible proposition, bundle discount, social proof, friction-free CTA.
+
+---
+
+## 4. Google Ads Architecture & Template Structure
+
+### A. Search Campaigns (Alpha / Beta Mining Model)
+1. **Search - Alpha (Exact Match Winner Pool)**
+   - Bidding: Target CPA or Target ROAS (Value-based).
+   - Match Type: 100% [Exact Match].
+   - Search Terms: Only historically proven queries with CVR > 4% and CPA within target.
+2. **Search - Beta (Phrase Match Query Discovery)**
+   - Bidding: Maximize Conversions (with target CPA guardrail).
+   - Match Type: "Phrase Match".
+   - Discipline: Add all Alpha exact match keywords as exact negatives to prevent internal bidding wars.
+3. **Responsive Search Ad (RSA) Structure**:
+   - **Headline 1 (Pinned)**: Exact search intent / keyword match.
+   - **Headline 2 (Pinned)**: Core benefit, quantifiable metric, or differentiator.
+   - **Headline 3 (Unpinned)**: Brand name, urgency, or guarantee.
+   - **Headlines 4–15 (Rotational)**: Social proof, secondary benefits, features, CTAs.
+   - **Descriptions 1–4**: 90-character problem/solution statements with clear call-to-action.
+
+### B. Performance Max (PMax) Structure
+- **Asset Group Segmentation**: 1 Asset Group per distinct product category or buyer persona.
+- **Audience Signals**: First-party Customer Match list, high-intent custom search terms (10-15 top search queries), competitor URLs.
+- **Negative Keyword Enforcement**: Apply account-level Brand Negative list to keep PMax focused on incremental generic acquisition.
+- **Final URL Expansion**: On, with exclusions for legal pages, blogs, support desk, and career portals.
+
+---
+
+## 5. Performance Marketing Subagent Loop & Delegation
+
+The Antigravity agent loop delegates specialized tasks to dedicated subagents imported from the `digital-marketing-pro` framework:
+
+1. **`media_buyer`**:
+   - Scope: Campaign architecture, bid strategy optimization, budget pacing, ad creative technical specs, Meta & Google Ads execution.
+2. **`marketing_strategist`**:
+   - Scope: 12-Part Strategy Flow, GTM planning, SOSTAC & RACE frameworks, budget allocation, multi-channel positioning.
+3. **`growth_engineer`**:
+   - Scope: Product-Led Growth (PLG), viral loops, referral systems, activation funnels, unit economics (LTV/CAC/Payback), experimentation backlogs (ICE/RICE).
+4. **`seo_specialist`**:
+   - Scope: Technical SEO, Google AI Mode & AI Overviews optimization (AEO/GEO), schema markup, content cluster architecture.
+5. **`analytics_analyst`**:
+   - Scope: Attribution modeling (MMM, data-driven), GA4/GSC reporting, cohort retention, incremental ROAS analysis.
+6. **`brand_guardian`**:
+   - Scope: EU AI Act Article 50 compliance, C2PA metadata, claims validation, brand voice governance, FTC disclosure review.

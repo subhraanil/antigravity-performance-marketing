@@ -1,0 +1,69 @@
+{
+  "platform": "Meta Ads",
+  "version": "v25.0",
+  "default_status": "PAUSED",
+  "campaign_structures": {
+    "advantage_plus_shopping": {
+      "name_convention": "[TOF-ASC] {{brand}} | Advantage+ Shopping | {{target_geo}}",
+      "objective": "OUTCOME_SALES",
+      "special_ad_categories": [],
+      "budget_type": "CBO",
+      "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+      "budget_allocation_pct": 70,
+      "attribution_spec": [
+        { "event_type": "CLICK_THROUGH", "window_days": 7 },
+        { "event_type": "VIEW_THROUGH", "window_days": 1 }
+      ],
+      "audience_settings": {
+        "targeting_type": "BROAD",
+        "existing_customer_budget_cap_pct": 5,
+        "exclusions": ["custom_audience_30d_purchasers", "customer_list_active"]
+      }
+    },
+    "creative_testing_sandbox": {
+      "name_convention": "[TEST-ABO] {{brand}} | Dynamic Creative Testing | {{concept_theme}}",
+      "objective": "OUTCOME_SALES",
+      "budget_type": "ABO",
+      "budget_allocation_pct": 20,
+      "ad_set_structure": {
+        "dynamic_creative": true,
+        "assets_per_adset": {
+          "videos_or_images": 3,
+          "primary_texts": 2,
+          "headlines": 2,
+          "descriptions": 1,
+          "call_to_action_types": ["SHOP_NOW", "LEARN_MORE"]
+        },
+        "graduation_threshold": {
+          "min_conversions": 35,
+          "max_cpa": 35.0,
+          "min_roas": 3.0
+        }
+      }
+    },
+    "warm_retargeting": {
+      "name_convention": "[MOF/BOF] {{brand}} | Social Engagers & Cart Abandoners",
+      "objective": "OUTCOME_SALES",
+      "budget_type": "ABO",
+      "budget_allocation_pct": 10,
+      "audiences": [
+        "ig_fb_engagers_90d",
+        "video_viewers_50pct_60d",
+        "website_add_to_cart_14d_exclude_buyers"
+      ]
+    }
+  },
+  "utm_parameters": {
+    "utm_source": "meta",
+    "utm_medium": "paid_social",
+    "utm_campaign": "{{campaign.name}}",
+    "utm_content": "{{ad.name}}",
+    "utm_term": "{{adset.name}}"
+  },
+  "compliance": {
+    "eu_ai_act_article_50": {
+      "require_c2pa_metadata": true,
+      "require_ai_disclosure_if_synthetic": true
+    }
+  }
+}
