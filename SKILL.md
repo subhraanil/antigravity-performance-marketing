@@ -87,3 +87,18 @@ For deep-dive procedures, view the files in the `knowledge/` directory:
 - [google_ads_playbook.md](knowledge/google_ads_playbook.md): Search Alpha/Beta, PMax setup, RSA copywriting.
 - [target_cpas_and_benchmarks.md](knowledge/target_cpas_and_benchmarks.md): Vertical metrics and unit economics formulas.
 - [compliance_and_governance.md](knowledge/compliance_and_governance.md): EU AI Act Article 50, C2PA signing, privacy.
+- [aeo_geo_ai_search_playbook.md](knowledge/aeo_geo_ai_search_playbook.md): Google AI Mode, AI Overviews, Perplexity, RFC 9309 crawler standards.
+- [attribution_modeling_and_mmm.md](knowledge/attribution_modeling_and_mmm.md): Modern post-cookie attribution, Google Meridian MMM, Geo-lift testing.
+- [retention_and_email_playbook.md](knowledge/retention_and_email_playbook.md): 6 core lifecycle flows, RFM segmentation, churn signals.
+
+---
+
+## 6. Standard Operating Workflows
+
+Standard operating runbooks available in `workflows/`:
+- [engagement-12-part.md](workflows/engagement-12-part.md): Canonical 12-Part Strategy Flow across Four Core Documents.
+- [campaign-launch.md](workflows/campaign-launch.md): Zero-defect pre-flight launch checklist.
+- [aeo-geo-audit.md](workflows/aeo-geo-audit.md): 5-phase generative AI search visibility audit.
+- [competitor-sweep.md](workflows/competitor-sweep.md): Competitor Ad Library, creative reverse-engineering, and backlink gaps.
+- [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
+- [continuous-improvement-loop.md](workflows/continuous-improvement-loop.md): Quarterly MER review and channel rebalancing.
