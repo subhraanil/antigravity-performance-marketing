@@ -90,6 +90,10 @@ For deep-dive procedures, view the files in the `knowledge/` directory:
 - [aeo_geo_ai_search_playbook.md](knowledge/aeo_geo_ai_search_playbook.md): Google AI Mode, AI Overviews, Perplexity, RFC 9309 crawler standards.
 - [attribution_modeling_and_mmm.md](knowledge/attribution_modeling_and_mmm.md): Modern post-cookie attribution, Google Meridian MMM, Geo-lift testing.
 - [retention_and_email_playbook.md](knowledge/retention_and_email_playbook.md): 6 core lifecycle flows, RFM segmentation, churn signals.
+- [google_shopping_and_gmc_feed_playbook.md](knowledge/google_shopping_and_gmc_feed_playbook.md): Google Merchant Center TSV/CSV feed specs, variants, and custom labels.
+- [search_terms_audit_and_query_mining.md](knowledge/search_terms_audit_and_query_mining.md): 4-tier query classification, negative keyword lists, and CPA reduction.
+- [technical_seo_and_screaming_frog_remediation.md](knowledge/technical_seo_and_screaming_frog_remediation.md): Screaming Frog crawl fixes, 4xx/3xx redirect chains, and IndexNow API.
+- [advanced_schema_entity_templates.md](knowledge/advanced_schema_entity_templates.md): Production JSON-LD snippets (Organization, Product, FAQPage).
 
 ---
 
@@ -102,3 +106,14 @@ Standard operating runbooks available in `workflows/`:
 - [competitor-sweep.md](workflows/competitor-sweep.md): Competitor Ad Library, creative reverse-engineering, and backlink gaps.
 - [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
 - [continuous-improvement-loop.md](workflows/continuous-improvement-loop.md): Quarterly MER review and channel rebalancing.
+
+---
+
+## 7. Real-World Client Audits & Case Studies
+
+Audited client deliverables and field data available in `case-studies/`:
+- [pet_mode_forensic_audit_and_fixation_plan.md](case-studies/pet_mode_forensic_audit_and_fixation_plan.md): UK pet e-commerce forensic audit, feed hygiene, and placement burn elimination.
+- [pet_mode_3month_forecast_report.md](case-studies/pet_mode_3month_forecast_report.md): 90-day conservative, moderate, and aggressive growth model.
+- [share_samadhan_search_terms_analysis.md](case-studies/share_samadhan_search_terms_analysis.md): 23-month analysis of 2,780 search queries for high-ticket financial lead generation.
+- [pajama_village_client_strategy_report.md](case-studies/pajama_village_client_strategy_report.md): 66-day Q4 Christmas pajama seasonal DTC scaling architecture.
+- [kuri_meta_ads_strategy.md](case-studies/kuri_meta_ads_strategy.md): Festive season ethnic fashion Meta Ads campaign strategy and copy matrix.

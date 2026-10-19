@@ -1,0 +1,44 @@
+{
+  "brand_name": "Pajama Village",
+  "slug": "pajama-village",
+  "website": "https://pajamavillage.com",
+  "business_model": "DTC_ECOMMERCE",
+  "industry_vertical": "Seasonal Apparel & Matching Holiday Sleepwear",
+  "target_geos": ["US"],
+  "currency": "USD",
+  "unit_economics": {
+    "aov_or_acv": 84.0,
+    "gross_margin_pct": 68,
+    "target_cpa": 28.0,
+    "max_acceptable_cpa": 38.0,
+    "target_roas": 3.2,
+    "breakeven_roas": 1.47,
+    "target_monthly_budget": 20000.0
+  },
+  "brand_voice": {
+    "tone": "Festive, heartwarming, family-centric, playful",
+    "primary_angle": "Matching holiday pajamas for the whole family, kids, and pets — ultra-soft organic cotton holiday memories",
+    "forbidden_claims": ["Guaranteed pre-Christmas delivery past shipping deadline"]
+  },
+  "channels": {
+    "meta_ads": {
+      "active": true,
+      "budget_pct": 70,
+      "campaign_types": ["ADVANTAGE_PLUS_SHOPPING", "DCT_HOLIDAY_SANDBOX", "CATALOG_DPA"]
+    },
+    "google_ads": {
+      "active": true,
+      "budget_pct": 20,
+      "campaign_types": ["PERFORMANCE_MAX_SEASONAL", "SEARCH_ALPHA_EXACT"]
+    },
+    "retention_email": {
+      "active": true,
+      "budget_pct": 10,
+      "platform": "Klaviyo"
+    }
+  },
+  "guardrails": {
+    "scaling_cap_strict": "Maximum 20% budget increase per 72h during Q4 ramp",
+    "shipping_cut_off_ad_swap_mandatory": true
+  }
+}

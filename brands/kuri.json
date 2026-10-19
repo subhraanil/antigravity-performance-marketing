@@ -1,0 +1,43 @@
+{
+  "brand_name": "Kuri",
+  "slug": "kuri",
+  "website": "https://kuri.in",
+  "business_model": "DTC_ECOMMERCE",
+  "industry_vertical": "Ethnic Fashion, Festive Kurtis & Women's Wear",
+  "target_geos": ["IN"],
+  "currency": "INR",
+  "unit_economics": {
+    "aov_or_acv": 2400.0,
+    "gross_margin_pct": 65,
+    "target_cpa": 450.0,
+    "max_acceptable_cpa": 650.0,
+    "target_roas": 4.5,
+    "breakeven_roas": 1.54,
+    "target_monthly_budget": 75000.0
+  },
+  "brand_voice": {
+    "tone": "Vibrant, elegant, celebratory, proud Indian heritage",
+    "primary_angle": "Pure cotton, breathable festive kurtis crafted for elegance and all-day comfort during Navratri, Durga Puja, and Diwali",
+    "forbidden_claims": ["Handloom claims without certified weaver tags"]
+  },
+  "channels": {
+    "meta_ads": {
+      "active": true,
+      "budget_pct": 75,
+      "campaign_types": ["CBO_FESTIVE_CATALOG", "DCT_REELS_VIDEO", "WARM_ENGAGEMENT"]
+    },
+    "google_ads": {
+      "active": true,
+      "budget_pct": 15,
+      "campaign_types": ["SEARCH_ALPHA_EXACT", "PERFORMANCE_MAX"]
+    },
+    "whatsapp_and_sms": {
+      "active": true,
+      "budget_pct": 10
+    }
+  },
+  "guardrails": {
+    "cod_rto_threshold": "Pin codes with >30% RTO excluded from Cash-on-Delivery campaigns",
+    "festive_dayparting": true
+  }
+}

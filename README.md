@@ -57,7 +57,11 @@ antigravity-performance-marketing/
 │   ├── compliance_and_governance.md         # EU AI Act Article 50, C2PA, signal resilience
 │   ├── aeo_geo_ai_search_playbook.md        # Google AI Mode, AI Overviews, Perplexity, RFC 9309
 │   ├── attribution_modeling_and_mmm.md      # Post-cookie attribution, Google Meridian MMM, Geo-lift
-│   └── retention_and_email_playbook.md      # 6 core lifecycle flows, RFM segmentation, churn signals
+│   ├── retention_and_email_playbook.md      # 6 core lifecycle flows, RFM segmentation, churn signals
+│   ├── google_shopping_and_gmc_feed_playbook.md   # GMC TSV/CSV feed specs, variants, custom labels
+│   ├── search_terms_audit_and_query_mining.md     # 4-tier query classification, negative lists
+│   ├── technical_seo_and_screaming_frog_remediation.md # Crawl defect fixes, canonicals, IndexNow API
+│   └── advanced_schema_entity_templates.md        # JSON-LD entity graph templates (Org, Product, FAQ)
 ├── rules/                            # Workspace & Global Rules
 │   ├── .antigravity-rules            # Global workspace constraints (.antigravity/rules)
 │   ├── performance-marketing.md      # Standard Antigravity rules format
@@ -67,7 +71,16 @@ antigravity-performance-marketing/
 │   ├── nutrabytes.json               # UK Health & Supplements DTC profile
 │   ├── share-samadhan.json           # India Financial Recovery consultancy profile
 │   ├── airdog.json                   # Clean air hardware DTC profile
+│   ├── pet-mode.json                 # UK Pet accessories & dog beds DTC profile
+│   ├── pajama-village.json           # US Seasonal Christmas pajama sleepwear profile
+│   ├── kuri.json                     # India Festive ethnic fashion apparel profile
 │   └── _template.json                # Master brand onboarding template
+├── case-studies/                     # Audited Field Case Studies & Forensic Data
+│   ├── pet_mode_forensic_audit_and_fixation_plan.md # UK pet ecom audit & placement burn fix
+│   ├── pet_mode_3month_forecast_report.md           # 90-day conservative/aggressive forecast
+│   ├── share_samadhan_search_terms_analysis.md      # 23-month analysis of 2,780 search terms
+│   ├── pajama_village_client_strategy_report.md     # 66-day Q4 seasonal holiday DTC strategy
+│   └── kuri_meta_ads_strategy.md                    # Indian festive ethnic wear campaign brief
 ├── subagents/                        # 24 Specialist Marketing Subagent definitions
 │   ├── media-buyer.md                # Paid advertising, bid pacing, campaign setup
 │   ├── marketing-strategist.md       # 12-Part Strategy Flow, GTM planning, SOSTAC

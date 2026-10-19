@@ -1,0 +1,45 @@
+{
+  "brand_name": "Pet Mode",
+  "slug": "pet-mode",
+  "website": "https://petmode.co.uk",
+  "business_model": "DTC_ECOMMERCE",
+  "industry_vertical": "Pet Care, Dog Beds & Accessories",
+  "target_geos": ["UK"],
+  "currency": "GBP",
+  "unit_economics": {
+    "aov_or_acv": 38.50,
+    "gross_margin_pct": 62,
+    "target_cpa": 16.0,
+    "max_acceptable_cpa": 22.0,
+    "target_roas": 3.8,
+    "breakeven_roas": 1.61,
+    "target_monthly_budget": 5000.0
+  },
+  "brand_voice": {
+    "tone": "Warm, practical, pet-loving British lifestyle",
+    "primary_angle": "Durable, orthopedic memory foam pet beds and pet travel accessories built for everyday British weather",
+    "forbidden_claims": ["Shock collar effectiveness", "Guaranteed medical cure for arthritis"]
+  },
+  "channels": {
+    "google_ads": {
+      "active": true,
+      "budget_pct": 55,
+      "campaign_types": ["PERFORMANCE_MAX_FEED_ONLY", "SEARCH_ALPHA_EXACT"]
+    },
+    "meta_ads": {
+      "active": true,
+      "budget_pct": 35,
+      "campaign_types": ["ADVANTAGE_PLUS_SHOPPING", "DCT_SANDBOX"]
+    },
+    "retention_email": {
+      "active": true,
+      "budget_pct": 10,
+      "platform": "Shopify Email"
+    }
+  },
+  "guardrails": {
+    "no_boosted_engagement_posts": true,
+    "no_standalone_reels_placement": true,
+    "uk_feed_localization_strict": true
+  }
+}
