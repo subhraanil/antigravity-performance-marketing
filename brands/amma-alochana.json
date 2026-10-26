@@ -1,0 +1,39 @@
+{
+  "brand_name": "Amma Alochana Trading Academy",
+  "slug": "amma-alochana",
+  "website": "https://play.google.com/store/apps/details?id=co.sansa.pwiko",
+  "business_model": "HIGH_TICKET_LEAD_GEN",
+  "industry_vertical": "Financial Education & Stock Market Training",
+  "target_geos": ["IN-AP", "IN-TG", "IN"],
+  "currency": "INR",
+  "unit_economics": {
+    "aov_or_acv": 15000.0,
+    "gross_margin_pct": 85,
+    "target_cpa": 120.0,
+    "max_acceptable_cpa": 180.0,
+    "target_monthly_budget": 50000.0
+  },
+  "brand_voice": {
+    "tone": "Direct, empathetic, mentor-like, transparent Telugu financial guidance",
+    "primary_angle": "Learn structured, rule-based price action trading directly in Telugu — stop gambling on random Telegram tips",
+    "forbidden_claims": ["100% guaranteed daily profits", "Get rich quick without risk", "SEBI-unauthorized advisory tips"]
+  },
+  "channels": {
+    "meta_ads": {
+      "active": true,
+      "budget_pct": 85,
+      "campaign_types": ["LEAD_GEN_LANDING_PAGE", "INSTANT_WEBINAR_REGISTRATION", "REELS_FOUNDER_HOOK"]
+    },
+    "google_ads": {
+      "active": true,
+      "budget_pct": 15,
+      "campaign_types": ["SEARCH_ALPHA_EXACT"]
+    }
+  },
+  "funnel": {
+    "type": "AUTOMATED_WEBINAR_FUNNEL",
+    "webinar_day": "Sunday 7:30 PM IST",
+    "calendar_sync_required": true,
+    "whatsapp_automation": true
+  }
+}

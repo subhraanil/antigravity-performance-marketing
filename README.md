@@ -61,7 +61,8 @@ antigravity-performance-marketing/
 │   ├── google_shopping_and_gmc_feed_playbook.md   # GMC TSV/CSV feed specs, variants, custom labels
 │   ├── search_terms_audit_and_query_mining.md     # 4-tier query classification, negative lists
 │   ├── technical_seo_and_screaming_frog_remediation.md # Crawl defect fixes, canonicals, IndexNow API
-│   └── advanced_schema_entity_templates.md        # JSON-LD entity graph templates (Org, Product, FAQ)
+│   ├── advanced_schema_entity_templates.md        # JSON-LD entity graph templates (Org, Product, FAQ)
+│   └── webinar_funnel_and_lead_generation_playbook.md # Automated webinars, WhatsApp/Email nurture, CAC-to-LTV
 ├── rules/                            # Workspace & Global Rules
 │   ├── .antigravity-rules            # Global workspace constraints (.antigravity/rules)
 │   ├── performance-marketing.md      # Standard Antigravity rules format
@@ -74,13 +75,16 @@ antigravity-performance-marketing/
 │   ├── pet-mode.json                 # UK Pet accessories & dog beds DTC profile
 │   ├── pajama-village.json           # US Seasonal Christmas pajama sleepwear profile
 │   ├── kuri.json                     # India Festive ethnic fashion apparel profile
+│   ├── amma-alochana.json            # Telugu Parenting automated webinar coaching profile
 │   └── _template.json                # Master brand onboarding template
-├── case-studies/                     # Audited Field Case Studies & Forensic Data
-│   ├── pet_mode_forensic_audit_and_fixation_plan.md # UK pet ecom audit & placement burn fix
-│   ├── pet_mode_3month_forecast_report.md           # 90-day conservative/aggressive forecast
-│   ├── share_samadhan_search_terms_analysis.md      # 23-month analysis of 2,780 search terms
-│   ├── pajama_village_client_strategy_report.md     # 66-day Q4 seasonal holiday DTC strategy
-│   └── kuri_meta_ads_strategy.md                    # Indian festive ethnic wear campaign brief
+├── case-studies/                     # Structured Field Case Studies & Forensic Data
+│   ├── amma-alochana/                # Automated webinar funnel, Meta CPL, WhatsApp automation
+│   ├── pet-mode/                     # UK Pet Ecom 6-part audit, forecast & unit economics
+│   ├── pajama-village/               # US Christmas Pajama Q4 scaling, feed & geo deep-dives
+│   ├── share-samadhan/               # 23-month 2,780 search query forensic analysis
+│   ├── kuri/                         # Festive ethnic fashion Meta/PMax strategy & copy banks
+│   └── seo-and-publishing/           # Screaming Frog remediation, Schema, IndexNow, AdSense
+├── MIGRATION_GUIDE.md                # 1-Click restoration guide for new systems
 ├── subagents/                        # 24 Specialist Marketing Subagent definitions
 │   ├── media-buyer.md                # Paid advertising, bid pacing, campaign setup
 │   ├── marketing-strategist.md       # 12-Part Strategy Flow, GTM planning, SOSTAC

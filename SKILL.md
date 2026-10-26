@@ -94,6 +94,7 @@ For deep-dive procedures, view the files in the `knowledge/` directory:
 - [search_terms_audit_and_query_mining.md](knowledge/search_terms_audit_and_query_mining.md): 4-tier query classification, negative keyword lists, and CPA reduction.
 - [technical_seo_and_screaming_frog_remediation.md](knowledge/technical_seo_and_screaming_frog_remediation.md): Screaming Frog crawl fixes, 4xx/3xx redirect chains, and IndexNow API.
 - [advanced_schema_entity_templates.md](knowledge/advanced_schema_entity_templates.md): Production JSON-LD snippets (Organization, Product, FAQPage).
+- [webinar_funnel_and_lead_generation_playbook.md](knowledge/webinar_funnel_and_lead_generation_playbook.md): High-ticket and regional language automated webinar funnels, WhatsApp/Email nurture, and show-up rate optimization.
 
 ---
 
@@ -111,9 +112,32 @@ Standard operating runbooks available in `workflows/`:
 
 ## 7. Real-World Client Audits & Case Studies
 
-Audited client deliverables and field data available in `case-studies/`:
-- [pet_mode_forensic_audit_and_fixation_plan.md](case-studies/pet_mode_forensic_audit_and_fixation_plan.md): UK pet e-commerce forensic audit, feed hygiene, and placement burn elimination.
-- [pet_mode_3month_forecast_report.md](case-studies/pet_mode_3month_forecast_report.md): 90-day conservative, moderate, and aggressive growth model.
-- [share_samadhan_search_terms_analysis.md](case-studies/share_samadhan_search_terms_analysis.md): 23-month analysis of 2,780 search queries for high-ticket financial lead generation.
-- [pajama_village_client_strategy_report.md](case-studies/pajama_village_client_strategy_report.md): 66-day Q4 Christmas pajama seasonal DTC scaling architecture.
-- [kuri_meta_ads_strategy.md](case-studies/kuri_meta_ads_strategy.md): Festive season ethnic fashion Meta Ads campaign strategy and copy matrix.
+Audited client deliverables, field data, and forensic remediation plans organized by client vertical in `case-studies/`:
+- **Amma Alochana** (`case-studies/amma-alochana/`):
+  - [automated_webinar_funnel_strategy.md](case-studies/amma-alochana/automated_webinar_funnel_strategy.md): Telugu parenting coaching automated webinar funnel, Meta Ads CPL optimization, and WhatsApp automation.
+- **Pet Mode UK** (`case-studies/pet-mode/`):
+  - [pet_mode_forensic_audit_and_fixation_plan.md](case-studies/pet-mode/pet_mode_forensic_audit_and_fixation_plan.md): UK pet e-commerce Google Ads forensic audit, feed hygiene, and placement burn elimination.
+  - [pet_mode_3month_forecast_report.md](case-studies/pet-mode/pet_mode_3month_forecast_report.md): 90-day conservative, moderate, and aggressive growth financial models.
+  - [pet_mode_city_orders_analysis.md](case-studies/pet-mode/pet_mode_city_orders_analysis.md): Geographic density analysis and regional bid adjustments.
+  - [pet_mode_search_terms_audit.md](case-studies/pet-mode/pet_mode_search_terms_audit.md): Search query classification and negative keyword sculpting.
+  - [pet_mode_turnaround_summary.md](case-studies/pet-mode/pet_mode_turnaround_summary.md): High-level executive turnaround summary.
+  - [pet_mode_unit_economics_dashboard.md](case-studies/pet-mode/pet_mode_unit_economics_dashboard.md): LTV/CAC, margin, and contribution analysis.
+- **Pajama Village US** (`case-studies/pajama-village/`):
+  - [pajama_village_client_strategy_report.md](case-studies/pajama-village/pajama_village_client_strategy_report.md): 66-day Q4 Christmas pajama seasonal DTC scaling architecture.
+  - [pajama_village_google_ads_audit_and_christmas_strategy.md](case-studies/pajama-village/pajama_village_google_ads_audit_and_christmas_strategy.md): Pre-holiday account audit, ROAS benchmarks, and scaling roadmap.
+  - [pajama_village_locations_and_feed_deepdive.md](case-studies/pajama-village/pajama_village_locations_and_feed_deepdive.md): Merchant Center feed optimization and state-level targeting.
+  - [pajama_village_q4_scale_and_retention_plan.md](case-studies/pajama-village/pajama_village_q4_scale_and_retention_plan.md): Cyber 5 scaling, retention funnels, and post-purchase email cadence.
+- **Share Samadhan** (`case-studies/share-samadhan/`):
+  - [share_samadhan_search_terms_analysis.md](case-studies/share-samadhan/share_samadhan_search_terms_analysis.md): 23-month forensic analysis of 2,780 search queries for high-ticket financial recovery lead generation.
+- **Kuri Ethnic Fashion** (`case-studies/kuri/`):
+  - [kuri_meta_ads_strategy.md](case-studies/kuri/kuri_meta_ads_strategy.md): Festive season ethnic fashion Meta Ads campaign strategy and copy matrix.
+  - [kuri_google_ads_pmax_report.md](case-studies/kuri/kuri_google_ads_pmax_report.md): Performance Max audit and asset group segmentation.
+  - [kuri_ad_copy_bank.md](case-studies/kuri/kuri_ad_copy_bank.md): Multi-angle hook and ad copy repository for ethnic apparel.
+  - [kuri_negative_keywords_report.md](case-studies/kuri/kuri_negative_keywords_report.md): Irrelevant search term exclusions and brand negative list.
+- **SEO & Publishing Remediation** (`case-studies/seo-and-publishing/`):
+  - [technical_seo_screaming_frog_remediation.md](case-studies/seo-and-publishing/technical_seo_screaming_frog_remediation.md): Crawl defect remediation plan, 4xx/3xx redirect consolidation, and IndexNow API integration.
+  - [schema_markup_implementation_report.md](case-studies/seo-and-publishing/schema_markup_implementation_report.md): Multi-entity JSON-LD graphs for articles, authors, and publisher entities.
+  - [category_page_indexing_strategy.md](case-studies/seo-and-publishing/category_page_indexing_strategy.md): Thin taxonomy cleanup, noindex directives, and canonical hierarchy.
+  - [gsc_search_performance_optimization.md](case-studies/seo-and-publishing/gsc_search_performance_optimization.md): Google Search Console query mining and CTR optimization.
+  - [wordpress_seo_migration_guide.md](case-studies/seo-and-publishing/wordpress_seo_migration_guide.md): Platform migration risk mitigation and URL mapping.
+  - [adsense_rpm_growth_framework.md](case-studies/seo-and-publishing/adsense_rpm_growth_framework.md): Viewability optimization and ad unit placement architecture.
