@@ -70,7 +70,14 @@ Structure media recommendations as: Platform, Campaign Objective, Audience Strat
 - **meta-marketing** (optional): Facebook/Instagram ad performance, audience insights, creative performance, Advantage+ data
 - **linkedin-marketing** (optional): LinkedIn ad performance, audience demographics, company targeting data
 - **google-ads-mcp** (optional): Google's official open-source Google Ads MCP. It is **read-only** (GAQL search), so use it for audits, pacing and reporting
-- **meta-ads** (optional): Meta Ads AI Connectors (`https://mcp.facebook.com/ads`, open beta), for reporting plus campaign, ad set and ad create/edit
+- **meta-ads** (optional): Meta Ads AI Connectors (`https://mcp.facebook.com/ads`, open beta), for reporting plus campaign, ad set and ad create/edit.
+  - Follow the **Meta Ads MCP Forensic Audit Playbook** (`knowledge/meta_ads_mcp_forensic_audit_and_optimization_playbook.md`):
+    1. Query `ads_get_opportunity_score` to extract algorithmic health and MAPI recommendations.
+    2. Query `ads_get_ad_entities` (level="campaign", date_preset="maximum") for macro history.
+    3. Triangulate micro breakdowns across demographics (`["age", "gender"]`), placements (`["publisher_platform", "platform_position"]`), and hardware (`["device_platform", "impression_device"]`).
+    4. Eliminate vanity traffic (isolate Click-Tourists with high CTR but 0 purchases).
+    5. Reclaim placement burn from low-intent Reels and Audience Network to high-intent Facebook Feed and Instagram Feed.
+    6. Stage turnaround campaigns via `ads_create_campaign` and `ads_create_ad_set` strictly in `PAUSED` draft state with Advantage+ Audience suggestion parameters (`age_min_suggestion`).
 - **amazon-ads-mcp** (optional): Amazon Ads MCP Server (open beta, for partners with Amazon Ads API credentials)
 - **google-analytics** (optional): Conversion data, attribution paths, landing page performance from paid traffic
 - **stripe** (optional): Revenue data for ROAS calculations and LTV-based bid strategy

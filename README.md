@@ -62,7 +62,8 @@ antigravity-performance-marketing/
 │   ├── search_terms_audit_and_query_mining.md     # 4-tier query classification, negative lists
 │   ├── technical_seo_and_screaming_frog_remediation.md # Crawl defect fixes, canonicals, IndexNow API
 │   ├── advanced_schema_entity_templates.md        # JSON-LD entity graph templates (Org, Product, FAQ)
-│   └── webinar_funnel_and_lead_generation_playbook.md # Automated webinars, WhatsApp/Email nurture, CAC-to-LTV
+│   ├── webinar_funnel_and_lead_generation_playbook.md # Automated webinars, WhatsApp/Email nurture, CAC-to-LTV
+│   └── meta_ads_mcp_forensic_audit_and_optimization_playbook.md # Meta Ads MCP tool taxonomy, 5-phase forensic audit
 ├── rules/                            # Workspace & Global Rules
 │   ├── .antigravity-rules            # Global workspace constraints (.antigravity/rules)
 │   ├── performance-marketing.md      # Standard Antigravity rules format
@@ -102,6 +103,7 @@ antigravity-performance-marketing/
 ├── workflows/                        # Standard Operating Procedures
 │   ├── engagement-12-part.md         # Canonical 12-Part Strategy Flow
 │   ├── campaign-launch.md            # Zero-defect pre-flight launch checklist
+│   ├── meta-ads-mcp-audit.md         # Automated Meta Ads MCP multi-dimensional audit SOP
 │   ├── aeo-geo-audit.md              # 5-phase generative AI search visibility audit
 │   ├── competitor-sweep.md           # Competitor Ad Library, creative reverse-engineering
 │   ├── client-onboarding.md          # 5-stage agency client onboarding runbook

@@ -95,6 +95,7 @@ For deep-dive procedures, view the files in the `knowledge/` directory:
 - [technical_seo_and_screaming_frog_remediation.md](knowledge/technical_seo_and_screaming_frog_remediation.md): Screaming Frog crawl fixes, 4xx/3xx redirect chains, and IndexNow API.
 - [advanced_schema_entity_templates.md](knowledge/advanced_schema_entity_templates.md): Production JSON-LD snippets (Organization, Product, FAQPage).
 - [webinar_funnel_and_lead_generation_playbook.md](knowledge/webinar_funnel_and_lead_generation_playbook.md): High-ticket and regional language automated webinar funnels, WhatsApp/Email nurture, and show-up rate optimization.
+- [meta_ads_mcp_forensic_audit_and_optimization_playbook.md](knowledge/meta_ads_mcp_forensic_audit_and_optimization_playbook.md): Meta Ads MCP tool calling taxonomy, 5-phase forensic audit, Click-Tourist filtering, and placement recovery.
 
 ---
 
@@ -103,6 +104,7 @@ For deep-dive procedures, view the files in the `knowledge/` directory:
 Standard operating runbooks available in `workflows/`:
 - [engagement-12-part.md](workflows/engagement-12-part.md): Canonical 12-Part Strategy Flow across Four Core Documents.
 - [campaign-launch.md](workflows/campaign-launch.md): Zero-defect pre-flight launch checklist.
+- [meta-ads-mcp-audit.md](workflows/meta-ads-mcp-audit.md): 5-step automated Meta Ads MCP audit, placement waste recovery, and PAUSED staging.
 - [aeo-geo-audit.md](workflows/aeo-geo-audit.md): 5-phase generative AI search visibility audit.
 - [competitor-sweep.md](workflows/competitor-sweep.md): Competitor Ad Library, creative reverse-engineering, and backlink gaps.
 - [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
@@ -116,6 +118,7 @@ Audited client deliverables, field data, and forensic remediation plans organize
 - **Amma Alochana** (`case-studies/amma-alochana/`):
   - [automated_webinar_funnel_strategy.md](case-studies/amma-alochana/automated_webinar_funnel_strategy.md): Telugu parenting coaching automated webinar funnel, Meta Ads CPL optimization, and WhatsApp automation.
 - **Pet Mode UK** (`case-studies/pet-mode/`):
+  - [pet_mode_meta_ads_mcp_forensic_analysis.md](case-studies/pet-mode/pet_mode_meta_ads_mcp_forensic_analysis.md): Live Meta Ads MCP forensic analysis across 34 campaigns, demographic isolation (Women 45-65+ = 68.8% sales), iPad ROAS multiplier, and Facebook Feed concentration blueprint.
   - [pet_mode_forensic_audit_and_fixation_plan.md](case-studies/pet-mode/pet_mode_forensic_audit_and_fixation_plan.md): UK pet e-commerce Google Ads forensic audit, feed hygiene, and placement burn elimination.
   - [pet_mode_3month_forecast_report.md](case-studies/pet-mode/pet_mode_3month_forecast_report.md): 90-day conservative, moderate, and aggressive growth financial models.
   - [pet_mode_city_orders_analysis.md](case-studies/pet-mode/pet_mode_city_orders_analysis.md): Geographic density analysis and regional bid adjustments.
