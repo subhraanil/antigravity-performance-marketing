@@ -28,8 +28,10 @@
     },
     "meta_ads": {
       "active": true,
+      "ad_account_id": "2061291304637828",
       "budget_pct": 35,
-      "campaign_types": ["ADVANTAGE_PLUS_SHOPPING", "DCT_SANDBOX"]
+      "campaign_types": ["OUTCOME_SALES_CBO", "DCT_SANDBOX"],
+      "verified_winning_demographic": "Women 45-65+, iPad & iPhone Mobile Apps, Facebook Feed"
     },
     "retention_email": {
       "active": true,
