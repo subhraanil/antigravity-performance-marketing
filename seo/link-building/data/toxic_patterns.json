@@ -1,0 +1,222 @@
+{
+  "version": "2.0.0",
+  "name": "Penguin-Safe Toxic Link Detection Taxonomy",
+  "description": "30 structural, contextual, and architectural patterns for detecting toxic, spammy, or high-risk inbound links.",
+  "categories": [
+    {
+      "tier": "Definite Spam (Auto-Flag & Disavow)",
+      "action": "Immediate disavow candidate",
+      "risk_level": "critical",
+      "patterns": [
+        {
+          "id": "TOX_01",
+          "name": "Excessive Outbound Link Density",
+          "description": "Page contains > 1,000 outbound links or > 10,000 links on domain.",
+          "signal": "Link farm or public directory spam page"
+        },
+        {
+          "id": "TOX_02",
+          "name": "Deindexed or Penalized Domain",
+          "description": "Referring domain has zero indexed pages in Google cache/index.",
+          "signal": "Domain penalized or deindexed for webmaster guideline violations"
+        },
+        {
+          "id": "TOX_03",
+          "name": "Burner Domain Velocity",
+          "description": "Domain registered < 30 days ago with > 100 outbound commercial links.",
+          "signal": "Disposable burner site built exclusively for manipulative SEO"
+        },
+        {
+          "id": "TOX_04",
+          "name": "Coordinated Commercial Exact-Match Anchor Spam",
+          "description": "Identical commercial money anchor received from 5+ unrelated low-quality domains within days.",
+          "signal": "Negative SEO blast or automated link scheme"
+        },
+        {
+          "id": "TOX_05",
+          "name": "Doorway Pages & Parasite Injection",
+          "description": "Thin, keyword-stuffed page hosted on compromised or scraped server.",
+          "signal": "Automated doorway page redirecting or manipulating anchor weight"
+        },
+        {
+          "id": "TOX_06",
+          "name": "Hacked / Malicious Injections",
+          "description": "Inbound link from compromised pharma, casino, essay-writing, or adult redirect paths.",
+          "signal": "Hacked CMS insertion"
+        },
+        {
+          "id": "TOX_07",
+          "name": "Known PBN Footprints",
+          "description": "Shared IP blocks, same WHOIS registrant, identical CMS themes, zero brand identity.",
+          "signal": "Private Blog Network (PBN) footprint"
+        },
+        {
+          "id": "TOX_08",
+          "name": "Sitewide Footer/Sidebar Link Blasts",
+          "description": "Sitewide boiler-plate links appearing across thousands of pages on unrelated niche sites.",
+          "signal": "Paid or hacked sitewide link injection"
+        },
+        {
+          "id": "TOX_09",
+          "name": "Auto-Spun & Markov AI Scrapes",
+          "description": "Unintelligible, machine-scraped gibberish text surrounding target hyperlink.",
+          "signal": "Scraper network or spun content syndication"
+        },
+        {
+          "id": "TOX_10",
+          "name": "Manual Penalty Association",
+          "description": "Domains actively associated with known link sales networks or public link marketplace listings.",
+          "signal": "Outed link seller / broker"
+        }
+      ]
+    },
+    {
+      "tier": "Likely Spam (Manual Review Required)",
+      "action": "Flag for human spot-check; disavow if unresolvable",
+      "risk_level": "high",
+      "patterns": [
+        {
+          "id": "TOX_11",
+          "name": "Extreme Outbound to Inbound Link Ratio",
+          "description": "Referring domain has > 90% outbound links compared to total inbound authority.",
+          "signal": "Link distribution site"
+        },
+        {
+          "id": "TOX_12",
+          "name": "Irrelevant Foreign Language Mismatch",
+          "description": "Foreign language domain (e.g., Cyrillic/Chinese) linking to localized English B2B SaaS without context.",
+          "signal": "Automated scrapers or syndicated forum spam"
+        },
+        {
+          "id": "TOX_13",
+          "name": "Repurposed Expired Domain",
+          "description": "Domain history shows complete topical shift (e.g., historic veterinary clinic now linking to crypto).",
+          "signal": "Expired domain 301 or PBN rebuild"
+        },
+        {
+          "id": "TOX_14",
+          "name": "Excessive Page Link Count",
+          "description": "Inbound link originates on a page with > 100 external outbound links.",
+          "signal": "Resource listicle farm or unmoderated bookmark directory"
+        },
+        {
+          "id": "TOX_15",
+          "name": "Parked / Zero Organic Traffic Domain",
+          "description": "Domain generates 0 organic visits and consists solely of parking ads or placeholder links.",
+          "signal": "Parked or abandoned domain"
+        },
+        {
+          "id": "TOX_16",
+          "name": "Triangular or Reciprocal Link Rings",
+          "description": "Reciprocal link pattern (Site A -> Site B -> Site A) across 5+ sites in a network.",
+          "signal": "Reciprocal link exchange scheme"
+        },
+        {
+          "id": "TOX_17",
+          "name": "Low Quality Web 2.0 Spun Pages",
+          "description": "Free subdomain properties (e.g. *.blogspot.com, *.wordpress.com) with < 200 words and 1 link.",
+          "signal": "Automated Web 2.0 link tiering"
+        },
+        {
+          "id": "TOX_18",
+          "name": "Zombie Article Directories",
+          "description": "Submissions on legacy syndication sites (EzineArticles, ArticleBiz, GoArticles).",
+          "signal": "Deprecate archive links"
+        },
+        {
+          "id": "TOX_19",
+          "name": "Low Quality Guest Post Marketplaces",
+          "description": "Sites featuring 'Write for us' banners with unmoderated commercial links across every topic.",
+          "signal": "Guest post farm"
+        },
+        {
+          "id": "TOX_20",
+          "name": "Total Niche Disconnect",
+          "description": "Plumbing contractor or gambling casino linking to an AI developer SDK.",
+          "signal": "Unnatural linking pattern"
+        }
+      ]
+    },
+    {
+      "tier": "Potentially Problematic (Surveillance Tier)",
+      "action": "Monitor; do not disavow unless toxic ratio exceeds 10%",
+      "risk_level": "medium",
+      "patterns": [
+        {
+          "id": "TOX_21",
+          "name": "Automated Social Bookmarking Ingestion",
+          "description": "Mass automated links from Reddit/Twitter scrapers or social bookmark clones.",
+          "signal": "Low authority scraper syndication"
+        },
+        {
+          "id": "TOX_22",
+          "name": "Empty Forum User Profiles",
+          "description": "Profile pages on vBulletin/Discourse with zero post history and homepage link in bio.",
+          "signal": "Automated forum profile backlink tool"
+        },
+        {
+          "id": "TOX_23",
+          "name": "Low-End Press Release Syndication",
+          "description": "Identical press release syndicated verbatim across 200 scraper domains without canonical tag.",
+          "signal": "Press release spam"
+        },
+        {
+          "id": "TOX_24",
+          "name": "Coupon and Voucher Scrapers",
+          "description": "Scraped 'discount code' or 'coupon' listings with fake tracking redirects.",
+          "signal": "Affiliate scrapers"
+        },
+        {
+          "id": "TOX_25",
+          "name": "Generic Uncategorized Directories",
+          "description": "Directories with zero editorial oversight that accept all URLs automatically.",
+          "signal": "Legacy directory noise"
+        },
+        {
+          "id": "TOX_26",
+          "name": "Hidden or Offscreen CSS Links",
+          "description": "Links rendered with display:none, opacity:0, or positioned -9999px offscreen.",
+          "signal": "Manipulative hidden links"
+        },
+        {
+          "id": "TOX_27",
+          "name": "Cloaked Content Discrepancies",
+          "description": "HTML served to Googlebot differs from human browser view.",
+          "signal": "Search engine cloaking"
+        },
+        {
+          "id": "TOX_28",
+          "name": "Thin Affiliate Bridge Pages",
+          "description": "Pages with 0 original text, purely serving as redirect bridges to affiliate destinations.",
+          "signal": "Affiliate bridge pages"
+        },
+        {
+          "id": "TOX_29",
+          "name": "Unmoderated Blog Comment Spams",
+          "description": "Keyword name spam in WordPress comment sections (e.g. 'Best CRM software' as commenter name).",
+          "signal": "Comment spam bot"
+        },
+        {
+          "id": "TOX_30",
+          "name": "High Velocity Single-Domain Link Flooding",
+          "description": "> 500 links originating from a single internal taxonomy or calendar tag on one external domain.",
+          "signal": "Calendar or tag archive loop"
+        }
+      ]
+    }
+  ],
+  "disavow_rules": {
+    "when_to_disavow": [
+      "Site has received a Google Manual Action for unnatural inbound links",
+      "Clear targeted negative SEO attack with hundreds of spam domains in a short window",
+      "Toxic links exceed 10% of total referring domains",
+      "Explicitly identified PBNs or link farms linking with commercial exact-match anchors"
+    ],
+    "when_NOT_to_disavow": [
+      "Naturally occurring low-authority scraper links (Google ignores these automatically)",
+      "Links with rel='nofollow', rel='sponsored', or rel='ugc'",
+      "Legitimate niche blogs with lower DA/DR",
+      "Spam link volume is < 2% of overall backlink profile"
+    ]
+  }
+}

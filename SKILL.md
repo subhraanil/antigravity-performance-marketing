@@ -1,11 +1,35 @@
 ---
 name: performance-marketing
-description: Master Performance Marketing Skill & Autonomous Operating System. Integrates full-funnel media buying across Meta Ads (MCP integration), Google Ads (Search Alpha/Beta, Shopping GMC, PMax), 12-part GTM strategy flow, automated 5-dimensional forensic audits, e-commerce SKU contribution analysis, AEO/GEO generative AI search visibility, technical SEO/IndexNow, high-ticket webinar funnels, lifecycle email retention, attribution MMM, and strict campaign safety guardrails.
+description: Master Omnichannel Performance Marketing & Autonomous SEO Operating System. Integrates full-funnel media buying across Meta Ads (MCP integration), Google Ads (Search Alpha/Beta, Shopping GMC, PMax), 12-part GTM strategy flow, automated 5-dimensional forensic audits, e-commerce SKU contribution analysis, Princeton KDD 2024 Generative Engine Optimization (GEO/AEO), Google Search Console (GSC) intelligence, ApexLink Pro 745+ platform link building, Search Experience Optimization (SXO), SEO drift baselining, programmatic SEO, high-ticket webinar funnels, lifecycle email retention, attribution MMM, and strict campaign safety guardrails.
 ---
 
-# Master Performance Marketing Operating System (OS)
+# Master Performance Marketing & Autonomous SEO Operating System (OS)
 
-This skill empowers Antigravity with a unified, end-to-end performance marketing engine, combining the open-source **`digital-marketing-pro`** (v3.33.3) framework, multi-platform media buying architectures, rigorous forensic audit methodologies, deep e-commerce store analytics, and an autonomous 6-subagent execution loop.
+This skill empowers Antigravity with a unified, end-to-end performance marketing and organic search authority operating system. It merges full-funnel paid media acquisition (`digital-marketing-pro` v3.33.3), deep e-commerce store SKU forensics, and the complete **Autonomous SEO & Link-Building Engine** (ApexLink Pro, GSC Intelligence, OpenSEO technical diagnostics, and Princeton KDD 2024 Generative Engine Optimization).
+
+---
+
+## Quick Reference CLI Command Matrix
+
+| Domain | Command | Operational Action | Execution Script / Endpoint |
+|---|---|---|---|
+| **Media Buying** | `/media-buying meta audit` | Run 5-dimensional Meta Ads forensic audit | `python workflows/meta-ads-mcp-audit.md` |
+| **Media Buying** | `/media-buying google audit` | PMax brand negatives & search query mining | `knowledge/google_ads_playbook.md` |
+| **Store Analytics** | `/store sku-audit` | Reconcile Shopify net SKU margins & city clusters | `knowledge/ecommerce_order_and_sku_forensics_playbook.md` |
+| **GSC** | `/seo gsc cannibalization` | Detect query cannibalization & compute traffic loss | `python seo/seo-suite/gsc/gsc_analyzer.py --cannibalization` |
+| **GSC** | `/seo gsc quick-wins` | Extract Pos 11–20 striking distance opportunities | `python seo/seo-suite/gsc/gsc_analyzer.py --quick-wins` |
+| **GEO / AEO** | `/seo geo audit <url>` | Run 0–100 Citability Score & 9-dimension audit | `python seo/seo-suite/geo/geo_engine.py --file <file>` |
+| **GEO / AEO** | `/seo geo robots` | Generate optimal AI search vs training `robots.txt` | `python seo/seo-suite/geo/geo_engine.py --generate-robots` |
+| **GEO / AEO** | `/seo geo llms-txt` | Generate standard `/llms.txt` markdown index | `python seo/seo-suite/geo/geo_engine.py --generate-llms` |
+| **Technical SEO**| `/seo technical audit <url>`| OpenSEO diagnostics & AI fan-out citation gaps | `python seo/seo-suite/audit/site_auditor.py --sample` |
+| **SXO** | `/seo sxo audit <url>` | Detect SERP page-type mismatch & IST/SOLL wireframe | `workflows/seo-sxo-audit.md` |
+| **SEO Drift** | `/seo drift baseline <url>`| Capture pre-deploy known good DOM snapshot | `knowledge/seo_drift_and_regression_monitoring_playbook.md` |
+| **Backlinks** | `/backlinks audit <url>` | 0–100 Profile Health Score & Penguin disavow | `python seo/link-building/scripts/link_audit.py --sample` |
+| **Backlinks** | `/backlinks directories` | Filter 745+ curated platform database by DR/tag | `python seo/link-building/scripts/directory_engine.py list` |
+| **Backlinks** | `/backlinks pr-pitch` | Score journalist queries & draft PR pitches | `python seo/link-building/scripts/pr_pitch_engine.py` |
+| **Backlinks** | `/backlinks asset build` | Generate zero-leak HTML statistics research page | `python seo/link-building/scripts/stats_asset_generator.py` |
+| **Backlinks** | `/backlinks gap` | Poach referring domains linking to 2+ competitors | `python seo/link-building/scripts/competitor_gap.py --sample` |
+| **Backlinks** | `/backlinks verify` | Deterministic live DOM crawler verifying equity | `python seo/link-building/scripts/link_verifier.py` |
 
 ---
 
@@ -38,7 +62,7 @@ Whenever planning, auditing, creating, or editing advertising campaigns across a
 
 ---
 
-## 3. Multi-Platform Media Buying Architecture
+## 3. Multi-Platform Paid Acquisition Architecture
 
 ### Meta Ads Architecture & MCP Execution
 - **[TOF-ASC] Advantage+ Shopping (CBO - 70%)**: Algorithmic broad audience targeting, existing customer budget cap set to 5–10%, 30d purchaser exclusions.
@@ -48,165 +72,226 @@ Whenever planning, auditing, creating, or editing advertising campaigns across a
   - 0–3s Hook: Visual scroll-stopper answering *"Why stop scrolling?"*
   - 3–15s Hold: Problem agitation & unique mechanism demonstration.
   - 15–30s Offer: Irresistible proposition, social proof, and clear CTA.
-- **Meta Ads MCP Tool Suite**: Direct integration with `ads_get_ad_accounts`, `ads_get_opportunity_score`, `ads_get_ad_entities` (with multi-dimensional breakdowns), and `ads_create_campaign` in `PAUSED` draft mode.
 
-### Google Ads Architecture
-- **Search Alpha / Beta Model**: Exact match high-intent winner pool (Alpha) paired with phrase query discovery (Beta), enforced with exact negative cross-pollination.
-- **Performance Max (PMax)**: Asset group segmentation, mandatory account-level brand negative list, final URL expansion exclusions for non-converting pages, first-party customer match signals.
-- **Google Shopping & GMC Feed Hygiene**: Merchant Center feed attribute optimization (`title`, `description`, `google_product_category`, `custom_label_0` to `custom_label_4` for margin segmentation).
-- **Responsive Search Ad (RSA) Copywriting**:
-  - Headline 1 (Pinned): Exact search query match.
-  - Headline 2 (Pinned): Core benefit or quantifiable claim.
-  - Headline 3 (Unpinned): Brand trust, urgency, or guarantee.
-  - Descriptions 1–4: Problem/solution statements with direct action verb CTA.
+### Google Ads Architecture (Alpha/Beta & PMax)
+- **Alpha Campaigns (Exact Match Core)**: Target ROAS / Maximize Conversions with Target CPA. Highest commercial intent queries only.
+- **Beta Campaigns (Broad Match + Smart Bidding Discovery)**: Mined weekly to graduate converting queries to Alpha and harvest negatives.
+- **Performance Max (PMax) Guardrails**:
+  - Account-level negative keyword lists (Brand exclusions).
+  - High-intent first-party audience signals (Customer Match, Past 180-day Converters).
+  - Asset group URL expansion disabled or restricted to top converting collection hubs.
+- **Google Merchant Center (GMC) Hygiene**: Enforce strict title attribute taxonomy (`Brand + Gender + Product Type + Color + Material + Size`), high-resolution white background primary images, GTIN/MPN integrity.
 
 ---
 
-## 4. The 5-Dimensional Forensic Audit Engine
+## 4. 5-Dimensional Meta Ads Forensic Audit Engine
 
-When analyzing ad performance via MCP or CSV exports, execute the 5-dimensional breakdown:
+Whenever evaluating historical ad accounts, execute forensic breakdown across 5 independent axes via Meta Ads MCP:
 
-```mermaid
-flowchart TD
-    A["Raw Account & Campaign Data"] --> B["Dim 1: Click-Tourist Filter<br/>(Vanity CTR vs. Purchase Reality)"]
-    B --> C["Dim 2: Placement Burn Ratio<br/>(Feed Concentration vs. Reels/Audience Net)"]
-    C --> D["Dim 3: Hardware Multipliers<br/>(iPhone vs. Android vs. iPad vs. Desktop)"]
-    D --> E["Dim 4: SKU Contribution Forensics<br/>(Net Margin vs. Platform Reported ROAS)"]
-    E --> F["Dim 5: Opportunity Arbitrage<br/>(Genuine Levers vs. Spend Traps)"]
+1. **Campaign & Bid Integrity**: Flag high spend without conversions; identify fragmented ad sets resetting algorithmic learning.
+2. **Placement Waste Elimination**: Isolate Audience Network, Messenger, and third-party apps generating high clicks but 0 sales ("Click-Tourists"). Reallocate capital to high-intent surfaces (Facebook Feed, Instagram Feed, Reels).
+3. **Device ROAS Optimization**: Separate Mobile vs Desktop vs Tablet ROAS. Rebalance budget or set platform bid adjustments.
+4. **Demographic & Gender Concentration**: Reallocate budget towards high-converting age bands (e.g. Women 45-65+) while pruning non-performing demographics.
+5. **Regional Geography & City Density**: Isolate top-performing geographic hubs and postal codes to apply location-specific bid modifiers.
+
+---
+
+## 5. E-Commerce Store & SKU Contribution Margin Forensics
+
+Never evaluate marketing performance on ROAS or top-line revenue alone. Enforce full unit economics down to the individual SKU level:
+
+$$\text{Contribution Margin} = \text{Revenue} - (\text{COGS} + \text{Shipping/Fulfillment} + \text{Payment Fees} + \text{Allocated Ad Spend} + \text{Return Reserves})$$
+
+### Core E-Commerce Forensics Modules:
+- **Hero SKU vs Loss-Leader Analysis**: Identify SKUs that generate high volume but negative net margin after returns and ad spend. Rebalance ad budgets toward high-margin hero products.
+- **Shopify Reconciliation Matrix**: Reconcile ad platform reported conversions against raw store transaction data to calculate true Blended MER (Marketing Efficiency Ratio).
+- **Postcode & Municipal Density Clustering**: Identify top conversion hubs (e.g. London SW15, SW17, Bristol BS14) for geotargeted scaling.
+
+---
+
+## 6. Technical Site Diagnostics & OpenSEO Model
+
+- **Technical Integrity**: Automated crawling of HTTP status codes, redirect chains (301/302), canonical tags, meta robots directives, header hierarchy, and image alt text coverage.
+- **AI Fan-Out Query Simulation**: Simulates the multi-step background queries generative engines (Perplexity, ChatGPT Search, Claude) execute prior to rendering answers.
+- **Citation Gap Identification**: Tracks recurring third-party sources (G2, Reddit, TechCrunch, niche directories) cited by AI engines instead of your domain, generating actionable PR and directory insertion targets.
+- **Execution Script**: `python seo/seo-suite/audit/site_auditor.py --sample` or `--file <file>`
+
+---
+
+## 7. Generative Engine Optimization (GEO) & Princeton KDD 2024 Benchmarks
+
+Position content for preferential retrieval by AI answer engines (ChatGPT Search, Perplexity, Claude, and Google AI Overviews):
+- **Princeton KDD 2024 Citability Levers**:
+  - Authoritative source citations (`.gov`, `.edu`, benchmark reports): **+30% to +115% visibility boost**.
+  - Verified quantitative statistics: **+40% visibility boost**.
+  - Verbatim expert quotes: **+30% to +40% visibility boost**.
+  - Front-loaded fluency: **+15% to +30% visibility boost**.
+- **AI Crawler Governance (`robots.txt`)**:
+  - Allow Search/Retrieval Bots: `OAI-SearchBot`, `PerplexityBot`, `Claude-SearchBot`, `Googlebot`.
+  - Control Bulk Training Harvesters: `GPTBot`, `ClaudeBot`, `Google-Extended`, `CCBot`.
+- **`llms.txt` Generation**: Produce machine-readable markdown site indexes meeting `llmstxt.org` specifications.
+- **Execution Script**: `python seo/seo-suite/geo/geo_engine.py --file <page.html>`
+
+---
+
+## 8. Google Search Console (GSC) Intelligence Engine
+
+Automate search data analysis to extract hidden ranking and revenue opportunities:
+- **Cannibalization Resolver**: Flags queries where 2+ URLs on the domain split impressions, computes impressions at stake, and applies the 301 vs Canonical vs Content-Differentiation decision matrix.
+- **Striking-Distance Quick Wins**: Scans queries ranking in Positions 11.0–20.0 with $\ge 100$ impressions and CTR $< 3\%$, calculating Opportunity Score $= \text{Impressions} \times (0.05 - \text{CTR})$.
+- **Period-over-Period Delta Triage**: Evaluates 28-day traffic, impression velocity, CTR shifts, and ranking drift.
+- **Execution Script**: `python seo/seo-suite/gsc/gsc_analyzer.py --sample` or `--input <file>`
+
+---
+
+## 9. Off-Page Authority & ApexLink Pro Link Acquisition
+
+White-hat, Penguin-safe off-page authority framework:
+- **745+ Curated Platforms Database**: 47 Tier-1 DR 80+ platforms, 56 Tier-2 DR 60–79 niche directories, 102 verified dofollow sources.
+- **Penguin-Proof Anchor Distribution**: Branded 35%–55%, Naked URL 15%–25%, Generic 10%–20%, Exact-Match 2%–8% (Alert if $> 15\%$).
+- **30-Pattern Toxic Link Disavow**: Detects link farm networks and auto-generates Google Disavow files when toxic domains exceed 2%.
+- **Digital PR & Journalist Pitch Engine**: Scores journalist queries (Qwoted, HARO, Connectively) and drafts data-anchored pitches.
+- **"Juice-Hoarding" Linkable Asset Engine**: Builds zero-leak HTML statistics research pages with Chart.js and Dataset Schema that attract permanent editorial backlinks.
+- **Competitor Link Gap Poacher**: Identifies domains linking to 2+ competitors but not the brand.
+- **Deterministic Live Crawler**: Crawls target URLs to verify live backlink presence, anchor text, and dofollow status.
+- **Execution Engine**: `python seo/link-building/scripts/directory_engine.py` & `link_audit.py`
+
+---
+
+## 10. Search Experience Optimization (SXO) & Intent Alignment
+
+Fixes the post-HCU cause of ranking failure: **Page-Type and Intent Mismatch**.
+- **SERP Reverse-Engineering**: Analyzes what Google rewards in the top 10 results (interactive tools vs comparison matrices vs product buy-boxes vs informational guides).
+- **Rule of SERP Precedence**: If $\ge 70\%$ of top results are comparison hubs, blog posts cannot rank.
+- **Multi-Persona Evaluation**: Evaluates pages across Time-Crunched Operators, Analytical Scrutinizers, and Skeptical Buyers.
+- **IST/SOLL Wireframes**: Produces layout transformations moving core answers and interactive matrices above the fold.
+
+---
+
+## 11. Programmatic SEO & Index Bloat Prevention
+
+Scales data-driven landing pages while protecting domain crawl budgets:
+- **Uniqueness Gate**: Requires $\ge 8$ unique data attributes per record and $\le 80\%$ attribute overlap.
+- **Anti-"Mad-Libs" Architecture**: Employs conditional template logic ensuring $\ge 40\%$ unique visible body copy per page.
+- **Index Bloat Controls**: Segments XML sitemaps to $\le 5,000$ URLs per file and links pages through structured contextual taxonomies.
+
+---
+
+## 12. High-Ticket Lead Generation & Automated Webinar Funnels
+
+Engineered for coaching, B2B consulting, financial recovery, and high-ticket service sales:
+- **Acquisition**: Meta/Google CPL targets (\$65–\$160), low-friction lead forms.
+- **Show-Up Rate Mechanics**: Automated WhatsApp/SMS/Email reminder cadences (24h, 1h, 15m before event). Target show-up rate: $\ge 45\%$.
+- **VSL & Offer Architecture**: 45–60 minute structured presentation: Hook $\to$ Problem Agitation $\to$ Unique Mechanism $\to$ Case Study Proof $\to$ Irresistible Stacked Offer.
+- **Sales Qualified Lead (SQL) Governance**: SQL target cost \$350–\$850; consultation booking rate $\ge 20\%$ of attendees.
+
+---
+
+## 13. Full-Funnel Lifecycle & RFM Retention
+
+Maximizes customer lifetime value and repeat purchase rates:
+- **6 Essential Klaviyo/Omnisend Lifecycle Flows**: Welcome Series (3-part), Abandoned Checkout (3-part dynamic discount), Post-Purchase Replenishment, Customer Win-Back (60-day), VIP Rewards, Sunset Unengaged (90-day).
+- **RFM Segmentation Matrix**: Champions, Loyal Customers, Potential Loyalists, At Risk, Hibernating.
+- **Email Economics**: Maintain unsubscribe rate $< 0.3\%$, spam complaint $< 0.02\%$, deliverability $> 98\%$.
+
+---
+
+## 14. Attribution Modeling & Open-Source Meridian MMM
+
+Resolves post-iOS 14.5 signal loss and cross-channel credit allocation:
+- **Multi-Touch Attribution (MTA)**: First-touch, Last-touch, and Shapley Value Data-Driven models in GA4.
+- **Google Meridian Marketing Mix Modeling (MMM)**: Open-source Bayesian model analyzing high-level marketing spend across channels against top-line revenue, accounting for ad stock carryover and ad saturation curves.
+- **Geo-Lift Experimentation**: Matched-market geo testing to prove true causal incrementality.
+
+---
+
+## 15. Unified 6-Subagent Autonomous Execution Loop
+
+```
+┌────────────────────────────────────────────────────────┐
+│               marketing_strategist                     │
+│    (12-Part Flow, GTM Roadmap, Positioning, Budget)    │
+└────────────────────────────────────────────────────────┘
+          │                                  │
+          ▼                                  ▼
+┌──────────────────┐               ┌──────────────────┐
+│   media_buyer    │               │  seo_specialist  │
+│ (Meta/Google Ads,│               │ (ApexLink, GSC,  │
+│  MCP Audits,     │               │  GEO Citability, │
+│  PAUSED Rules)   │               │  SXO Wireframes) │
+└──────────────────┘               └──────────────────┘
+          │                                  │
+          ▼                                  ▼
+┌──────────────────┐               ┌──────────────────┐
+│ growth_engineer  │               │ analytics_analyst│
+│ (PLG, Retention, │               │ (Attribution,    │
+│  Funnel CRO,     │               │  Meridian MMM,   │
+│  Unit Economics) │               │  GA4 Dashboards) │
+└──────────────────┘               └──────────────────┘
+          │                                  │
+          └────────────────┬─────────────────┘
+                           ▼
+                 ┌──────────────────┐
+                 │  brand_guardian  │
+                 │ (EU AI Act Art 50│
+                 │  C2PA Provenance,│
+                 │  Brand Safety)   │
+                 └──────────────────┘
 ```
 
-1. **Click-Tourist Filter**: Separate vanity clicks from real buyers. Calculate Purchase Conversion Efficiency:
-   $$\text{Efficiency} = \frac{\text{Purchases}}{\text{Link Clicks}} \times 100$$
-2. **Placement Burn Ratio**: Measure Feed Concentration Ratio. Quantify and eliminate budget leaking into Facebook Reels, Instagram Reels, and Audience Network with sub-0.35x ROAS.
-3. **Hardware & Device Multiplier**: Calculate CPA and ROAS disparities between iOS, Android, Tablet (iPad), and Desktop. Exclude Desktop when conversion track record = 0.
-4. **SKU Contribution Forensics**: Audit backend orders to ensure ad spend scales only high-margin SKUs with low return rates.
-5. **Opportunity Score Arbitrage**: Filter MAPI recommendations—accept genuine infrastructure wins (CAPI health, Advantage+ suggestions) while rejecting Meta's spend-inflating placement expansions.
-
 ---
 
-## 5. Technical SEO, IndexNow & Generative Search (AEO/GEO)
+## 16. Master Knowledge Base Directory Index (23 Operational Playbooks)
 
-- **Google AI Mode & AI Overviews (AEO/GEO)**: Direct-answer formatting, structured comparison tables, quotation-rich primary research, and RFC 9309 crawler standards.
-- **Screaming Frog Crawl Remediation**: Resolving 4xx/3xx redirect chains, canonical mismatch cleanup, orphaned page linking, and thin taxonomy removal.
-- **Advanced Schema Entity Graphs**: Production JSON-LD snippets for `Organization`, `Product`, `FAQPage`, `NewsArticle`, and `Medical/Financial` authority entities.
-- **Instant Indexing (IndexNow API)**: Real-time search engine notifications upon content publishing or updates.
-
----
-
-## 6. High-Ticket Funnels & Webinar Engineering
-
-- **Automated Webinar Funnel**: High-converting registration page, SMS & WhatsApp countdown reminders, 45-minute structured VSL script, and urgent post-webinar offer sequences.
-- **Show-Up Rate Optimization**: Target ≥ 40% live attendance via calendar invite auto-booking and WhatsApp VIP communities.
-- **Sales Conversion Cadence**: 4-day deadline sequence with objection handling, video testimonials, and live payment support.
-
----
-
-## 7. Customer Retention & Lifecycle Email (Klaviyo/Shopify)
-
-- **The 6 Core Lifecycle Flows**:
-  1. Welcome Series (Non-Buyers): 3-part brand story and first-purchase incentive.
-  2. Abandoned Checkout: 3-part SMS/email sequence within 1h, 12h, and 24h.
-  3. Browse Abandonment: Dynamic product feed display.
-  4. Post-Purchase Thank You & Cross-Sell: Delivery tracking and complementary product bundle.
-  5. VIP Customer Appreciation: Exclusive early access for top 10% LTV customers.
-  6. Sunset / Win-Back Cadence: Re-engagement flow followed by list hygiene pruning.
-- **RFM Segmentation**: Recency, Frequency, Monetary scoring to detect early churn signals.
-
----
-
-## 8. Attribution, Incrementality & Media Mix Modeling
-
-- **Modern Post-Cookie Attribution**: Blended Marketing Efficiency Ratio (MER), in-platform 7-day click attribution, and GA4 first-party data capture.
-- **Google Meridian MMM**: Open-source Bayesian media mix modeling incorporating baseline sales, channel adstock, and diminishing return saturation curves.
-- **Geo-Lift & Match-Market Testing**: Holdout testing across geographic regions to prove true incrementality.
-
----
-
-## 9. The 6-Subagent Autonomous Orchestration Loop
-
-Delegate specialized tasks to the dedicated performance marketing subagents:
-
-```
-                  ┌──────────────────────────────┐
-                  │    marketing_strategist      │
-                  │ (12-Part Flow, SOSTAC, GTM)  │
-                  └──────────────┬───────────────┘
-                                 │
-         ┌───────────────────────┼───────────────────────┐
-         ▼                       ▼                       ▼
-┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
-│   media_buyer    │    │  growth_engineer │    │  seo_specialist  │
-│(Meta MCP, Google,│    │ (PLG, LTV/CAC,   │    │(AI Search, Index,│
-│ Pacing, PAUSED)  │    │  Funnels, Loops) │    │ Schema, Crawls)  │
-└────────┬─────────┘    └────────┬─────────┘    └────────┬─────────┘
-         │                       │                       │
-         └───────────────────────┼───────────────────────┘
-                                 │
-         ┌───────────────────────┴───────────────────────┐
-         ▼                                               ▼
-┌──────────────────┐                            ┌──────────────────┐
-│analytics_analyst │                            │  brand_guardian  │
-│(Attribution, MMM,│                            │(EU AI Act Art 50,│
-│ GA4, Scorecards) │                            │ C2PA Provenance) │
-└──────────────────┘                            └──────────────────┘
-```
-
-- **`media_buyer`**: Campaign architecture, bid strategy, budget pacing, platform specs, Meta Ads MCP tool execution, and PAUSED safety rules.
-- **`marketing_strategist`**: 12-Part Strategy Flow, GTM planning, SOSTAC & RACE roadmaps, and Two-Views competitive positioning.
-- **`growth_engineer`**: Product-Led Growth (PLG), viral loops, unit economics (LTV/CAC), and ICE/RICE experiment design.
-- **`seo_specialist`**: Google AI Mode, AI Overviews (AEO/GEO), schema markup, IndexNow, and crawlability.
-- **`brand_guardian`**: EU AI Act Article 50, C2PA provenance signing, FTC disclosures, and voice integrity.
-- **`analytics_analyst`**: Attribution modeling, GA4/GSC reporting, cohort retention, incremental ROAS analysis.
-
----
-
-## 10. Master Knowledge Base Directory Index
-
-For exhaustive technical playbooks and reference architectures, consult `knowledge/`:
+Consult detailed playbooks in `knowledge/`:
 1. [performance_marketing_frameworks.md](knowledge/performance_marketing_frameworks.md): 12-part flow, Two-Views model, Stone vs Opinion.
 2. [meta_ads_playbook.md](knowledge/meta_ads_playbook.md): Full-funnel account setup, DCT testing, CAPI.
 3. [google_ads_playbook.md](knowledge/google_ads_playbook.md): Search Alpha/Beta, PMax setup, RSA copywriting.
 4. [target_cpas_and_benchmarks.md](knowledge/target_cpas_and_benchmarks.md): Vertical metrics and unit economics formulas.
 5. [compliance_and_governance.md](knowledge/compliance_and_governance.md): EU AI Act Article 50, C2PA signing, privacy resilience.
-6. [aeo_geo_ai_search_playbook.md](knowledge/aeo_geo_ai_search_playbook.md): Google AI Mode, AI Overviews, Perplexity, RFC 9309 standards.
+6. [aeo_geo_ai_search_playbook.md](knowledge/aeo_geo_ai_search_playbook.md): Princeton KDD 2024 benchmarks, 0–100 rubric, AI crawler access rules, `llms.txt`.
 7. [attribution_modeling_and_mmm.md](knowledge/attribution_modeling_and_mmm.md): Modern attribution, Google Meridian MMM, Geo-lift testing.
 8. [retention_and_email_playbook.md](knowledge/retention_and_email_playbook.md): 6 core lifecycle flows, RFM segmentation, churn signals.
 9. [google_shopping_and_gmc_feed_playbook.md](knowledge/google_shopping_and_gmc_feed_playbook.md): GMC TSV/CSV feed specs, variants, custom labels.
 10. [search_terms_audit_and_query_mining.md](knowledge/search_terms_audit_and_query_mining.md): 4-tier query classification, negative keyword lists.
 11. [technical_seo_and_screaming_frog_remediation.md](knowledge/technical_seo_and_screaming_frog_remediation.md): Screaming Frog crawl fixes, 4xx/3xx redirect chains, IndexNow API.
-12. [advanced_schema_entity_templates.md](knowledge/advanced_schema_entity_templates.md): Production JSON-LD snippets (Organization, Product, FAQPage).
+12. [advanced_schema_entity_templates.md](knowledge/advanced_schema_entity_templates.md): Production JSON-LD snippets (Organization, Product, FAQPage, LocalBusiness).
 13. [webinar_funnel_and_lead_generation_playbook.md](knowledge/webinar_funnel_and_lead_generation_playbook.md): Automated webinar funnels, WhatsApp/Email nurture, and show-up rate optimization.
-14. [meta_ads_mcp_forensic_audit_and_optimization_playbook.md](knowledge/meta_ads_mcp_forensic_audit_and_optimization_playbook.md): Meta Ads MCP tool calling taxonomy, 5-phase forensic audit, Click-Tourist filtering, and placement recovery.
-15. [ecommerce_order_and_sku_forensics_playbook.md](knowledge/ecommerce_order_and_sku_forensics_playbook.md): Shopify/store order reconciliations, contribution margins, and postcode density clustering.
-16. [digital_publishing_and_programmatic_growth_playbook.md](knowledge/digital_publishing_and_programmatic_growth_playbook.md): Digital publishing, programmatic yield optimization, Core Web Vitals, and Google Discover spikes.
+14. [webinar_funnel_reporting_playbook.md](knowledge/webinar_funnel_reporting_playbook.md): Lead tracking, attendee metrics, and sales conversion scorecards.
+15. [meta_ads_mcp_forensic_audit_and_optimization_playbook.md](knowledge/meta_ads_mcp_forensic_audit_and_optimization_playbook.md): Meta Ads MCP tool calling taxonomy, 5-phase forensic audit, Click-Tourist filtering, and placement recovery.
+16. [ecommerce_order_and_sku_forensics_playbook.md](knowledge/ecommerce_order_and_sku_forensics_playbook.md): Shopify/store order reconciliations, contribution margins, and postcode density clustering.
+17. [digital_publishing_and_programmatic_growth_playbook.md](knowledge/digital_publishing_and_programmatic_growth_playbook.md): Digital publishing, programmatic yield optimization, Core Web Vitals, and Google Discover spikes.
+18. [offpage_link_building_and_apexlink_playbook.md](knowledge/offpage_link_building_and_apexlink_playbook.md): 745+ curated platforms, Penguin-safe anchor distributions, 30-pattern toxic link disavow, Digital PR pitch frameworks, zero-leak statistics pages, and live verification crawler.
+19. [google_search_console_intelligence_playbook.md](knowledge/google_search_console_intelligence_playbook.md): Query cannibalization resolution, striking-distance Pos 11–20 quick-wins, and period-over-period search variance.
+20. [search_experience_optimization_sxo_playbook.md](knowledge/search_experience_optimization_sxo_playbook.md): SERP reverse-engineering, page-type mismatch resolution, multi-persona intent scoring, and IST/SOLL wireframes.
+21. [seo_drift_and_regression_monitoring_playbook.md](knowledge/seo_drift_and_regression_monitoring_playbook.md): Git for SEO, capturing baselines, detecting post-deployment regressions, and triage rules.
+22. [programmatic_seo_and_indexing_bloat_playbook.md](knowledge/programmatic_seo_and_indexing_bloat_playbook.md): Dynamic page generation at scale, data uniqueness gates, anti-mad-libs conditional logic, and crawl budget preservation.
+23. [local_seo_and_google_maps_playbook.md](knowledge/local_seo_and_google_maps_playbook.md): Google Local 3-pack ranking factors, GBP optimization, primary aggregator NAP consistency, localized schema, and review velocity.
 
 ---
 
-## 11. Standard Operating Procedures (Workflows)
+## 17. Standard Operating Procedures (11 Workflows)
 
-Standard runbooks available in `workflows/`:
-- [engagement-12-part.md](workflows/engagement-12-part.md): Canonical 12-Part Strategy Flow across Four Core Documents.
-- [campaign-launch.md](workflows/campaign-launch.md): Zero-defect pre-flight launch checklist.
-- [meta-ads-mcp-audit.md](workflows/meta-ads-mcp-audit.md): 5-step automated Meta Ads MCP audit, placement waste recovery, and PAUSED staging.
-- [aeo-geo-audit.md](workflows/aeo-geo-audit.md): 5-phase generative AI search visibility audit.
-- [competitor-sweep.md](workflows/competitor-sweep.md): Competitor Ad Library, creative reverse-engineering, and backlink gaps.
-- [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
-- [continuous-improvement-loop.md](workflows/continuous-improvement-loop.md): Quarterly MER review and channel rebalancing.
+Standard runbooks in `workflows/`:
+1. [meta-ads-mcp-audit.md](workflows/meta-ads-mcp-audit.md): 5-step automated Meta Ads MCP audit, placement waste recovery, and PAUSED staging.
+2. [seo-gsc-audit.md](workflows/seo-gsc-audit.md): Google Search Console query cannibalization detection and striking-distance quick wins SOP.
+3. [seo-geo-audit.md](workflows/seo-geo-audit.md): 0–100 GEO citability audit, AI crawler robots governance, and `llms.txt` generation SOP.
+4. [seo-backlinks-campaign.md](workflows/seo-backlinks-campaign.md): ApexLink Pro 745+ directory outreach, digital PR, and live verification SOP.
+5. [seo-sxo-audit.md](workflows/seo-sxo-audit.md): Search Experience Optimization, SERP intent reverse-engineering, and IST/SOLL wireframe SOP.
+6. [aeo-geo-audit.md](workflows/aeo-geo-audit.md): 5-phase generative AI search visibility audit.
+7. [campaign-launch.md](workflows/campaign-launch.md): Zero-defect pre-flight launch checklist.
+8. [competitor-sweep.md](workflows/competitor-sweep.md): Competitor Ad Library, creative reverse-engineering, and backlink gaps.
+9. [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
+10. [continuous-improvement-loop.md](workflows/continuous-improvement-loop.md): Quarterly MER review and channel rebalancing.
+11. [engagement-12-part.md](workflows/engagement-12-part.md): Canonical 12-Part Strategy Flow across Four Core Documents.
 
 ---
 
-## 12. Real-World Client Audits & Field Case Studies
+## 18. Real-World Client Audits & Field Case Studies
 
 Audited deliverables, field data, and forensic remediation plans in `case-studies/`:
 - **Amma Alochana** (`case-studies/amma-alochana/`): Automated webinar funnel, Meta Ads CPL optimization, and WhatsApp automation.
-- **Pet Mode UK** (`case-studies/pet-mode/`):
-  - [pet_mode_meta_ads_mcp_forensic_analysis.md](case-studies/pet-mode/pet_mode_meta_ads_mcp_forensic_analysis.md): Live Meta Ads MCP forensic analysis across 34 campaigns, demographic isolation (Women 45-65+ = 68.8% sales), iPad ROAS multiplier, and Facebook Feed concentration blueprint.
-  - [pet_mode_forensic_audit_and_fixation_plan.md](case-studies/pet-mode/pet_mode_forensic_audit_and_fixation_plan.md): UK pet e-commerce Google Ads forensic audit, feed hygiene, and placement burn elimination.
-  - [pet_mode_3month_forecast_report.md](case-studies/pet-mode/pet_mode_3month_forecast_report.md): 90-day conservative, moderate, and aggressive growth financial models.
-  - [pet_mode_city_orders_analysis.md](case-studies/pet-mode/pet_mode_city_orders_analysis.md): Geographic density analysis and regional bid adjustments.
-  - [pet_mode_search_terms_audit.md](case-studies/pet-mode/pet_mode_search_terms_audit.md): Search query classification and negative keyword sculpting.
-  - [pet_mode_turnaround_summary.md](case-studies/pet-mode/pet_mode_turnaround_summary.md): High-level executive turnaround summary.
-  - [pet_mode_unit_economics_dashboard.md](case-studies/pet-mode/pet_mode_unit_economics_dashboard.md): LTV/CAC, margin, and contribution analysis.
+- **Pet Mode UK** (`case-studies/pet-mode/`): Live Meta Ads MCP forensic analysis across 34 campaigns, demographic isolation, iPad ROAS multiplier, UK postcode density clustering, and feed hygiene.
 - **Pajama Village US** (`case-studies/pajama-village/`): 66-day Q4 seasonal holiday DTC strategy, Merchant Center feed optimization, and regional conversion analysis.
 - **Share Samadhan** (`case-studies/share-samadhan/`): 23-month forensic analysis of 2,780 search queries for high-ticket financial recovery lead generation.
 - **Kuri Ethnic Fashion** (`case-studies/kuri/`): Festive season ethnic fashion Meta/PMax campaign briefs and copy banks.

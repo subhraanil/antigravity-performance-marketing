@@ -1,0 +1,6 @@
+# ApexLink Penguin-Safe Disavow List
+# Generated for 2 toxic referring domains
+# Evaluated 8 total backlinks
+
+domain:bestseobacklinks123.xyz
+domain:pbn-network-node4.ru

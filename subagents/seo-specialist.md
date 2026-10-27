@@ -38,7 +38,43 @@ Structure SEO recommendations as: Priority (Quick Win / Strategic / Fill-In), Op
 
 ## Tools & Scripts
 
-- **keyword_cluster.py** — SERP-overlap keyword clusterer (used by /digital-marketing-pro:keyword-cluster)
+- **gsc_analyzer.py** — Google Search Console query cannibalization & striking-distance quick wins
+  python seo/seo-suite/gsc/gsc_analyzer.py --input gsc_data.csv --cannibalization --quick-wins
+  When: Diagnosing query splits, cannibalization loss, or low-hanging Page 2 ranking opportunities (Pos 11–20).
+
+- **geo_engine.py** — Princeton KDD 2024 Generative Engine Optimization citability audit & llms.txt generator
+  python seo/seo-suite/geo/geo_engine.py --file <page.html> or --generate-robots or --generate-llms
+  When: Auditing AI answer visibility (ChatGPT Search, Perplexity, Google AI Overviews) and crawler access.
+
+- **site_auditor.py** — OpenSEO technical diagnostics & AI fan-out query citation gap tracker
+  python seo/seo-suite/audit/site_auditor.py --sample or --file <file>
+  When: Inspecting status codes, canonicals, alt tags, and identifying third-party sources cited by AI engines instead of your brand.
+
+- **directory_engine.py** — 745+ Curated Platform Database & Sharding Engine
+  python seo/link-building/scripts/directory_engine.py list --category AI --min-dr 60
+  When: Identifying high-authority, white-hat foundation platforms and creating batch execution shards.
+
+- **link_audit.py** — 0–100 Backlink Profile Health Scorer & Penguin-Safe Disavow Generator
+  python seo/link-building/scripts/link_audit.py --input backlinks.csv --disavow disavow.txt
+  When: Auditing backlink health, anchor text distributions, and removing toxic link farm networks.
+
+- **competitor_gap.py** — Competitor Backlink Gap & Broken Link Intersect Engine
+  python seo/link-building/scripts/competitor_gap.py --target target.csv --competitors c1.csv c2.csv
+  When: Identifying high-authority domains linking to 2+ competitors but not the brand.
+
+- **pr_pitch_engine.py** — Digital PR Journalist Pitch Engine (Qwoted, HARO, Connectively)
+  python seo/link-building/scripts/pr_pitch_engine.py --topic <topic> --ask <ask> --framework data_anchor
+  When: Drafting high-converting editorial pitches and scoring linkable asset requirements.
+
+- **stats_asset_generator.py** — 'Hoard the Juice' Zero-Leak Statistics Asset Generator
+  python seo/link-building/scripts/stats_asset_generator.py --topic <topic> --brand <name> --url <url>
+  When: Building linkable research pages that earn permanent editorial backlinks without leaking PageRank equity.
+
+- **link_verifier.py** — Deterministic Live Backlink & DOM Equity Crawler
+  python seo/link-building/scripts/link_verifier.py --source <page_url> --target <domain>
+  When: Verifying whether acquired backlinks are live, indexable, and passing PageRank equity.
+
+- **keyword_cluster.py** — SERP-overlap keyword clusterer — SERP-overlap keyword clusterer (used by /digital-marketing-pro:keyword-cluster)
   `python "${CLAUDE_PLUGIN_ROOT}/scripts/keyword_cluster.py" --keywords keywords.csv --serps serps.json --overlap 0.4`
   When: During keyword research — group keywords into pillar+spoke clusters and map intent
 

@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "mcp-search-console": {
+      "command": "python",
+      "args": ["repos/mcp-gsc/gsc_server.py"],
+      "env": {
+        "GSC_CREDENTIALS_PATH": "",
+        "GSC_OAUTH_CLIENT_SECRETS_FILE": "",
+        "GSC_DATA_STATE": "all"
+      }
+    },
+    "openseo": {
+      "command": "npx",
+      "args": ["-y", "@every-app/openseo-mcp"],
+      "env": {
+        "DATAFORSEO_LOGIN": "",
+        "DATAFORSEO_PASSWORD": ""
+      }
+    }
+  }
+}
