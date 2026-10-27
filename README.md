@@ -63,7 +63,9 @@ antigravity-performance-marketing/
 │   ├── technical_seo_and_screaming_frog_remediation.md # Crawl defect fixes, canonicals, IndexNow API
 │   ├── advanced_schema_entity_templates.md        # JSON-LD entity graph templates (Org, Product, FAQ)
 │   ├── webinar_funnel_and_lead_generation_playbook.md # Automated webinars, WhatsApp/Email nurture, CAC-to-LTV
-│   └── meta_ads_mcp_forensic_audit_and_optimization_playbook.md # Meta Ads MCP tool taxonomy, 5-phase forensic audit
+│   ├── meta_ads_mcp_forensic_audit_and_optimization_playbook.md # Meta Ads MCP tool taxonomy, 5-phase forensic audit
+│   ├── ecommerce_order_and_sku_forensics_playbook.md # Net cash reconciliation, SKU margins, postcode density
+│   └── digital_publishing_and_programmatic_growth_playbook.md # Programmatic yield, Discover spikes, Core Web Vitals
 ├── rules/                            # Workspace & Global Rules
 │   ├── .antigravity-rules            # Global workspace constraints (.antigravity/rules)
 │   ├── performance-marketing.md      # Standard Antigravity rules format
