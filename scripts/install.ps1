@@ -25,6 +25,7 @@ Copy-Item -Path "$repoRoot\workflows" -Destination "$geminiConfigDir\" -Recurse 
 Copy-Item -Path "$repoRoot\brands" -Destination "$geminiConfigDir\" -Recurse -Force
 Copy-Item -Path "$repoRoot\case-studies" -Destination "$geminiConfigDir\" -Recurse -Force
 Copy-Item -Path "$repoRoot\seo" -Destination "$geminiConfigDir\" -Recurse -Force
+Copy-Item -Path "$repoRoot\tools" -Destination "$geminiConfigDir\" -Recurse -Force
 
 # 2. Populate Knowledge Base
 Write-Host "[2/3] Installing Knowledge Base to $geminiKnowledgeDir..." -ForegroundColor Yellow

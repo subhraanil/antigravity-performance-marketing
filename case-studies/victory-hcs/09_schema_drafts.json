@@ -1,0 +1,212 @@
+{
+  "_comment": "Ready-to-use JSON-LD schemas. Values marked with [CONFIRM WITH CLIENT] must be confirmed prior to production deployment.",
+  "educational_organization_schema": {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "@id": "https://victoryhcspl.com/#organization",
+    "name": "Victory Healthcare Services Pvt Ltd",
+    "legalName": "Victory Healthcare Services Private Limited",
+    "url": "https://victoryhcspl.com/",
+    "logo": "https://victoryhcspl.com/wp-content/uploads/2024/03/Logo-Eng.png",
+    "description": "Provider of healthcare training, medical imaging continuing education, HIS/RIS/PACS software, and hospital infrastructure management in India.",
+    "foundingDate": "2024",
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Anto Ramesh Delvi",
+        "jobTitle": "Founder & Director",
+        "description": "Healthcare operations and radiology expert with 30 years experience; former GM at Columbia Asia Hospitals.",
+        "sameAs": "https://in.linkedin.com/in/antorameshdelvi"
+      },
+      {
+        "@type": "Person",
+        "name": "Vijaya Kumar C",
+        "jobTitle": "Founder & Director",
+        "description": "Healthcare administration & radiology specialist with 19+ years experience at Columbia Asia and Manipal Hospitals."
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "The Ledge Apartment, B 108 B Block, Jakkur, Yelahanka",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "postalCode": "560064",
+      "addressCountry": "IN"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91-9916509090",
+        "contactType": "admissions",
+        "areaServed": "IN",
+        "availableLanguage": [
+          "English",
+          "Hindi",
+          "Kannada"
+        ]
+      }
+    ],
+    "sameAs": [
+      "https://in.linkedin.com/in/antorameshdelvi",
+      "https://www.facebook.com/anto.r.delvi/"
+    ]
+  },
+  "local_business_schema": {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://victoryhcspl.com/#localbusiness",
+    "name": "Victory Healthcare Services - Training & Corporate Office",
+    "image": "https://victoryhcspl.com/wp-content/uploads/2024/03/Logo-Eng.png",
+    "telephone": "+91-9916509090",
+    "email": "victoryantovijay@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "The Ledge Apartment, B 108 B Block, Jakkur, Yelahanka",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "postalCode": "560064",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 13.0784,
+      "longitude": 77.607
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "priceRange": "INR"
+  },
+  "course_ct_mri_schema": {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "CT & MRI Module-Based Training",
+    "description": "Comprehensive modular training in Computed Tomography (CT) and Magnetic Resonance Imaging (MRI) scanning protocols, patient positioning, and diagnostic post-processing.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Victory Healthcare Services Pvt Ltd",
+      "sameAs": "https://victoryhcspl.com/"
+    },
+    "hasCourseInstance": [
+      {
+        "@type": "CourseInstance",
+        "courseMode": [
+          "Blended",
+          "Online",
+          "Onsite"
+        ],
+        "courseWorkload": "PT60H [CONFIRM WITH CLIENT]",
+        "instructor": {
+          "@type": "Person",
+          "name": "Anto Ramesh Delvi",
+          "jobTitle": "Radiology Specialist & Senior Trainer"
+        }
+      }
+    ]
+  },
+  "course_ultrasound_schema": {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Training on Ultrasound (Sonographer)",
+    "description": "Practical hands-on training for Sonographers covering probe handling, pelvic/abdominal scanning techniques, machine optimization, and clinical reporting workflows.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Victory Healthcare Services Pvt Ltd",
+      "sameAs": "https://victoryhcspl.com/"
+    },
+    "hasCourseInstance": [
+      {
+        "@type": "CourseInstance",
+        "courseMode": [
+          "Onsite",
+          "Blended"
+        ],
+        "location": {
+          "@type": "Place",
+          "name": "Victory Healthcare Clinical Training Lab [CONFIRM WITH CLIENT]",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bangalore",
+            "addressCountry": "IN"
+          }
+        }
+      }
+    ]
+  },
+  "faq_page_schema_for_healthcare_training": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is eligible to enroll in the Healthcare & Medical Imaging Training programs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The programs are designed for medical imaging technologists, B.Sc/Diploma Radiography graduates, sonographers, radiology residents, and healthcare administrators looking to upgrade their clinical and technical competencies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the training sessions conducted online or offline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Victory Healthcare Services offers a flexible blended learning model comprising interactive online theory webinars and monthly live sessions, combined with bi-annual hands-on practical workshops on actual diagnostic workstations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What imaging modalities are covered in the training curriculum?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The curriculum covers Cross-Sectional Imaging, CT (Computed Tomography), MRI (Magnetic Resonance Imaging), Ultrasound/Sonography scanning, 3D Post-Processing workstations, and Radiology Department Administration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do participants receive a certificate upon course completion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, candidates who successfully complete the modular coursework, practical assessments, and attendance criteria receive a Certificate of Completion from Victory Healthcare Services Pvt Ltd."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I apply or enquire about course fees and upcoming batch schedules?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can enquire directly via the admission form on our Healthcare Training page, contact our admissions office at +91 99165 09090, or message us via WhatsApp."
+        }
+      }
+    ]
+  },
+  "breadcrumb_schema_service_page": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://victoryhcspl.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Healthcare Training",
+        "item": "https://victoryhcspl.com/healthcare-training/"
+      }
+    ]
+  }
+}

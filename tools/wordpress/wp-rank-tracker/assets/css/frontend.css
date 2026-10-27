@@ -1,0 +1,266 @@
+/* Frontend Rank Tracker Container */
+.wprt-front-container {
+    max-width: 900px;
+    margin: 30px auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
+.wprt-front-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    padding: 28px;
+}
+
+.wprt-front-header {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 16px;
+}
+
+.wprt-front-header h2 {
+    margin: 0 0 6px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+.wprt-front-subtitle {
+    margin: 0;
+    font-size: 14px;
+    color: #718096;
+}
+
+.wprt-front-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 640px) {
+    .wprt-front-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.wprt-front-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.wprt-front-field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 6px;
+}
+
+.wprt-front-field input,
+.wprt-front-field select,
+.wprt-front-field textarea {
+    padding: 10px 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #2d3748;
+    background: #f8fafc;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.wprt-front-field input:focus,
+.wprt-front-field select:focus,
+.wprt-front-field textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+.wprt-front-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.wprt-front-btn {
+    background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+    color: #ffffff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+}
+
+.wprt-front-btn:hover {
+    background: linear-gradient(135deg, #2b6cb0 0%, #2c5282 100%);
+    box-shadow: 0 6px 16px rgba(49, 130, 206, 0.4);
+    transform: translateY(-1px);
+}
+
+.wprt-front-btn:disabled {
+    background: #a0aec0;
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.wprt-front-btn-secondary {
+    background: #edf2f7;
+    color: #4a5568 !important;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.wprt-front-btn-secondary:hover {
+    background: #e2e8f0;
+    color: #1a202c !important;
+}
+
+/* Progress Bar */
+.wprt-front-progress-box {
+    margin-top: 24px;
+}
+
+.wprt-front-progress-bar-bg {
+    background: #edf2f7;
+    height: 14px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.wprt-front-progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #3182ce, #38a169);
+    transition: width 0.3s ease;
+}
+
+.wprt-front-progress-status {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #718096;
+    text-align: right;
+    font-weight: 500;
+}
+
+/* Results Box */
+.wprt-front-results-box {
+    margin-top: 30px;
+    padding-top: 24px;
+    border-top: 1px solid #edf2f7;
+}
+
+.wprt-front-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.wprt-front-results-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+/* Summary Chips */
+.wprt-front-summary-chips {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.wprt-chip {
+    background: #edf2f7;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.wprt-chip.chip-top3 { background: #d4edda; color: #155724; }
+.wprt-chip.chip-top10 { background: #e8f5e9; color: #2e7d32; }
+.wprt-chip.chip-unranked { background: #f0f0f1; color: #646970; }
+
+/* Table */
+.wprt-table-responsive {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.wprt-front-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 13px;
+}
+
+.wprt-front-table th {
+    background: #f7fafc;
+    color: #4a5568;
+    font-weight: 600;
+    padding: 12px 14px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.wprt-front-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: middle;
+}
+
+.wprt-front-table tr:hover {
+    background: #f8fafc;
+}
+
+/* Badges */
+.wprt-badge-f {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    min-width: 32px;
+}
+
+.wprt-badge-f-top3 { background: #d4edda; color: #155724; }
+.wprt-badge-f-top10 { background: #e8f5e9; color: #2e7d32; }
+.wprt-badge-f-top20 { background: #fff3cd; color: #856404; }
+.wprt-badge-f-top50 { background: #ffe8d6; color: #a73a00; }
+.wprt-badge-f-top100 { background: #f8d7da; color: #721c24; }
+.wprt-badge-f-unranked { background: #edf2f7; color: #718096; }
+
+.wprt-url-link {
+    color: #3182ce;
+    text-decoration: none;
+    max-width: 340px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wprt-url-link:hover {
+    text-decoration: underline;
+}

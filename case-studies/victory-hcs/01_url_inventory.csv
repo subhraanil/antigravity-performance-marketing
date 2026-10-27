@@ -1,0 +1,24 @@
+url,final_url,status_code,url_type,source,in_sitemap,in_crawl
+https://victoryhcspl.com,https://victoryhcspl.com/,200,Homepage,crawl-only,False,True
+https://victoryhcspl.com/,https://victoryhcspl.com/,200,Homepage,both,True,True
+https://victoryhcspl.com/#!,https://victoryhcspl.com/#!,200,AJAX Crawling Scheme / Fragment,crawl-only,False,True
+https://victoryhcspl.com/about-us/,https://victoryhcspl.com/about-us/,200,Supporting Page,both,True,True
+https://victoryhcspl.com/about-us/#!,https://victoryhcspl.com/about-us/#!,200,AJAX Crawling Scheme / Fragment,crawl-only,False,True
+https://victoryhcspl.com/careers/,https://victoryhcspl.com/careers/,200,Supporting Page,both,True,True
+https://victoryhcspl.com/careers/#!,https://victoryhcspl.com/careers/#!,200,AJAX Crawling Scheme / Fragment,crawl-only,False,True
+https://victoryhcspl.com/clientele/,https://victoryhcspl.com/clientele/,200,Supporting Page,both,True,True
+https://victoryhcspl.com/clientele/#!,https://victoryhcspl.com/clientele/#!,200,AJAX Crawling Scheme / Fragment,crawl-only,False,True
+https://victoryhcspl.com/consulting/,https://victoryhcspl.com/consulting/,200,Supporting Page,both,True,True
+https://victoryhcspl.com/consulting/#!,https://victoryhcspl.com/consulting/#!,200,AJAX Crawling Scheme / Fragment,crawl-only,False,True
+https://victoryhcspl.com/contact-us/,https://victoryhcspl.com/contact-us/,200,Supporting Page,both,True,True
+https://victoryhcspl.com/contact-us/#!,https://victoryhcspl.com/contact-us/#!,200,AJAX Crawling Scheme / Fragment,crawl-only,False,True
+https://victoryhcspl.com/gallery/,https://victoryhcspl.com/gallery/,200,Supporting Page,both,True,True
+https://victoryhcspl.com/gallery/#!,https://victoryhcspl.com/gallery/#!,200,AJAX Crawling Scheme / Fragment,crawl-only,False,True
+https://victoryhcspl.com/healthcare-training/,https://victoryhcspl.com/healthcare-training/,200,Primary Service Page,both,True,True
+https://victoryhcspl.com/healthcare-training/#!,https://victoryhcspl.com/healthcare-training/#!,200,AJAX Crawling Scheme / Fragment,crawl-only,False,True
+https://victoryhcspl.com/his-ris-pacs/,https://victoryhcspl.com/his-ris-pacs/,200,Supporting Page,both,True,True
+https://victoryhcspl.com/his-ris-pacs/#!,https://victoryhcspl.com/his-ris-pacs/#!,200,AJAX Crawling Scheme / Fragment,crawl-only,False,True
+https://victoryhcspl.com/home/,https://victoryhcspl.com/,200,Supporting Page,crawl-only,False,True
+https://victoryhcspl.com/infra-management/,https://victoryhcspl.com/infra-management/,200,Supporting Page,both,True,True
+https://victoryhcspl.com/infra-management/#!,https://victoryhcspl.com/infra-management/#!,200,AJAX Crawling Scheme / Fragment,crawl-only,False,True
+https://victoryhcspl.com/wp-content/plugins/chaty/js/cht-front-script.min.js,https://victoryhcspl.com/,200,Asset / Script,crawl-only,False,True

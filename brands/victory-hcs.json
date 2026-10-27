@@ -1,0 +1,38 @@
+{
+  "brand_id": "victory-hcs",
+  "brand_name": "Victory Healthcare Services Pvt Ltd",
+  "domain": "https://victoryhcspl.com/",
+  "primary_service_page": "https://victoryhcspl.com/healthcare-training/",
+  "vertical": "Healthcare Education & Hospital Technology Solutions",
+  "target_market": "India (Bangalore & Pan-India Radiologists, Technologists, Healthcare Administrators)",
+  "leadership": [
+    {
+      "name": "Mr. Anto Ramesh Delvi",
+      "credentials": "Ex-Columbia Asia, 25+ years radiology operational leadership"
+    },
+    {
+      "name": "Mr. Vijaya Kumar C",
+      "credentials": "Ex-Manipal Hospitals, 24+ years radiology training"
+    }
+  ],
+  "core_offering": "Medical Imaging Training (CT/MRI/Ultrasound/PACS administration) and Hospital Information Systems",
+  "baseline_audit": {
+    "audit_date": "2026-09-24",
+    "health_score": 44,
+    "rating_band": "Critical Remediation Required",
+    "primary_blockers": [
+      "robots.txt 301 redirects to homepage",
+      "Missing H1 headings on 90% of site including primary training page",
+      "Zero admission enquiry lead capture forms on course page",
+      "Free @gmail.com address used instead of domain email",
+      "Missing LocalBusiness, Course, and EducationalOccupationalProgram schema",
+      "Missing Privacy Policy violating India DPDP Act 2023"
+    ]
+  },
+  "remediation_phases": {
+    "phase_1": "Emergency Setup (Restore robots.txt, deploy descriptive H1s and metadata, embed admission enquiry form, set up GA4/GTM)",
+    "phase_2": "Authority & Trust (Columbia Asia / Manipal credentials integration, Course JSON-LD, localized Schema, DPDP-compliant privacy policy)",
+    "phase_3": "Content Hub Expansion (Individual sub-course pages for CT, MRI, PACS, Sonography with syllabus downloads)",
+    "phase_4": "Local Dominance (Google Business Profile optimization, verified Bangalore address, student review capture)"
+  }
+}

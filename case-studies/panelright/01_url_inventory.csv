@@ -1,0 +1,9 @@
+url,final_url,status_code,url_type,source,in_sitemap,in_crawl,notes
+https://www.panelright.com/,https://www.panelright.com/,200,Homepage / Core Landing,crawl-only,False,True,Main marketing homepage; 7 H1 tags; Next.js 13 template meta description
+https://www.panelright.com/faq,https://www.panelright.com/faq,200,Support / Informational,crawl-only,False,True,FAQ page; 14 questions; answers unmounted in raw DOM by Radix accordion
+https://www.panelright.com/efficiency,https://www.panelright.com/efficiency,200,Service / Solution (Thin),crawl-only,False,True,Linked from homepage; 25 words 'Under Construction' placeholder; no H1
+https://solutions.panelright.com/contact,https://solutions.panelright.com/contact,200,Lead Capture / Contact Form,crawl-only,False,True,Hosted on app subdomain; return link points to portal root; missing meta description
+https://www.panelright.com/privacy,https://www.panelright.com/privacy,200,Legal / Compliance (Orphan),discovery-only,False,False,Discovered orphan; contains Latin Lorem Ipsum & references 'Taxonomy App'
+https://www.panelright.com/terms,https://www.panelright.com/terms,200,Legal / Compliance (Orphan),discovery-only,False,False,Discovered orphan; contains Latin Lorem Ipsum text; unlinked in footer
+https://solutions.panelright.com/,https://solutions.panelright.com/,200,App Portal (SaaS Login),crawl-only,False,True,SaaS application portal; titled 'Redirect Buttons'; internal app interface
+https://www.panelright.com/sitemap.xml,https://www.panelright.com/sitemap.xml,404,XML Sitemap,sitemap-probe,False,False,Missing XML sitemap; search engines receive 404 error

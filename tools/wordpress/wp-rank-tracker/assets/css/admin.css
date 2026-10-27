@@ -1,0 +1,171 @@
+.wprt-wrap {
+    max-width: 1200px;
+    margin: 20px 20px 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.wprt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.wprt-header h1 {
+    margin: 0;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wprt-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.wprt-stat-card {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    border-left: 4px solid #2271b1;
+}
+
+.wprt-stat-card.top3 { border-left-color: #008a00; }
+.wprt-stat-card.top10 { border-left-color: #2e7d32; }
+.wprt-stat-card.unranked { border-left-color: #9e9e9e; }
+
+.wprt-stat-title {
+    font-size: 13px;
+    color: #646970;
+    margin-bottom: 5px;
+}
+
+.wprt-stat-num {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1d2327;
+}
+
+.wprt-card {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+}
+
+.wprt-card h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.wprt-progress-container {
+    display: none;
+    margin: 15px 0;
+    background: #f0f0f1;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 18px;
+}
+
+.wprt-progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #2271b1;
+    transition: width 0.3s ease;
+}
+
+.wprt-progress-text {
+    font-size: 13px;
+    color: #50575e;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+/* Rank Badges */
+.wprt-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    min-width: 28px;
+}
+
+.wprt-badge-top3 {
+    background: #d4edda;
+    color: #155724;
+}
+
+.wprt-badge-top10 {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.wprt-badge-top20 {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.wprt-badge-top50 {
+    background: #ffe8d6;
+    color: #a73a00;
+}
+
+.wprt-badge-top100 {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.wprt-badge-unranked {
+    background: #f0f0f1;
+    color: #646970;
+}
+
+/* Rank Change */
+.wprt-change-up { color: #008a00; font-weight: 600; font-size: 11px; }
+.wprt-change-down { color: #d63638; font-weight: 600; font-size: 11px; }
+.wprt-change-same { color: #8c8f94; font-size: 11px; }
+
+.wprt-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wprt-table th, .wprt-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f1;
+    font-size: 13px;
+}
+
+.wprt-table th {
+    background: #f6f7f7;
+    font-weight: 600;
+    color: #2c3338;
+}
+
+.wprt-table tr:hover {
+    background: #f9f9f9;
+}
+
+.wprt-url {
+    max-width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -1,0 +1,10 @@
+Source URL,Target URL,Anchor Text,Context / Placement
+https://www.panelright.com/,https://www.panelright.com/efficiency,algorithmic PCB panelization efficiency,In 'How it Works' section overview paragraph
+https://www.panelright.com/,https://www.panelright.com/faq,view answers to common panelization questions,Bottom callout banner above footer
+https://www.panelright.com/,https://solutions.panelright.com/contact,request a free trial panelization run,Hero banner primary CTA and pricing section CTA
+https://www.panelright.com/faq,https://www.panelright.com/efficiency,learn how our nesting algorithms minimize eWaste,Inside FAQ answer for 'What makes PanelRight better?'
+https://www.panelright.com/faq,https://solutions.panelright.com/contact,contact our engineering team for technical support,Top intro paragraph on /faq
+https://www.panelright.com/efficiency,https://solutions.panelright.com/contact,benchmark your current PCB panel utilization,Final CTA box on completed /efficiency page
+Site-wide Footer,https://www.panelright.com/privacy,Privacy Policy,Footer legal links column
+Site-wide Footer,https://www.panelright.com/terms,Terms & Conditions,Footer legal links column
+https://solutions.panelright.com/contact,https://www.panelright.com/,Return to PanelRight Homepage,Back navigation link (replacing internal portal root redirect)

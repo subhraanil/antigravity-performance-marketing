@@ -1,0 +1,36 @@
+{
+  "brand_id": "panelright",
+  "brand_name": "PanelRight",
+  "domain": "https://www.panelright.com/",
+  "portal_url": "https://solutions.panelright.com/contact",
+  "vertical": "B2B SaaS / Manufacturing Technology",
+  "target_market": "Global B2B (Electronics OEMs, PCB Fabricators, Contract Manufacturers)",
+  "tech_stack": {
+    "framework": "Next.js 13+ (App Router)",
+    "frontend": "React, Tailwind CSS, Radix UI",
+    "infrastructure": "Vercel / AWS",
+    "ttfb": "68 ms"
+  },
+  "core_offering": "Algorithmic PCB (Printed Circuit Board) Panel Optimization & Automated Array Layout Software",
+  "baseline_audit": {
+    "audit_date": "2026-10-14",
+    "health_score": 33,
+    "rating_band": "Critical Remediation Required",
+    "organic_traffic_monthly": 0,
+    "ai_search_visibility": 0,
+    "referring_domains": 1200,
+    "primary_blockers": [
+      "Missing sitemap.xml (returns 404)",
+      "robots.txt missing sitemap pointer",
+      "Starter Next.js default boilerplate description in production metadata",
+      "Unmounted Radix UI accordion text hidden behind hidden divs",
+      "WCAG 2.5.8 mobile tap target violations (< 44x44px)"
+    ]
+  },
+  "remediation_phases": {
+    "phase_1": "Emergency Technical Cleanup (Deploy sitemap, fix robots.txt, eliminate boilerplate metadata, fix mobile touch targets)",
+    "phase_2": "Core Solution Content & Trust Architecture (Expand solution pages to 1,000+ words, deploy SoftwareApplication & Organization schema)",
+    "phase_3": "Industry Expansion & Inbound Scaling (Launch aerospace/automotive PCB landing pages, interactive panel waste calculator)",
+    "phase_4": "Field Verification & Authority Rescoring (Track CrUX data, mobile UX on physical devices, AI engine citations)"
+  }
+}

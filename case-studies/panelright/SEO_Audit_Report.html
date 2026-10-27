@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical SEO & On-Page Audit Report | PanelRight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a192f;
+            --primary-light: #172a45;
+            --accent: #2563eb;
+            --accent-glow: rgba(37, 99, 235, 0.15);
+            --teal: #059669;
+            --bg-main: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --critical: #dc2626;
+            --critical-bg: #fef2f2;
+            --warning: #d97706;
+            --warning-bg: #fffbeb;
+            --success: #059669;
+            --success-bg: #ecfdf5;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg-main); color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #06101e 100%);
+            color: white; padding: 50px 0; border-bottom: 4px solid var(--accent);
+        }
+
+        .badge-client {
+            display: inline-flex; align-items: center; background: rgba(255, 255, 255, 0.1);
+            padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600;
+            color: #93c5fd; text-transform: uppercase; margin-bottom: 16px;
+        }
+
+        .hero-title { font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; margin-bottom: 10px; }
+        .hero-subtitle { font-size: 16px; color: #cbd5e1; max-width: 800px; margin-bottom: 24px; }
+
+        .meta-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px; background: rgba(255, 255, 255, 0.05); padding: 16px 20px; border-radius: 10px;
+        }
+        .meta-item .lbl { font-size: 11px; text-transform: uppercase; color: #94a3b8; font-weight: 600; }
+        .meta-item .val { font-size: 14px; font-weight: 700; color: #f8fafc; }
+
+        .sticky-nav {
+            position: sticky; top: 0; background: white; border-bottom: 1px solid var(--border);
+            z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+        .nav-links { display: flex; gap: 20px; padding: 12px 0; overflow-x: auto; white-space: nowrap; }
+        .nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 13px; padding: 6px 10px; border-radius: 6px; }
+        .nav-links a:hover { color: var(--accent); background: var(--accent-glow); }
+
+        main { padding: 40px 0 70px; }
+
+        .score-hero-card {
+            background: white; border-radius: 14px; border: 1px solid var(--border);
+            padding: 30px; margin-bottom: 36px; display: grid; grid-template-columns: 240px 1fr;
+            gap: 36px; align-items: center; box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+        }
+        .score-circle {
+            text-align: center; background: #fff5f5; border: 4px solid var(--critical);
+            border-radius: 50%; width: 170px; height: 170px; display: flex;
+            flex-direction: column; align-items: center; justify-content: center; margin: 0 auto;
+        }
+        .score-val { font-family: 'Space Grotesk', sans-serif; font-size: 50px; font-weight: 800; color: var(--critical); line-height: 1; }
+        .score-lbl { font-size: 12px; font-weight: 700; color: #991b1b; text-transform: uppercase; margin-top: 4px; }
+
+        .card { background: white; border-radius: 12px; border: 1px solid var(--border); padding: 24px; margin-bottom: 28px; }
+        .card h3 { font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 12px; }
+
+        .callout-critical {
+            background: #fff5f5; border: 1px solid #fed7d7; border-left: 5px solid var(--critical);
+            border-radius: 8px; padding: 18px 20px; margin-bottom: 20px;
+        }
+        .callout-critical h4 { font-size: 15px; font-weight: 800; color: var(--critical); margin-bottom: 4px; }
+        .callout-critical p { font-size: 13px; color: #7f1d1d; }
+
+        .table-wrap { background: white; border-radius: 10px; border: 1px solid var(--border); overflow-x: auto; margin-bottom: 30px; }
+        table { width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; }
+        thead { background: #f8fafc; border-bottom: 2px solid var(--border); }
+        th { padding: 12px 16px; font-weight: 700; color: var(--primary); text-transform: uppercase; font-size: 11px; }
+        td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: #334155; }
+        tbody tr:hover { background-color: #f8fafc; }
+
+        .badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+        .badge-critical { background: var(--critical-bg); color: var(--critical); border: 1px solid #fecaca; }
+        .badge-warning { background: var(--warning-bg); color: var(--warning); border: 1px solid #fde68a; }
+        .badge-pass { background: var(--success-bg); color: var(--success); border: 1px solid #a7f3d0; }
+
+        footer { background: white; border-top: 1px solid var(--border); padding: 30px 0; text-align: center; color: var(--text-muted); font-size: 13px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="badge-client">Technical SEO & Next.js Website Audit</div>
+        <h1 class="hero-title">PanelRight: Comprehensive Technical & On-Page Audit</h1>
+        <p class="hero-subtitle">Rigorous diagnostic of www.panelright.com covering Next.js App Router architecture, crawlability, on-page semantics, and B2B organic lead generation.</p>
+        
+        <div class="meta-grid">
+            <div class="meta-item"><div class="lbl">Domain</div><div class="val">www.panelright.com</div></div>
+            <div class="meta-item"><div class="lbl">Framework / Host</div><div class="val">Next.js 13+ on Vercel</div></div>
+            <div class="meta-item"><div class="lbl">Domain Authority</div><div class="val">DA: 6 | AS: 2 (Semrush)</div></div>
+            <div class="meta-item"><div class="lbl">Organic Traffic</div><div class="val">0 Visits / Month</div></div>
+        </div>
+    </div>
+</header>
+
+<div class="sticky-nav">
+    <div class="container">
+        <div class="nav-links">
+            <a href="#executive">Executive Summary</a>
+            <a href="#critical-blockers">Critical Smoking Guns</a>
+            <a href="#scorecard">Health Scorecard</a>
+            <a href="#issues">Issues Log</a>
+            <a href="#metadata">Metadata Rewrites</a>
+            <a href="#roadmap">30-60-90 Roadmap</a>
+        </div>
+    </div>
+</div>
+
+<main class="container">
+
+    <section id="executive">
+        <div class="score-hero-card">
+            <div class="score-circle">
+                <div class="score-val">33</div>
+                <div class="score-lbl">Health Score / 100</div>
+            </div>
+            <div>
+                <h3 style="font-size: 22px; color: var(--primary); margin-bottom: 8px;">Technical Hosting is Fast, But SEO Foundation is Severely Incomplete</h3>
+                <p style="color: #475569; font-size: 14.5px; margin-bottom: 14px;">
+                    PanelRight is hosted on modern Vercel Edge infrastructure delivering lightning-fast response times (TTFB: 68 ms). However, the site suffers from <strong>zero organic search visibility</strong> because the development team deployed the site with <strong>Next.js 13 boilerplate template descriptions</strong>, <strong>7 H1 tags on the homepage</strong>, <strong>an 'Under Construction' placeholder page linked from the primary CTA</strong>, <strong>unmounted FAQ answers</strong>, and <strong>missing sitemaps/canonicals</strong>.
+                </p>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                    <span class="badge badge-critical">Next.js Template Description Live</span>
+                    <span class="badge badge-critical">7 H1 Tags on Homepage</span>
+                    <span class="badge badge-critical">No XML Sitemap (404)</span>
+                    <span class="badge badge-pass">TTFB 68ms (Vercel Edge)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="critical-blockers">
+        <h2 style="font-size: 22px; color: var(--primary); margin-bottom: 18px;">Critical "Smoking Gun" Defects</h2>
+
+        <div class="callout-critical">
+            <h4>1. Default Next.js 13 Template Description Active in Production</h4>
+            <p><strong>Observed:</strong> Meta description on homepage reads: <em>"An open source application built using the new router, server components and everything new in Next.js 13."</em> This developer boilerplate from the <code>shadcn/taxonomy</code> starter kit appears in live Google search snippets.</p>
+        </div>
+
+        <div class="callout-critical">
+            <h4>2. Primary CTA Links to a 25-Word "Under Construction" Page (/efficiency)</h4>
+            <p><strong>Observed:</strong> The homepage CTA <em>"How We Find Efficient Solutions"</em> links to <code>/efficiency</code>, which displays only: <em>"Under Construction. This page is currently being built. Please check back soon."</em> Returns HTTP 200 without a noindex tag.</p>
+        </div>
+
+        <div class="callout-critical">
+            <h4>3. Heading Dilution: 7 Separate H1 Tags on Homepage</h4>
+            <p><strong>Observed:</strong> The homepage marks up every industry tab (Aviation, Marine, Medical, Automotive, Industrial, Consumer) as an <code>&lt;h1&gt;</code>, completely diluting core keyword focus.</p>
+        </div>
+
+        <div class="callout-critical">
+            <h4>4. FAQ Answers Unmounted in Server-Rendered HTML (Invisible to Crawlers)</h4>
+            <p><strong>Observed:</strong> Radix UI accordion renders closed answers with <code>&lt;div hidden=""&gt;&lt;/div&gt;</code>. Crawlers see 130 words of question headings and zero answers, blocking FAQ Rich Snippets.</p>
+        </div>
+
+        <div class="callout-critical">
+            <h4>5. Live Legal Pages Contain Latin Lorem Ipsum ('Taxonomy App')</h4>
+            <p><strong>Observed:</strong> <code>/privacy</code> and <code>/terms</code> are live on production and contain unedited Latin filler text referencing <em>"Taxonomy App"</em>.</p>
+        </div>
+    </section>
+
+    <section id="scorecard">
+        <h2 style="font-size: 22px; color: var(--primary); margin-bottom: 18px;">Detailed Audit Scorecard</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Area</th><th>Weight</th><th>Score</th><th>Status</th><th>Defect Summary</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Crawlability & Sitemaps</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Fail</span></td><td>sitemap.xml is 404; no sitemap pointer in robots.txt</td></tr>
+                    <tr><td><strong>Canonicalisation</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Fail</span></td><td>Missing canonical tags across 100% of pages</td></tr>
+                    <tr><td><strong>On-Page Metadata</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Critical</span></td><td>Next.js 13 template descriptions; titles under 20 chars</td></tr>
+                    <tr><td><strong>Heading Hierarchy</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Critical</span></td><td>7 H1 tags on homepage; 0 H1 tags on /efficiency</td></tr>
+                    <tr><td><strong>Content Depth</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Critical</span></td><td>Primary CTA leads to 25-word 'Under Construction' page; FAQ unmounted</td></tr>
+                    <tr><td><strong>Performance & Speed</strong></td><td>10</td><td><strong>10 / 10</strong></td><td><span class="badge badge-pass">Pass</span></td><td>Vercel Edge delivery is ultra fast (TTFB 68ms, FCP 500ms)</td></tr>
+                    <tr><td><strong>Structured Data</strong></td><td>10</td><td><strong>0 / 10</strong></td><td><span class="badge badge-critical">Fail</span></td><td>Zero Schema.org JSON-LD blocks across the domain</td></tr>
+                    <tr><td><strong>E-E-A-T & Trust</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Critical</span></td><td>No company address, phone, or leadership info; Latin Lorem Ipsum legal pages</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>PanelRight Technical SEO & Website Audit &bull; Confidential Client Deliverable</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+Old URL,Target Canonical URL,Redirect Type,Reason
+http://victoryhcspl.com/,https://victoryhcspl.com/,301 Permanent,HTTP to HTTPS protocol consolidation
+http://www.victoryhcspl.com/,https://victoryhcspl.com/,301 Permanent (Direct),Eliminate 2-hop redirect chain (http://www -> https://www -> https://)
+https://www.victoryhcspl.com/,https://victoryhcspl.com/,301 Permanent,Subdomain consolidation (www to non-www)
+https://victoryhcspl.com/home/,https://victoryhcspl.com/,301 Permanent,Consolidate duplicate WordPress /home/ slug to root domain
+https://victoryhcspl.com/index.php,https://victoryhcspl.com/,301 Permanent,Default directory index canonicalisation
+https://victoryhcspl.com/wp-sitemap.xml,https://victoryhcspl.com/sitemap.xml,301 Permanent,Convert 302 temporary redirect to 301 permanent redirect
+https://victoryhcspl.com/robots.txt,Serve HTTP 200 File (No Redirect),200 Static File,Remove 301 redirect to homepage; serve valid text/plain robots.txt
+https://victoryhcspl.com/#!,https://victoryhcspl.com/,Remove Link / 301,Remove internal #! dummy links to stop AJAX crawling duplication
+https://victoryhcspl.com/healthcare-training/#!,https://victoryhcspl.com/healthcare-training/,Remove Link / 301,Remove internal #! dummy links to stop AJAX crawling duplication

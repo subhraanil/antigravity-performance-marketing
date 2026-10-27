@@ -1,0 +1,5 @@
+Old URL,Target Canonical URL,Redirect Type,Reason
+http://panelright.com/,https://www.panelright.com/,308 Permanent (Single Hop),Consolidate 2-hop redirect chain (http:// -> https://non-www -> https://www)
+https://panelright.com/,https://www.panelright.com/,308 Permanent,Non-WWW to WWW canonical domain consolidation
+http://www.panelright.com/,https://www.panelright.com/,308 Permanent,HTTP to HTTPS protocol consolidation
+https://www.panelright.com/efficiency (Temporary),https://www.panelright.com/#workSection,302 Temporary (Until Built),Prevent visitors & crawlers from hitting 25-word 'Under Construction' placeholder

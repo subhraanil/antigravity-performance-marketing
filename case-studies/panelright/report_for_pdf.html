@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SEO & Website Audit Report | PanelRight</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 16mm 16mm 16mm 16mm;
+            @bottom-center {
+                content: "PanelRight — SEO & Website Audit | Page " counter(page);
+                font-size: 8pt;
+                color: #64748b;
+            }
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #0f172a;
+            line-height: 1.5;
+            font-size: 9.5pt;
+            background: #ffffff;
+        }
+
+        .cover-page {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 60px;
+            page-break-after: always;
+        }
+        .cover-badge {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: #2563eb;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .cover-title {
+            font-size: 26pt;
+            font-weight: 800;
+            color: #0a192f;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+        .cover-subtitle {
+            font-size: 13pt;
+            color: #475569;
+            margin-bottom: 40px;
+        }
+        .score-box {
+            display: inline-block;
+            border: 3px solid #dc2626;
+            background: #fef2f2;
+            border-radius: 12px;
+            padding: 24px 40px;
+            margin-bottom: 40px;
+        }
+        .score-val {
+            font-size: 46pt;
+            font-weight: 800;
+            color: #dc2626;
+            line-height: 1;
+        }
+        .score-lbl {
+            font-size: 10pt;
+            font-weight: 700;
+            color: #991b1b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 6px;
+        }
+        .cover-meta {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px 20px;
+            font-size: 9pt;
+        }
+        .cover-meta div {
+            margin-bottom: 6px;
+        }
+        .cover-meta strong {
+            color: #0a192f;
+        }
+
+        .section {
+            margin-bottom: 22px;
+            page-break-inside: avoid;
+        }
+        .section-title {
+            font-size: 13pt;
+            font-weight: 800;
+            color: #0a192f;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            margin-top: 14px;
+        }
+        p {
+            margin-bottom: 8px;
+            color: #334155;
+            text-align: justify;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8.5pt;
+            margin: 10px 0 16px;
+            page-break-inside: avoid;
+        }
+        th {
+            background: #0a192f;
+            color: #ffffff;
+            font-weight: 700;
+            text-align: left;
+            padding: 7px 10px;
+            text-transform: uppercase;
+            font-size: 7.5pt;
+            letter-spacing: 0.5px;
+        }
+        td {
+            padding: 7px 10px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #334155;
+            vertical-align: top;
+        }
+        tr:nth-child(even) td {
+            background: #f8fafc;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 7.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .badge-critical { background: #fee2e2; color: #dc2626; }
+        .badge-warning { background: #fef3c7; color: #d97706; }
+        .badge-pass { background: #d1fae5; color: #059669; }
+
+        .callout {
+            background: #fff5f5;
+            border-left: 4px solid #dc2626;
+            padding: 10px 14px;
+            border-radius: 0 6px 6px 0;
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+        .callout h4 {
+            font-size: 9pt;
+            font-weight: 700;
+            color: #991b1b;
+            margin-bottom: 3px;
+        }
+        .callout p {
+            font-size: 8.5pt;
+            color: #7f1d1d;
+            margin-bottom: 0;
+        }
+
+        .code-block {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-family: Consolas, monospace;
+            font-size: 8pt;
+            margin: 6px 0 10px;
+            line-height: 1.4;
+        }
+
+        .footer-note {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #cbd5e1;
+            font-size: 8pt;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+<!-- PAGE 1: COVER -->
+<div class="cover-page">
+    <div class="cover-badge">B2B Website Technical & On-Page Audit</div>
+    <div class="cover-title">SEO & WEBSITE AUDIT REPORT</div>
+    <div class="cover-subtitle">PanelRight (www.panelright.com)</div>
+
+    <div class="score-box">
+        <div class="score-val">33 / 100</div>
+        <div class="score-lbl">Overall Website Health Score</div>
+    </div>
+
+    <div class="cover-meta">
+        <div><strong>Client Domain:</strong> https://www.panelright.com/</div>
+        <div><strong>Application Portal:</strong> https://solutions.panelright.com/contact</div>
+        <div><strong>Core Offering:</strong> Algorithmic PCB Panel Optimization Software</div>
+        <div><strong>Technology Stack:</strong> Next.js 13+ (App Router) on Vercel Edge / AWS (US)</div>
+        <div><strong>Audit Date:</strong> October 14, 2026</div>
+        <div><strong>Domain Authority:</strong> Moz DA 6 | Semrush AS 2 | Organic Traffic: 0</div>
+    </div>
+</div>
+
+<!-- PAGE 2: EXECUTIVE SUMMARY & SCORECARD -->
+<div class="section">
+    <div class="section-title">1. Executive Summary & Baseline Search Performance</div>
+    <p>PanelRight provides an automated algorithmic software solution designed to solve an expensive bottleneck in electronics manufacturing: printed circuit board (PCB) panelization and array nesting to minimize laminate scrap (eWaste) and reduce fabrication costs. While Vercel Edge hosting delivers exceptional static response times (TTFB: 68 ms, FCP: 500 ms), the website currently suffers from <strong>zero organic search visibility</strong> because critical developer boilerplate and unfinished assets were left active in production.</p>
+    
+    <div class="callout" style="background: #eff6ff; border-left-color: #2563eb;">
+        <h4 style="color: #1e40af;">Verified Tool Baseline (Semrush, Moz & Geolocation)</h4>
+        <p style="color: #1e3a8a;">
+            <strong>Semrush:</strong> Authority Score 2/100 ("Lacks organic traffic"). Organic Search Traffic: 0 visits/mo. AI Search Visibility: 0 across ChatGPT, Google AI Overviews, Google AI Mode, and Gemini. Ref. Domains: 1.2K | Backlinks: 1.3K.<br>
+            <strong>Moz:</strong> Domain Authority: 6/100 | Brand Authority: 1/100 | Page Authority: 22/100 | Search Theme: "Industrial Panel Systems".<br>
+            <strong>Hosting:</strong> IP 64.29.17.65 (Vercel, Inc / Amazon.com, Inc.) hosted in Walnut, California, United States.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-title">2. Website Technical Health Scorecard (33 / 100)</div>
+    <table>
+        <thead>
+            <tr><th>Audit Category</th><th>Weight</th><th>Score</th><th>Status</th><th>Primary Observed Defect</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Crawlability & Sitemaps</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Fail</span></td><td>sitemap.xml returns HTTP 404; robots.txt has no sitemap reference</td></tr>
+            <tr><td><strong>Indexability & Canonicals</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Fail</span></td><td>Missing canonical tags across 100% of pages</td></tr>
+            <tr><td><strong>On-Page Metadata</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Critical</span></td><td>Next.js 13 starter boilerplate meta descriptions; titles &lt; 20 chars</td></tr>
+            <tr><td><strong>Heading Structure (H1/H2)</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Critical</span></td><td>7 separate H1 tags on homepage; 0 H1 tags on /efficiency</td></tr>
+            <tr><td><strong>Content Depth & Indexability</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Critical</span></td><td>Primary CTA leads to 25-word 'Under Construction' page; FAQ unmounted</td></tr>
+            <tr><td><strong>Performance & Speed</strong></td><td>10</td><td><strong>10 / 10</strong></td><td><span class="badge badge-pass">Pass</span></td><td>Vercel Edge delivery is ultra fast (TTFB 68ms, FCP 500ms)</td></tr>
+            <tr><td><strong>Structured Data (Schema)</strong></td><td>10</td><td><strong>0 / 10</strong></td><td><span class="badge badge-critical">Fail</span></td><td>Zero Schema.org JSON-LD blocks across the domain</td></tr>
+            <tr><td><strong>E-E-A-T & Trust Signals</strong></td><td>10</td><td><strong>2 / 10</strong></td><td><span class="badge badge-critical">Critical</span></td><td>No company address/phone; Latin Lorem Ipsum on /privacy &amp; /terms</td></tr>
+            <tr><td><strong>Security & Architecture</strong></td><td>10</td><td><strong>3 / 10</strong></td><td><span class="badge badge-warning">Warning</span></td><td>Missing X-Frame-Options/CSP on root; isolated subdomain contact flow</td></tr>
+            <tr><td><strong>TOTAL WEIGHTED SCORE</strong></td><td>100</td><td><strong>33 / 100</strong></td><td><span class="badge badge-critical">Critical</span></td><td><strong>Immediate Next.js Production Cleanup Required</strong></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- PAGE 3: CRITICAL SMOKING GUNS -->
+<div class="section">
+    <div class="section-title">3. Critical "Smoking Gun" Issues (Empirically Verified)</div>
+
+    <div class="callout">
+        <h4>1. Default Next.js 13 Template Description in Production</h4>
+        <p><strong>Observed:</strong> Meta description on homepage and /efficiency reads: <em>"An open source application built using the new router, server components and everything new in Next.js 13."</em><br>
+        <strong>Impact:</strong> This exact string from the <code>shadcn/taxonomy</code> starter kit appears directly in Google search snippets, destroying organic CTR.</p>
+    </div>
+
+    <div class="callout">
+        <h4>2. Primary CTA Links to a 25-Word "Under Construction" Page (/efficiency)</h4>
+        <p><strong>Observed:</strong> The prominent homepage CTA <em>"How We Find Efficient Solutions"</em> links to <code>/efficiency</code>, which contains only 25 words stating: <em>"Under Construction. This page is currently being built. Please check back soon."</em><br>
+        <strong>Impact:</strong> Returns HTTP 200 without a noindex tag. Zero H1s, zero value, causing 100% of prospects to bounce.</p>
+    </div>
+
+    <div class="callout">
+        <h4>3. Severe Heading Dilution (7 Separate H1 Tags on Homepage)</h4>
+        <p><strong>Observed:</strong> Homepage marks up 7 separate <code>&lt;h1&gt;</code> tags (the main slogan plus all 6 industry tabs: Aviation, Marine, Medical, Automotive, Industrial, Consumer).<br>
+        <strong>Impact:</strong> Completely dilutes core topical focus. Industry tabs should be <code>&lt;h3&gt;</code>.</p>
+    </div>
+
+    <div class="callout">
+        <h4>4. FAQ Answers Unmounted in Server HTML (Invisible to Googlebot)</h4>
+        <p><strong>Observed:</strong> On <code>/faq</code>, 14 high-value questions are displayed via Radix UI accordion. In server HTML, closed answers render with <code>&lt;div hidden=""&gt;&lt;/div&gt;</code> with zero inner text.<br>
+        <strong>Impact:</strong> Crawlers see only 130 words of question headings and zero answers, blocking FAQ Rich Snippets.</p>
+    </div>
+
+    <div class="callout">
+        <h4>5. Live Production Legal Pages Contain Latin Lorem Ipsum ('Taxonomy App')</h4>
+        <p><strong>Observed:</strong> <code>/privacy</code> and <code>/terms</code> are live on production containing raw Latin filler text referencing <em>"Taxonomy App"</em>. Neither is linked in the footer.<br>
+        <strong>Impact:</strong> Destroys enterprise B2B credibility and Google E-E-A-T.</p>
+    </div>
+
+    <div class="callout">
+        <h4>6. Missing XML Sitemap (HTTP 404) &amp; Canonical Tags Across 100% of Pages</h4>
+        <p><strong>Observed:</strong> <code>https://www.panelright.com/sitemap.xml</code> returns 404, and 0 pages have <code>&lt;link rel="canonical"&gt;</code>.<br>
+        <strong>Impact:</strong> Crawlers receive no sitemap guidance, and Screaming Frog flags missing canonicals across all URLs.</p>
+    </div>
+</div>
+
+<!-- PAGE 4: CODE FIXES & METADATA -->
+<div class="section">
+    <div class="section-title">4. Next.js Code Implementations (Deploy in &lt; 2 Hours)</div>
+    
+    <p><strong>A. Dynamic XML Sitemap (<code>app/sitemap.ts</code>):</strong></p>
+    <div class="code-block">
+import { MetadataRoute } from 'next';<br>
+export default function sitemap(): MetadataRoute.Sitemap {<br>
+&nbsp;&nbsp;const base = 'https://www.panelright.com';<br>
+&nbsp;&nbsp;return [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{ url: base, lastModified: new Date(), changeFrequency: 'weekly', priority: 1.0 },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{ url: `${base}/faq`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{ url: `${base}/efficiency`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{ url: `${base}/privacy`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{ url: `${base}/terms`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },<br>
+&nbsp;&nbsp;];<br>
+}
+    </div>
+
+    <p><strong>B. Canonical Tags &amp; Global Metadata (<code>app/layout.tsx</code>):</strong></p>
+    <div class="code-block">
+export const metadata: Metadata = {<br>
+&nbsp;&nbsp;metadataBase: new URL('https://www.panelright.com'),<br>
+&nbsp;&nbsp;title: { default: 'PCB Panel Optimization Software | PanelRight', template: '%s | PanelRight' },<br>
+&nbsp;&nbsp;description: 'Cut PCB manufacturing costs and minimize eWaste with PanelRight. Advanced algorithmic printed circuit board panelization and nesting software.',<br>
+&nbsp;&nbsp;alternates: { canonical: './' },<br>
+&nbsp;&nbsp;openGraph: { images: [{ url: '/opengraph-image.png', width: 1200, height: 630 }] },<br>
+};
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-title">5. Production-Ready Metadata Rewrites</div>
+    <table>
+        <thead>
+            <tr><th>Page URL</th><th>Proposed Title Tag</th><th>Proposed Meta Description</th><th>Proposed H1</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>/ (Home)</strong></td>
+                <td>PCB Panel Optimization &amp; Panelization Software | PanelRight</td>
+                <td>Cut PCB manufacturing costs and minimize eWaste with PanelRight. Advanced algorithmic printed circuit board panelization and nesting software. Try us today!</td>
+                <td>PCB Panel Optimization &amp; Automated Panelization Software</td>
+            </tr>
+            <tr>
+                <td><strong>/faq</strong></td>
+                <td>PCB Panelization FAQ: Optimization, Cost &amp; Support | PanelRight</td>
+                <td>Find answers to top questions about PCB panelization, manufacturing cost reduction, panel turnaround times, and compatibility with your existing fabricators.</td>
+                <td>Frequently Asked Questions About PCB Panelization</td>
+            </tr>
+            <tr>
+                <td><strong>/efficiency</strong></td>
+                <td>Algorithmic PCB Panel Efficiency &amp; Nesting | PanelRight</td>
+                <td>Discover how PanelRight's mathematical nesting algorithms maximize laminate utilization, reduce trim scrap, and lower per-board production costs.</td>
+                <td>How PanelRight Delivers Maximum PCB Panel Efficiency</td>
+            </tr>
+            <tr>
+                <td><strong>solutions/contact</strong></td>
+                <td>Contact PanelRight | Request a Free PCB Panel Optimization Trial</td>
+                <td>Get in touch with the PanelRight engineering team. Request a free trial panelization run, ask questions, or discover custom electronics manufacturing savings.</td>
+                <td>Contact Our PCB Optimization Engineering Team</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- PAGE 5: ROADMAP & METRICS -->
+<div class="section">
+    <div class="section-title">6. 30–60–90 Day Execution Roadmap</div>
+    <table>
+        <thead>
+            <tr><th>Phase</th><th>Key Objectives &amp; Deliverables</th><th>Target Milestone</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Days 1–15<br>Emergency Cleanup</strong></td>
+                <td>Replace Next.js 13 template descriptions; correct homepage 7 H1 tags; deploy <code>app/sitemap.ts</code>; add canonical tags; fix Radix FAQ SSR unmounting bug; point OG image to production.</td>
+                <td>100% crawlable sitemap; 0 template strings in SERP; valid canonicals</td>
+            </tr>
+            <tr>
+                <td><strong>Days 16–45<br>Solution Depth &amp; Trust</strong></td>
+                <td>Build out <code>/efficiency</code> solution breakdown (1,000+ words with laminate savings tables); replace Latin Lorem Ipsum on <code>/privacy</code> and <code>/terms</code>; deploy Schema.org SoftwareApplication &amp; FAQPage JSON-LD; fix subdomain return link.</td>
+                <td>Google indexes FAQ answers; legal trust established; 0 orphan pages</td>
+            </tr>
+            <tr>
+                <td><strong>Days 46–90<br>Authority Scaling</strong></td>
+                <td>Launch dedicated industry landing pages (<code>/industries/aviation-defense</code>, <code>/industries/medical-devices</code>); build interactive PCB laminate savings calculator; target electronics manufacturing publications (EE Times, I-Connect007).</td>
+                <td>First-page rankings for "PCB panel optimization"; measurable B2B trial leads</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="section">
+    <div class="section-title">7. Recommended Success Metrics &amp; Final Takeaway</div>
+    <p>PanelRight does not need a complete site rebuild. The core Next.js application on Vercel delivers phenomenal speed (TTFB: 68 ms). The highest-leverage path to organic growth is resolving the unfinished developer template issues in Days 1–15, establishing legitimate legal/trust pages, transforming <code>/efficiency</code> into an authoritative technical pillar, and deploying Schema.org structured data.</p>
+    
+    <div class="footer-note">
+        <strong>Important notes:</strong> This audit report was compiled using live DOM and network extraction tools, Playwright headless browser rendering, and the supplied Screaming Frog crawl data. Metrics from Semrush, Moz, and IP geolocation reflect tool outputs as of October 13–14, 2026. The 30/60/90-day roadmap is an execution framework, not a guarantee of specific ranking or lead outcomes.
+    </div>
+</div>
+
+</body>
+</html>

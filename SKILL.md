@@ -30,6 +30,11 @@ This skill empowers Antigravity with a unified, end-to-end performance marketing
 | **Backlinks** | `/backlinks asset build` | Generate zero-leak HTML statistics research page | `python seo/link-building/scripts/stats_asset_generator.py` |
 | **Backlinks** | `/backlinks gap` | Poach referring domains linking to 2+ competitors | `python seo/link-building/scripts/competitor_gap.py --sample` |
 | **Backlinks** | `/backlinks verify` | Deterministic live DOM crawler verifying equity | `python seo/link-building/scripts/link_verifier.py` |
+| **Agency Growth**| `/agency proposal <client>`| 7-phase proposal architecture & 3-tier financial model | `workflows/proposal-preparation-sop.md` |
+| **Website Audit**| `/seo website-audit <url>` | 10-phase technical audit with "Issues-Only" report format | `workflows/technical-website-audit-sop.md` |
+| **B2B Outbound** | `/b2b linkedin-leads` | Low-volume, high-converting B2B intent scout | `workflows/linkedin-lead-generation.md` |
+| **CRO & Design** | `/cro recreate-page <url>`| Pixel-perfect page recreation & conversion tuning | `workflows/website-recreation-cro.md` |
+| **Indexing** | `/seo index-sitemap <url>`| Batch sitemap validation & Search Console indexing | `workflows/sitemap-indexing-automation.md` |
 
 ---
 
@@ -267,29 +272,38 @@ Consult detailed playbooks in `knowledge/`:
 21. [seo_drift_and_regression_monitoring_playbook.md](knowledge/seo_drift_and_regression_monitoring_playbook.md): Git for SEO, capturing baselines, detecting post-deployment regressions, and triage rules.
 22. [programmatic_seo_and_indexing_bloat_playbook.md](knowledge/programmatic_seo_and_indexing_bloat_playbook.md): Dynamic page generation at scale, data uniqueness gates, anti-mad-libs conditional logic, and crawl budget preservation.
 23. [local_seo_and_google_maps_playbook.md](knowledge/local_seo_and_google_maps_playbook.md): Google Local 3-pack ranking factors, GBP optimization, primary aggregator NAP consistency, localized schema, and review velocity.
+24. [agency_proposal_architecture_and_pricing_playbook.md](knowledge/agency_proposal_architecture_and_pricing_playbook.md): 7-phase proposal engineering, 11 client pricing models, 3-tier financial forecasting (Conservative/Expected/Aggressive), and scope protection guardrails.
+25. [b2b_linkedin_lead_generation_playbook.md](knowledge/b2b_linkedin_lead_generation_playbook.md): Account-based marketing, high-intent social keyword listening, session-persistent browser emulation, and data-anchored outreach frameworks.
 
 ---
 
-## 17. Standard Operating Procedures (11 Workflows)
+## 17. Standard Operating Procedures (16 Workflows)
 
 Standard runbooks in `workflows/`:
 1. [meta-ads-mcp-audit.md](workflows/meta-ads-mcp-audit.md): 5-step automated Meta Ads MCP audit, placement waste recovery, and PAUSED staging.
-2. [seo-gsc-audit.md](workflows/seo-gsc-audit.md): Google Search Console query cannibalization detection and striking-distance quick wins SOP.
-3. [seo-geo-audit.md](workflows/seo-geo-audit.md): 0–100 GEO citability audit, AI crawler robots governance, and `llms.txt` generation SOP.
-4. [seo-backlinks-campaign.md](workflows/seo-backlinks-campaign.md): ApexLink Pro 745+ directory outreach, digital PR, and live verification SOP.
-5. [seo-sxo-audit.md](workflows/seo-sxo-audit.md): Search Experience Optimization, SERP intent reverse-engineering, and IST/SOLL wireframe SOP.
-6. [aeo-geo-audit.md](workflows/aeo-geo-audit.md): 5-phase generative AI search visibility audit.
-7. [campaign-launch.md](workflows/campaign-launch.md): Zero-defect pre-flight launch checklist.
-8. [competitor-sweep.md](workflows/competitor-sweep.md): Competitor Ad Library, creative reverse-engineering, and backlink gaps.
-9. [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
-10. [continuous-improvement-loop.md](workflows/continuous-improvement-loop.md): Quarterly MER review and channel rebalancing.
-11. [engagement-12-part.md](workflows/engagement-12-part.md): Canonical 12-Part Strategy Flow across Four Core Documents.
+2. [proposal-preparation-sop.md](workflows/proposal-preparation-sop.md): Standard agency proposal preparation workflow, financial modeling, and executive deck generation.
+3. [technical-website-audit-sop.md](workflows/technical-website-audit-sop.md): 10-phase technical SEO & website audit protocol with "Issues-Only" client reporting standards.
+4. [linkedin-lead-generation.md](workflows/linkedin-lead-generation.md): Automated LinkedIn lead monitoring, connection discovery, and personalized outreach drafts.
+5. [website-recreation-cro.md](workflows/website-recreation-cro.md): Pixel-perfect marketing page recreation, design system extraction, and conversion friction elimination.
+6. [sitemap-indexing-automation.md](workflows/sitemap-indexing-automation.md): Sitemap crawling, indexability verification, and batch search console indexing submission.
+7. [seo-gsc-audit.md](workflows/seo-gsc-audit.md): Google Search Console query cannibalization detection and striking-distance quick wins SOP.
+8. [seo-geo-audit.md](workflows/seo-geo-audit.md): 0–100 GEO citability audit, AI crawler robots governance, and `llms.txt` generation SOP.
+9. [seo-backlinks-campaign.md](workflows/seo-backlinks-campaign.md): ApexLink Pro 745+ directory outreach, digital PR, and live verification SOP.
+10. [seo-sxo-audit.md](workflows/seo-sxo-audit.md): Search Experience Optimization, SERP intent reverse-engineering, and IST/SOLL wireframe SOP.
+11. [aeo-geo-audit.md](workflows/aeo-geo-audit.md): 5-phase generative AI search visibility audit.
+12. [campaign-launch.md](workflows/campaign-launch.md): Zero-defect pre-flight launch checklist.
+13. [competitor-sweep.md](workflows/competitor-sweep.md): Competitor Ad Library, creative reverse-engineering, and backlink gaps.
+14. [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
+15. [continuous-improvement-loop.md](workflows/continuous-improvement-loop.md): Quarterly MER review and channel rebalancing.
+16. [engagement-12-part.md](workflows/engagement-12-part.md): Canonical 12-Part Strategy Flow across Four Core Documents.
 
 ---
 
 ## 18. Real-World Client Audits & Field Case Studies
 
 Audited deliverables, field data, and forensic remediation plans in `case-studies/`:
+- **PanelRight** (`case-studies/panelright/`): Global B2B SaaS in PCB panelization optimization. Fast TTFB (68ms on Next.js/Vercel) but 33/100 health score due to 404 sitemap, boilerplate metadata, unmounted Radix UI text, and mobile touch target defects.
+- **Victory Healthcare Services** (`case-studies/victory-hcs/`): Bangalore & Pan-India medical imaging training (CT/MRI/PACS) and hospital software. 44/100 health score remediation plan: Columbia Asia / Manipal founder authority integration, Course Schema, and admission enquiry form embedding.
 - **Amma Alochana** (`case-studies/amma-alochana/`): Automated webinar funnel, Meta Ads CPL optimization, and WhatsApp automation.
 - **Pet Mode UK** (`case-studies/pet-mode/`): Live Meta Ads MCP forensic analysis across 34 campaigns, demographic isolation, iPad ROAS multiplier, UK postcode density clustering, and feed hygiene.
 - **Pajama Village US** (`case-studies/pajama-village/`): 66-day Q4 seasonal holiday DTC strategy, Merchant Center feed optimization, and regional conversion analysis.
