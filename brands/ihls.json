@@ -1,0 +1,22 @@
+{
+  "brand_id": "ihls",
+  "brand_name": "Indian Hearing & Language Society (IHLS)",
+  "vertical": "Healthcare Clinical Services / Audiology & Speech Therapy",
+  "target_market": "India (Delhi NCR, Major Metros, Regional Diagnostic Centers)",
+  "core_offering": "Diagnostic Audiometry, Hearing Aid Dispensing, Pediatric Speech Therapy, Cochlear Implant Rehabilitation, Language Pathology",
+  "core_channels": [
+    "Google Ads (Search & Call-Only campaigns targeting 'hearing aid clinic near me', 'speech therapist for child')",
+    "Google Business Profile (GBP Local 3-Pack, Patient review velocity)",
+    "Strict Negative Keyword Sculpting (Filtering out career/jobs, free testing, government schemes)"
+  ],
+  "unit_economics": {
+    "target_cpl": "$12.00 - $24.00",
+    "target_cost_per_call": "$15.00 - $30.00",
+    "clinic_visit_show_up_rate": ">= 68%",
+    "hearing_aid_conversion_rate": ">= 32%"
+  },
+  "deliverables": [
+    "case-studies/ihls/New_Negative_Additions_Last7Days.csv",
+    "case-studies/ihls/Search terms report.xlsx"
+  ]
+}

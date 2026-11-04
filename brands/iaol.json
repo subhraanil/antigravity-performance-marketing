@@ -1,0 +1,23 @@
+{
+  "brand_id": "iaol",
+  "brand_name": "International Academy of Ophthalmology (IAOL)",
+  "vertical": "Healthcare Education & Surgical Training",
+  "target_market": "India & Global Medical Graduates, Ophthalmologists, Eye Surgeons",
+  "core_offering": "Comprehensive Ophthalmology Fellowships, Phacoemulsification Training, Vitreoretinal Surgery Courses, Refractive Surgery Certification",
+  "core_channels": [
+    "Google Ads (Search campaigns targeting 'phaco fellowship in india', 'ophthalmology surgical training')",
+    "Meta Ads (Lead generation forms for surgical fellowships, video testimonials)",
+    "Conversion Rate Optimization (Landing page trust badges, curriculum downloads, faculty credentials)"
+  ],
+  "unit_economics": {
+    "target_cpl": "$35.00 - $65.00",
+    "target_course_enrollment_cpa": "$110.00 - $240.00",
+    "average_course_value": "$1,200 - $4,500"
+  },
+  "deliverables": [
+    "case-studies/iaol/MTD_Campaign.xlsx",
+    "case-studies/iaol/Search terms report.xlsx",
+    "case-studies/iaol/Conversion_ROI (1).xlsx",
+    "case-studies/iaol/IAOL-GoogleAds.xlsx"
+  ]
+}

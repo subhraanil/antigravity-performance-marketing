@@ -1,0 +1,24 @@
+{
+  "brand_id": "ab-universal-messaging",
+  "brand_name": "AB Universal Messaging",
+  "vertical": "B2B SaaS / Enterprise Communication Infrastructure",
+  "target_market": "Global B2B (Financial Services, Healthcare, Logistics, Enterprise IT)",
+  "core_offering": "Universal Omnichannel Messaging APIs, SMS Gateway, WhatsApp Business Platform, Push Notification Infrastructure",
+  "core_channels": [
+    "LinkedIn ABM & Thought Leadership (Decision maker targeting: CTO, VP Product, VP Engineering)",
+    "Google Ads (Search Alpha/Beta targeting 'enterprise sms gateway', 'omnichannel messaging api')",
+    "Technical SEO & Developer Documentation (OpenAPI specs, code sample libraries)"
+  ],
+  "unit_economics": {
+    "target_cpl": "$85.00 - $175.00",
+    "target_sql": "$450.00 - $900.00",
+    "sales_cycle": "45 - 90 days",
+    "ltv_cac_target": ">= 4.0x"
+  },
+  "deliverables": [
+    "case-studies/ab-universal-messaging/AB_Universal_Messaging_Growth_Strategy_and_Action_Plan.html",
+    "case-studies/ab-universal-messaging/AB_Universal_Messaging_Growth_Strategy_and_Action_Plan.pdf",
+    "case-studies/ab-universal-messaging/01_create_campaign_and_ad_groups.csv",
+    "case-studies/ab-universal-messaging/ab_negative_keywords.csv"
+  ]
+}

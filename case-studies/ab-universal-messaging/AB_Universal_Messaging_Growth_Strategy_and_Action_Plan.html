@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LinkedIn Growth Strategy & Plan of Action - AB Universal Messaging</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+  @page {
+    size: letter;
+    margin: 0.45in 0.5in 0.5in 0.5in;
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      color: #94a3b8;
+    }
+    @bottom-left {
+      content: "AB Universal Messaging — LinkedIn Growth Strategy";
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      color: #94a3b8;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    line-height: 1.45;
+    font-size: 9pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  .report-header {
+    border-bottom: 2.5px solid #0a66c2;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .report-title-block h1 {
+    font-size: 18pt;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 2px 0;
+    letter-spacing: -0.4px;
+  }
+  .report-title-block .subtitle {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #0a66c2;
+    margin: 0;
+  }
+  .report-meta {
+    text-align: right;
+    font-size: 8pt;
+    color: #64748b;
+    line-height: 1.35;
+  }
+
+  .section {
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: #0f172a;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .section-title span.number {
+    background: #0a66c2;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8.5pt;
+    font-weight: 700;
+  }
+
+  .alert-box {
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-size: 8.5pt;
+    line-height: 1.4;
+  }
+  .alert-info {
+    background-color: #eff6ff;
+    border-left: 3.5px solid #0a66c2;
+    color: #1e40af;
+  }
+  .alert-success {
+    background-color: #f0fdf4;
+    border-left: 3.5px solid #16a34a;
+    color: #166534;
+  }
+  .alert-title {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 8.5pt;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+    font-size: 8pt;
+  }
+  th {
+    background: #0f172a;
+    color: #ffffff;
+    text-align: left;
+    padding: 6px 8px;
+    font-weight: 600;
+    font-size: 8pt;
+  }
+  td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background-color: #f8fafc; }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .metric-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 8px 10px;
+    text-align: center;
+  }
+  .metric-card .val {
+    font-size: 13pt;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 1px;
+  }
+  .metric-card .label {
+    font-size: 7pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #64748b;
+    letter-spacing: 0.5px;
+  }
+
+  ul { margin: 4px 0 6px 16px; padding: 0; }
+  li { margin-bottom: 3px; font-size: 8.5pt; }
+
+  .page-break { page-break-before: always; }
+
+  .post-box {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    background: #ffffff;
+  }
+  .post-box h4 {
+    margin: 0 0 6px 0;
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #0a66c2;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .post-day-badge {
+    background: #0a66c2;
+    color: white;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 7.5pt;
+    font-weight: 700;
+  }
+  .post-body {
+    font-size: 8pt;
+    color: #334155;
+    line-height: 1.5;
+    font-style: italic;
+    border-left: 3px solid #e2e8f0;
+    padding-left: 8px;
+    margin: 0;
+    white-space: pre-line;
+  }
+
+  .outreach-box {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    background: #fafafa;
+  }
+  .outreach-box h4 {
+    margin: 0 0 4px 0;
+    font-size: 9pt;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .outreach-msg {
+    font-size: 8pt;
+    color: #334155;
+    font-style: italic;
+    border-left: 3px solid #0a66c2;
+    padding-left: 8px;
+    line-height: 1.5;
+  }
+
+  .roadmap-phase {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    align-items: flex-start;
+  }
+  .phase-badge {
+    background: #0a66c2;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 7.5pt;
+    font-weight: 700;
+    min-width: 95px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .phase-content {
+    flex: 1;
+    font-size: 8pt;
+    line-height: 1.35;
+  }
+  .phase-content strong { color: #0f172a; }
+
+  .checklist-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 5px;
+    align-items: flex-start;
+    font-size: 8.5pt;
+  }
+  .checkbox {
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #94a3b8;
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<div class="report-header">
+  <div class="report-title-block">
+    <h1>LinkedIn Growth Strategy & Plan of Action</h1>
+    <div class="subtitle">B2B Lead Generation — Company Page Authority & Sniper Outreach</div>
+  </div>
+  <div class="report-meta">
+    <strong>Client:</strong> AB Universal Messaging<br>
+    <strong>Website:</strong> abuniversalmessaging.com<br>
+    <strong>Date:</strong> October 2026<br>
+    <strong>Channel:</strong> LinkedIn B2B
+  </div>
+</div>
+
+<!-- SECTION 1: EXECUTIVE SUMMARY -->
+<div class="section">
+  <div class="section-title"><span class="number">1</span> Executive Summary & Opportunity</div>
+  <p style="margin:4px 0 6px 0;">
+    <strong>AB Universal Messaging</strong> operates with a clear, premium differentiator in the live answering industry: <strong>100% U.S.-based human operators</strong>, a rapid <strong>~4-second average pickup speed</strong>, <strong>HIPAA-aware workflows</strong>, and <strong>month-to-month contracts with no long-term lock-in</strong>. These are exactly the trust signals that resonate with B2B decision-makers on LinkedIn.
+  </p>
+  <p style="margin:4px 0 6px 0;">
+    LinkedIn is the ideal channel to reach <strong>Medical Practice Managers, Law Firm Managing Partners, and HVAC / Trade Business Owners</strong> — the exact decision-makers who sign monthly retainer contracts. This strategy delivers a sustainable, low-cost lead pipeline with a <strong>daily time investment of 10–15 minutes</strong>.
+  </p>
+  <div class="grid-3">
+    <div class="metric-card">
+      <div class="val">~4 Seconds</div>
+      <div class="label">Avg Pickup Speed</div>
+    </div>
+    <div class="metric-card">
+      <div class="val">100% U.S.</div>
+      <div class="label">Domestic Live Agents</div>
+    </div>
+    <div class="metric-card">
+      <div class="val">3.08M+</div>
+      <div class="label">Calls Handled / Year</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: THREE PILLARS -->
+<div class="section">
+  <div class="section-title"><span class="number">2</span> The 3-Pillar LinkedIn Strategy</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Pillar</th>
+        <th>What We Do</th>
+        <th>Outcome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. Company Page Optimization</strong></td>
+        <td>Overhaul the LinkedIn Business Page with a conversion-focused tagline, professional banner, compelling About copy, and a direct CTA button linked to the custom quote funnel.</td>
+        <td>Turns page visitors into inbound quote requests passively — 24/7.</td>
+      </tr>
+      <tr>
+        <td><strong>2. Weekly Content Engine (2x/week)</strong></td>
+        <td>Publish 2 strategic posts per week (Tuesday & Thursday at 8:30 AM EST) addressing the pain points of Practice Managers, Law Firm Partners, and Trade Business Owners.</td>
+        <td>Builds authority, increases organic reach, and attracts warm inbound leads.</td>
+      </tr>
+      <tr>
+        <td><strong>3. Sniper Outreach (2–3/day)</strong></td>
+        <td>Send 2–3 hyper-personalized, non-salesy connection requests per day to verified decision-makers. Follow up with a low-friction diagnostic conversation after acceptance.</td>
+        <td>Generates 10–15 qualified pipeline conversations per month with zero ad spend.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ================= PAGE 2 ================= -->
+<div class="page-break"></div>
+
+<!-- SECTION 3: COMPANY PAGE -->
+<div class="section">
+  <div class="section-title"><span class="number">3</span> LinkedIn Company Page Optimization Kit</div>
+  <p style="margin:4px 0 8px 0;">Every field below must be configured to transform the page from an empty profile into a high-converting B2B storefront:</p>
+
+  <table>
+    <thead>
+      <tr><th>Page Field</th><th>Content to Use</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Tagline</strong></td>
+        <td><em>"24/7/365 live U.S.-based phone answering, scheduling &amp; dispatch in ~4s. HIPAA-compliant. No contracts."</em></td>
+      </tr>
+      <tr>
+        <td><strong>CTA Button</strong></td>
+        <td>Set to <em>"Visit website"</em> → Link to: <code>abuniversalmessaging.com/get-started</code></td>
+      </tr>
+      <tr>
+        <td><strong>Industry</strong></td>
+        <td>Telecommunications / Customer Service / B2B Services</td>
+      </tr>
+      <tr>
+        <td><strong>Banner Image (1128x191)</strong></td>
+        <td>Dark navy/blue gradient featuring headline: <em>"Never Miss Another High-Value Call."</em> with 3 trust badges: <strong>100% U.S.-Based Agents | ~4s Average Pickup | HIPAA-Aware & Secure</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Specialties (20 tags)</strong></td>
+        <td>24/7 Live Answering, Virtual Receptionist, Medical Answering Service, HIPAA Compliant Answering, Legal Answering Service, After-Hours Answering, Emergency Dispatch, Appointment Scheduling, Bilingual Answering, HVAC Answering Service, Overflow Call Handling, U.S. Based Receptionists, and 8 more vertical-specific tags.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alert-box alert-info">
+    <div class="alert-title">📝 Company Page "About" Section (Copy & Paste)</div>
+    <p style="margin:4px 0 0 0; font-size:8pt; line-height:1.5;">
+      67% of callers who reach a business voicemail hang up and call the next competitor. For law firms, medical practices, and field service businesses, a single missed call can cost thousands in lost revenue.<br><br>
+      AB Universal Messaging provides seamless 24/7/365 live telephone answering, after-hours call routing, appointment scheduling, and emergency dispatch — powered entirely by trained, U.S.-based operators.<br><br>
+      <strong>What We Deliver:</strong> 100% Domestic Operators — Never robots or offshore scripts. | HIPAA-compliant medical workflows and conflict-aware legal intake. | Average pickup speed: ~4 seconds across 3M+ annual calls. | Live in as little as 24 hours with month-to-month contracts (cancel anytime).<br><br>
+      <strong>Ready to build your custom coverage plan?</strong><br>
+      Visit: abuniversalmessaging.com/get-started | Call: 1-800-395-0999
+    </p>
+  </div>
+</div>
+
+<!-- SECTION 4: CONTENT -->
+<div class="section">
+  <div class="section-title"><span class="number">4</span> Weekly Content Engine: 2 Posts per Week</div>
+  <p style="margin:4px 0 8px 0;">Publish every <strong>Tuesday</strong> and <strong>Thursday at 8:30 AM EST</strong> from the company page. Have team members like and re-share to extend organic reach:</p>
+
+  <div class="post-box">
+    <h4><span class="post-day-badge">TUESDAY</span> Post 1: The Real Cost of Voicemail (ROI Logic)</h4>
+    <div class="post-body">Here is a hard truth about business phone systems:
+
+Voicemail is where high-ticket deals go to die.
+
+Data shows that 67% of callers hang up the second they hear an automated beep. They don't leave a message — they click the next result on Google.
+
+Consider the math:
+• For a Law Firm: 1 missed retainer call is a $5,000–$25,000 case lost to the firm down the street.
+• For a Medical Practice: 1 missed patient inquiry is a $1,500 lifetime value gone.
+• For an HVAC Contractor: 1 missed midnight breakdown is an $8,000 replacement awarded to a competitor.
+
+Your team can't be at their desks 24/7. But your phone lines can.
+
+With professional U.S.-based operators answering in your company name within 4 seconds, every caller speaks to a live person.
+
+How does your office currently handle calls when your front desk is closed?
+
+#SmallBusiness #CustomerService #LegalOperations #HealthcareManagement</div>
+  </div>
+
+  <div class="post-box">
+    <h4><span class="post-day-badge">THURSDAY</span> Post 2: Human Operators vs. AI Bots (Empathy Hook)</h4>
+    <div class="post-body">"Please listen closely, as our menu options have changed."
+
+Everyone hates hearing those words.
+
+Yet so many companies are replacing their phone lines with AI voice bots and complex IVR phone trees.
+
+Here is what happens when someone calls with an urgent situation:
+1. They want immediate reassurance.
+2. They want their question understood without repeating it three times.
+3. They want to speak to a real human being.
+
+At AB Universal Messaging, we provide real, trained U.S.-based operators who answer as your front desk:
+✅ Average pickup speed: ~4 seconds
+✅ Direct calendar scheduling & intake
+✅ HIPAA-compliant medical workflows
+✅ Seamless emergency technician dispatch
+
+Technology should support your front desk, not alienate your callers.
+
+When your clients call your business, what experience do they get?
+
+#CustomerExperience #LiveAnswering #VirtualReceptionist #B2B</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 3 ================= -->
+<div class="page-break"></div>
+
+<!-- SECTION 5: OUTREACH -->
+<div class="section">
+  <div class="section-title"><span class="number">5</span> Sniper Outreach: 2–3 Personalized Requests / Day</div>
+  <p style="margin:4px 0 8px 0;">Send <strong>2–3 hyper-relevant, non-pitch connection requests per day</strong> to verified decision-makers. Rotate across verticals throughout the week:</p>
+
+  <table style="margin-bottom:10px;">
+    <thead>
+      <tr><th>Day</th><th>Target Persona</th><th>LinkedIn Search Filter</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Monday & Tuesday</strong></td>
+        <td>Practice Managers, Clinic Administrators</td>
+        <td>Title: "Practice Manager" OR "Clinic Director" | Industry: Medical Practices | US-based</td>
+      </tr>
+      <tr>
+        <td><strong>Wednesday & Thursday</strong></td>
+        <td>Managing Partners, Law Firm Administrators</td>
+        <td>Title: "Managing Partner" OR "Law Firm Administrator" | Industry: Law Practice | US-based</td>
+      </tr>
+      <tr>
+        <td><strong>Friday</strong></td>
+        <td>Business Owners (HVAC, Plumbing, Property Mgmt)</td>
+        <td>Title: "Owner" OR "President" | Industry: Construction / Real Estate | Employees: 2–50</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="outreach-box">
+    <h4>Connection Request A — For Medical Practice Managers</h4>
+    <div class="outreach-msg">"Hi [First Name], noticed your role leading operations at [Practice Name]. Love seeing medical practices streamline their patient intake. Thought it made sense to connect and follow your work in the healthcare space!"</div>
+  </div>
+
+  <div class="outreach-box">
+    <h4>Connection Request B — For Law Firm Managing Partners</h4>
+    <div class="outreach-msg">"Hi [First Name], saw you manage the team at [Firm Name]. With how critical after-hours client calls are for legal firms, thought I'd reach out and connect with fellow legal operations leaders."</div>
+  </div>
+
+  <div class="outreach-box">
+    <h4>Connection Request C — For HVAC / Trade Business Owners</h4>
+    <div class="outreach-msg">"Hi [First Name], came across [Company Name] while looking at top field service operators in [State/City]. Would love to connect and follow how you're handling after-hours service calls!"</div>
+  </div>
+
+  <div class="outreach-box">
+    <h4>Follow-Up Message — Sent 24–48 Hours After Acceptance</h4>
+    <div class="outreach-msg">"Thanks for connecting, [First Name]! Quick question — how is your team currently handling calls when your front desk is on the other line, at lunch, or after hours? We've seen a lot of [practices / law firms / contractors] losing leads simply because callers won't leave a voicemail. No pitch here at all — just curious if overflow and after-hours call coverage is already solved on your end?"</div>
+  </div>
+
+  <div class="outreach-box">
+    <h4>Conversion Message — For Anyone Who Replies It's a Challenge</h4>
+    <div class="outreach-msg">"Totally hear you. If you'd ever like to see how our U.S. team plugs in as a 24/7 backup (answering in ~4 seconds with zero long-term contracts), I'd be happy to share a quick 1-page custom plan. You can also explore directly here: abuniversalmessaging.com/get-started"</div>
+  </div>
+</div>
+
+<!-- ================= PAGE 4 ================= -->
+<div class="page-break"></div>
+
+<!-- SECTION 6: ROADMAP -->
+<div class="section">
+  <div class="section-title"><span class="number">6</span> 30-60-90 Day Execution Roadmap</div>
+
+  <div class="roadmap-phase">
+    <div class="phase-badge">Week 1–2<br>(Days 1–14)</div>
+    <div class="phase-content">
+      <strong>Company Page Setup & Content Foundation:</strong>
+      Update LinkedIn Company Page tagline, banner image, About section copy, and 20 specialty tags. Set CTA button to the custom quote funnel. Pin the introductory announcement post. Publish the first Tuesday and Thursday posts.
+    </div>
+  </div>
+
+  <div class="roadmap-phase">
+    <div class="phase-badge">Week 3–4<br>(Days 15–30)</div>
+    <div class="phase-content">
+      <strong>Outreach Launch & Rhythm Lock-In:</strong>
+      Begin 2–3 personalized connection requests daily (Mon–Fri). Continue Tuesday/Thursday content posting. Send follow-up messages to new acceptances within 24–48 hours. Track who replies and move them into a pipeline spreadsheet.
+    </div>
+  </div>
+
+  <div class="roadmap-phase">
+    <div class="phase-badge">Month 2<br>(Days 31–60)</div>
+    <div class="phase-content">
+      <strong>Content Optimization & Pipeline Building:</strong>
+      Review which post type (ROI logic vs. empathy hook) drives more profile visits and connection acceptance. Double down on the higher-performing format. Aim for first 2–4 qualified sales conversations from outreach acceptances.
+    </div>
+  </div>
+
+  <div class="roadmap-phase">
+    <div class="phase-badge">Month 3<br>(Days 61–90)</div>
+    <div class="phase-content">
+      <strong>Scale & Referral Activation:</strong>
+      Introduce Week 3 post type: client case studies and real behind-the-scenes wins. Ask satisfied early LinkedIn clients for a LinkedIn recommendation. Target goal: <strong>2–4 signed monthly retainers</strong> from LinkedIn pipeline.
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 7: KPIs -->
+<div class="section">
+  <div class="section-title"><span class="number">7</span> Success Benchmarks & Pipeline Economics</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Metric</th>
+        <th>Target</th>
+        <th>Business Impact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Connection Acceptance Rate</strong></td>
+        <td>25% – 40%</td>
+        <td>At 2–3 requests/day → 12–15 new connections/week of verified decision-makers.</td>
+      </tr>
+      <tr>
+        <td><strong>Follow-Up Reply Rate</strong></td>
+        <td>15% – 25%</td>
+        <td>Of all acceptances, 15–25% engage with the after-hours coverage diagnostic question.</td>
+      </tr>
+      <tr>
+        <td><strong>Monthly Qualified Conversations</strong></td>
+        <td>10 – 15 / month</td>
+        <td>Prospects who express active interest in a custom quote or follow-up call.</td>
+      </tr>
+      <tr>
+        <td><strong>New Signed Retainers / Month</strong></td>
+        <td>2 – 4 clients</td>
+        <td>At $350–$1,200/mo average retainer = $700–$4,800 in new MRR per month from LinkedIn alone.</td>
+      </tr>
+      <tr>
+        <td><strong>Customer Lifetime Value (LTV)</strong></td>
+        <td>$6,000 – $25,000+</td>
+        <td>High retention (18–36 months avg) makes each LinkedIn-sourced client extraordinarily valuable.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SECTION 8: CHECKLIST -->
+<div class="section">
+  <div class="section-title"><span class="number">8</span> This Week's Action Checklist</div>
+
+  <div class="alert-box alert-success">
+    <div class="alert-title">✅ Immediate Priority Items — Complete by End of Week</div>
+    <div style="margin-top:6px;">
+      <div class="checklist-item"><div class="checkbox"></div><span>Update LinkedIn Company Page tagline to: <em>"24/7/365 live U.S.-based phone answering, scheduling & dispatch in ~4s. HIPAA-compliant. No contracts."</em></span></div>
+      <div class="checklist-item"><div class="checkbox"></div><span>Set the Company Page CTA button to <em>"Visit website"</em> linking to <code>abuniversalmessaging.com/get-started</code>.</span></div>
+      <div class="checklist-item"><div class="checkbox"></div><span>Replace the banner image with the professionally designed version showing U.S.-based trust badges.</span></div>
+      <div class="checklist-item"><div class="checkbox"></div><span>Copy and paste the new "About" section copy from Section 3 of this report.</span></div>
+      <div class="checklist-item"><div class="checkbox"></div><span>Add all 20 Specialty tags to maximize LinkedIn search discovery.</span></div>
+      <div class="checklist-item"><div class="checkbox"></div><span>Schedule and publish Tuesday Post 1 (Cost of Voicemail) and Thursday Post 2 (Human vs. AI).</span></div>
+      <div class="checklist-item"><div class="checkbox"></div><span>Begin 2–3 personalized sniper outreach requests daily starting Monday morning.</span></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

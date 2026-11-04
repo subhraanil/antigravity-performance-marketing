@@ -1,0 +1,22 @@
+{
+  "brand_id": "baruipur-online",
+  "brand_name": "Baruipur Online",
+  "domain": "https://baruipur.online/",
+  "vertical": "Digital Publishing / Regional Bengali News & Local Civic Directory",
+  "target_market": "West Bengal, India (Baruipur, South 24 Parganas, Kolkata Suburban Commuters)",
+  "core_offering": "Hyper-local Bengali breaking news, suburban train schedules, local doctor and hospital directories, civic administration guides",
+  "core_channels": [
+    "Google Discover Optimization (High-CTR Bengali headlines, structured hero images >= 1200px)",
+    "Local Directory Technical SEO (LocalBusiness, MedicalOrganization, TrainStation schema graphs)",
+    "Programmatic Ad Yield (Google AdSense / Google Ad Manager responsive placements, high-viewability layouts)"
+  ],
+  "unit_economics": {
+    "page_rpm_target": "$12.00 - $28.00",
+    "core_web_vitals_lcp": "< 1.8s",
+    "mobile_page_load": "< 2.0s",
+    "bounce_rate_target": "< 48%"
+  },
+  "deliverables": [
+    "case-studies/baruipur-online/baruipur_online_homepage_ui_ux_redesign_instructions.md"
+  ]
+}

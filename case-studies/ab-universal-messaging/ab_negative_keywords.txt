@@ -1,0 +1,160 @@
+# ==============================================================================
+# MASTER NEGATIVE KEYWORD LIST - AB UNIVERSAL MESSAGING
+# Campaign: Google Ads Lead Generation
+# Generated: October 2026
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. COMPETITOR BRANDS (VIRTUAL RECEPTIONIST & ANSWERING SERVICES)
+# ------------------------------------------------------------------------------
+"ruby"
+"ruby receptionist"
+"ruby phone service"
+"call ruby"
+"nexa"
+"nexa phone"
+"centratel"
+"centratel answering service"
+"sierra answering service"
+"answerline"
+"answerline communications inc"
+"ambs"
+"ambs on call"
+"moneypenny"
+"smith.ai"
+"smith ai"
+"patlive"
+"davinci virtual"
+"answerconnect"
+"map communications"
+"ansafone"
+"specialty answering service"
+"sas answering"
+"posh virtual"
+"abby connect"
+"voice nation"
+"voicenation"
+"alert communications"
+"ansaphone"
+"stericycle"
+"medconnectusa"
+
+# ------------------------------------------------------------------------------
+# 2. SOFTWARE, VOIP, DIALERS & TELECOM HARDWARE
+# ------------------------------------------------------------------------------
+"sip"
+"sip account"
+"sip provider"
+"pbx"
+"hosted pbx"
+"phone system"
+"phone systems"
+"business phone systems"
+"ringcentral"
+"nextiva"
+"vonage"
+"grasshopper"
+"ooma"
+"8x8"
+"dialpad"
+"kixie"
+"kixie phone number"
+"sendbird"
+"sendbird com"
+"retell"
+"retell ai"
+"hello force"
+"syncup"
+"syncup call"
+"answering machine"
+"panasonic answering machine"
+"at&t answering machine"
+"voicemail box"
+"desk phone"
+"headset"
+
+# ------------------------------------------------------------------------------
+# 3. SOFTWARE AG "UNIVERSAL MESSAGING" & IT DEVELOPER COLLATERAL
+# ------------------------------------------------------------------------------
+"software ag"
+"universal messaging server"
+"universal messaging documentation"
+"jms"
+"activemq"
+"tibco"
+"kafka"
+"message broker"
+"jar download"
+"github"
+"api documentation"
+"sdk"
+"docker"
+"python library"
+"nuget"
+"npm"
+"client library"
+
+# ------------------------------------------------------------------------------
+# 4. EMPLOYMENT, JOBS & CAREERS (CLICK BLEED PREVENTION)
+# ------------------------------------------------------------------------------
+jobs
+job
+careers
+career
+employment
+hiring
+salary
+salaries
+glassdoor
+indeed
+resume
+"work from home"
+"remote job"
+"operator salary"
+"interview questions"
+"shift work"
+"part time"
+"application"
+"internship"
+
+# ------------------------------------------------------------------------------
+# 5. INFORMATIONAL, DIY, DEFINITIONS & QUESTIONS
+# ------------------------------------------------------------------------------
+"what is"
+"what is pci"
+"how many"
+"how do you"
+"how to"
+"tutorial"
+"course"
+"certification"
+"definition"
+"meaning"
+"wiki"
+"wikipedia"
+"youtube"
+
+# ------------------------------------------------------------------------------
+# 6. FREE, CHEAP & CONSUMER / PERSONAL
+# ------------------------------------------------------------------------------
+free
+cheap
+cheapest
+diy
+"open source"
+personal
+residential
+"home phone"
+"cheap answering service"
+"free answering service"
+
+# ------------------------------------------------------------------------------
+# 7. TELEMARKETING & OUTBOUND SALES
+# ------------------------------------------------------------------------------
+"cold calling"
+"telemarketing"
+"outbound sales"
+"robocall"
+"lead list"
+"bulk sms"
+"mass texting"

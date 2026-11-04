@@ -1,0 +1,24 @@
+{
+  "brand_id": "millie-coastal-accents",
+  "brand_name": "Millie Coastal Accents",
+  "vertical": "DTC E-Commerce / Coastal & Beach Home Decor",
+  "domain": "https://milliecoastalaccents.com/",
+  "target_market": "United States (Coastal States: Florida, California, South Carolina, North Carolina)",
+  "core_offering": "Luxury Coastal Home Accents, Nautical Decor, Ocean-Inspired Furniture & Lifestyle Goods",
+  "core_channels": [
+    "Meta Ads (Instagram & Facebook Visual Inspiration, Advantage+ Shopping CBO)",
+    "Google Ads (Shopping / Performance Max with account-level brand exclusions)",
+    "Klaviyo Lifecycle Retention (Welcome series, abandon checkout, VIP replenishment)"
+  ],
+  "unit_economics": {
+    "aov": "$85.00 - $165.00",
+    "target_cpa": "$28.00 - $42.00",
+    "target_roas": "3.5x - 4.5x",
+    "breakeven_roas": "2.1x",
+    "contribution_margin_target": "> 52%"
+  },
+  "deliverables": [
+    "case-studies/millie-coastal-accents/Digital_Marketing_Proposal_Millie_Coastal_Accents_Techno_Exponent.docx",
+    "case-studies/millie-coastal-accents/Millie_Coastal_Accents_Digital_Marketing_Proposal.html"
+  ]
+}

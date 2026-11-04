@@ -35,6 +35,9 @@ This skill empowers Antigravity with a unified, end-to-end performance marketing
 | **B2B Outbound** | `/b2b linkedin-leads` | Low-volume, high-converting B2B intent scout | `workflows/linkedin-lead-generation.md` |
 | **CRO & Design** | `/cro recreate-page <url>`| Pixel-perfect page recreation & conversion tuning | `workflows/website-recreation-cro.md` |
 | **Indexing** | `/seo index-sitemap <url>`| Batch sitemap validation & Search Console indexing | `workflows/sitemap-indexing-automation.md` |
+| **Publishing** | `/content publish-blog <topic>`| 2026 SEO blog drafting, WP REST API publish & index | `workflows/wordpress-blog-publishing-sop.md` |
+| **Reporting** | `/reporting slides <sheet_id>` | Google Sheets to PPTX/Slides presentation reporting | `workflows/slides-presentation-reporting-sop.md` |
+| **Core Web Vitals**| `/seo pagespeed <url>` | PageSpeed API query & CWV performance diagnostic | `workflows/pagespeed-cwv-audit-sop.md` |
 
 ---
 
@@ -277,7 +280,7 @@ Consult detailed playbooks in `knowledge/`:
 
 ---
 
-## 17. Standard Operating Procedures (16 Workflows)
+## 17. Standard Operating Procedures (19 Workflows)
 
 Standard runbooks in `workflows/`:
 1. [meta-ads-mcp-audit.md](workflows/meta-ads-mcp-audit.md): 5-step automated Meta Ads MCP audit, placement waste recovery, and PAUSED staging.
@@ -286,22 +289,30 @@ Standard runbooks in `workflows/`:
 4. [linkedin-lead-generation.md](workflows/linkedin-lead-generation.md): Automated LinkedIn lead monitoring, connection discovery, and personalized outreach drafts.
 5. [website-recreation-cro.md](workflows/website-recreation-cro.md): Pixel-perfect marketing page recreation, design system extraction, and conversion friction elimination.
 6. [sitemap-indexing-automation.md](workflows/sitemap-indexing-automation.md): Sitemap crawling, indexability verification, and batch search console indexing submission.
-7. [seo-gsc-audit.md](workflows/seo-gsc-audit.md): Google Search Console query cannibalization detection and striking-distance quick wins SOP.
-8. [seo-geo-audit.md](workflows/seo-geo-audit.md): 0–100 GEO citability audit, AI crawler robots governance, and `llms.txt` generation SOP.
-9. [seo-backlinks-campaign.md](workflows/seo-backlinks-campaign.md): ApexLink Pro 745+ directory outreach, digital PR, and live verification SOP.
-10. [seo-sxo-audit.md](workflows/seo-sxo-audit.md): Search Experience Optimization, SERP intent reverse-engineering, and IST/SOLL wireframe SOP.
-11. [aeo-geo-audit.md](workflows/aeo-geo-audit.md): 5-phase generative AI search visibility audit.
-12. [campaign-launch.md](workflows/campaign-launch.md): Zero-defect pre-flight launch checklist.
-13. [competitor-sweep.md](workflows/competitor-sweep.md): Competitor Ad Library, creative reverse-engineering, and backlink gaps.
-14. [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
-15. [continuous-improvement-loop.md](workflows/continuous-improvement-loop.md): Quarterly MER review and channel rebalancing.
-16. [engagement-12-part.md](workflows/engagement-12-part.md): Canonical 12-Part Strategy Flow across Four Core Documents.
+7. [wordpress-blog-publishing-sop.md](workflows/wordpress-blog-publishing-sop.md): 2026 SEO blog structure, REST API publishing, and instant search indexation.
+8. [slides-presentation-reporting-sop.md](workflows/slides-presentation-reporting-sop.md): Automated Google Sheets KPI data extraction to executive PPTX/Slides presentation decks.
+9. [pagespeed-cwv-audit-sop.md](workflows/pagespeed-cwv-audit-sop.md): Real-time Core Web Vitals (LCP, INP, CLS) API evaluation and DOM render-blocking diagnostics.
+10. [seo-gsc-audit.md](workflows/seo-gsc-audit.md): Google Search Console query cannibalization detection and striking-distance quick wins SOP.
+11. [seo-geo-audit.md](workflows/seo-geo-audit.md): 0–100 GEO citability audit, AI crawler robots governance, and `llms.txt` generation SOP.
+12. [seo-backlinks-campaign.md](workflows/seo-backlinks-campaign.md): ApexLink Pro 745+ directory outreach, digital PR, and live verification SOP.
+13. [seo-sxo-audit.md](workflows/seo-sxo-audit.md): Search Experience Optimization, SERP intent reverse-engineering, and IST/SOLL wireframe SOP.
+14. [aeo-geo-audit.md](workflows/aeo-geo-audit.md): 5-phase generative AI search visibility audit.
+15. [campaign-launch.md](workflows/campaign-launch.md): Zero-defect pre-flight launch checklist.
+16. [competitor-sweep.md](workflows/competitor-sweep.md): Competitor Ad Library, creative reverse-engineering, and backlink gaps.
+17. [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
+18. [continuous-improvement-loop.md](workflows/continuous-improvement-loop.md): Quarterly MER review and channel rebalancing.
+19. [engagement-12-part.md](workflows/engagement-12-part.md): Canonical 12-Part Strategy Flow across Four Core Documents.
 
 ---
 
-## 18. Real-World Client Audits & Field Case Studies
+## 18. Real-World Client Audits & Field Case Studies (13 Verticals)
 
 Audited deliverables, field data, and forensic remediation plans in `case-studies/`:
+- **Millie Coastal Accents** (`case-studies/millie-coastal-accents/`): US DTC e-commerce home decor & coastal accents. 3-tier financial model, Meta Ads visual lifestyle creative testing, and Google Shopping PMax structure.
+- **AB Universal Messaging** (`case-studies/ab-universal-messaging/`): Global B2B SaaS in omnichannel communication infrastructure. Search Alpha/Beta structure, negative keyword lists, and LinkedIn ABM growth plan.
+- **IAOL** (`case-studies/iaol/`): International Academy of Ophthalmology. Surgical training fellowships (Phaco/Retina), MTD Google Ads performance triage, conversion ROI modeling, and negative keyword sculpting.
+- **IHLS** (`case-studies/ihls/`): Indian Hearing & Language Society. Healthcare clinical audiology and speech therapy. 7-day search terms analysis, call-only campaigns, and negative keyword pruning.
+- **Baruipur Online** (`case-studies/baruipur-online/`): Hyper-local Bengali news portal & civic directory. 918-line UI/UX redesign specification, mobile reading accessibility, and programmatic ad yield optimization.
 - **PanelRight** (`case-studies/panelright/`): Global B2B SaaS in PCB panelization optimization. Fast TTFB (68ms on Next.js/Vercel) but 33/100 health score due to 404 sitemap, boilerplate metadata, unmounted Radix UI text, and mobile touch target defects.
 - **Victory Healthcare Services** (`case-studies/victory-hcs/`): Bangalore & Pan-India medical imaging training (CT/MRI/PACS) and hospital software. 44/100 health score remediation plan: Columbia Asia / Manipal founder authority integration, Course Schema, and admission enquiry form embedding.
 - **Amma Alochana** (`case-studies/amma-alochana/`): Automated webinar funnel, Meta Ads CPL optimization, and WhatsApp automation.

@@ -1,0 +1,16 @@
+﻿Negative Keyword,Match Type,Google Ads Syntax,Category,Reason
+djura,PHRASE,"""djura""",Local Perth Salons,Djura Hair & Spa in Fremantle ($12.16 wasted in PMax)
+morris mead,PHRASE,"""morris mead""",Local Perth Salons,Morris Mead Hairdressing in Perth ($7.07 wasted in PMax)
+floreat hair,PHRASE,"""floreat hair""",Local Perth Salons,Floreat Hair Salon ($4.67 wasted in PMax)
+hair dresser,PHRASE,"""hair dresser""",Local Perth Salons,"Hairdresser searches ($6.16 wasted on ""hair dresser nesr me"" in Search)"
+meloxidyl,PHRASE,"""meloxidyl""",Veterinary / Pet Drugs,Veterinary arthritis NSAID for dogs/cats ($18.33 wasted on 2 clicks in PMax)
+hairhouse,PHRASE,"""hairhouse""",Retail Chains & Salons,Hairhouse Warehouse salon chain ($12.24 wasted in Midland/Belmont)
+uniwigs,PHRASE,"""uniwigs""",Retail Wig Stores,UniWigs online e-commerce wig store ($3.80 wasted)
+nourkrin,PHRASE,"""nourkrin""",OTC Supplements & Tablets,Nourkrin Man hair supplement tablets ($5.61 wasted)
+cecred,PHRASE,"""cecred""",Retail Celebrity Brands,Beyoncé Cécred hair drops ($6.04 wasted in Search)
+gond katira,PHRASE,"""gond katira""",DIY / Home Remedies,Edible gum DIY hair mask (unrelated herbal inquiry)
+ghk cu,PHRASE,"""ghk cu""",Research Peptides / Chemicals,GHK-Cu copper peptide research chemical query
+dekohair,PHRASE,"""dekohair""",OTC Retail Lotions,DekoHair OTC cosmetic hair lotion online shopping query
+chinamed,PHRASE,"""chinamed""",Chinese Herbal Remedies,ChinaMed OTC herbal formula query
+exosomes,PHRASE,"""exosomes""",TGA Compliance Hazard (Biologicals),Exosome hair queries ($8.50 wasted in PMax; TGA biological compliance risk)
+exosome,PHRASE,"""exosome""",TGA Compliance Hazard (Biologicals),Single term phrase to permanently block all exosome query bleeding in PMax
