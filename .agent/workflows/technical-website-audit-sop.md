@@ -220,8 +220,15 @@ When preparing audit data for automated generation, structure `audit_data.json` 
 
 ---
 
-## 6. Pre-Delivery Quality Assurance (QA) Checklist
+## 6. Pre-Delivery Quality Assurance (QA) & Directory Routing
 
+### Workspace Directory Routing Mandate:
+- **Office Workspace** (`C:\Users\test\Videos\Office`): All client accounts, agency audits, and client reports (e.g. RACube, Pet Mode, IAOL, IHLS, Share Samadhan, Kuri) MUST be output to `C:\Users\test\Videos\Office\reports\` or `C:\Users\test\Videos\Office\case-studies\<client>\`.
+- **Personal Workspace** (`C:\Users\test\Videos\Personal`): All owned brand audits (e.g. PaidMediaWorld, personal blogs) MUST be output to `C:\Users\test\Videos\Personal\reports\` or `C:\Users\test\Videos\Personal\case-studies\`.
+- **Research Workspace** (`C:\Users\test\Videos\Research`): All market intelligence, competitor scraping, and experimental audits MUST be output to `C:\Users\test\Videos\Research\reports\`.
+- **Strict Guardrail**: NEVER write or output to legacy directories `TE-AI Agent`, `MY-AI Agent`, or `Freelance-AI`.
+
+### QA Checklist:
 Before delivering the audit reports to the client or account lead, verify:
 - [ ] **No Speculative Code Dumps:** Ensure the executive DOCX and PDF do not contain unrequested developer implementation scripts.
 - [ ] **Evidence Attached:** Every issue specifies exact `URL(s)`, `Observed Defect`, `Severity`, and `Impact`.

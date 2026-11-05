@@ -138,3 +138,13 @@ Synthesize the data into a 3-part deliverable:
    - Ready-to-stage campaign and ad set specs.
 3. **Execution Payload**:
    - Draft JSON for `ads_create_campaign` and `ads_create_ad_set` in `PAUSED` state.
+
+---
+
+## Step 6: Workspace Report Output Routing
+
+When saving generated audit deliverables, strictly observe workspace routing:
+- **Office Workspace** (`C:\Users\test\Videos\Office`): All agency/client accounts (e.g. Pet Mode, IAOL, IHLS, RACube) MUST save reports to `C:\Users\test\Videos\Office\reports\` or `C:\Users\test\Videos\Office\case-studies\<client>\`.
+- **Personal Workspace** (`C:\Users\test\Videos\Personal`): All owned brand accounts MUST save reports to `C:\Users\test\Videos\Personal\reports\`.
+- **Research Workspace** (`C:\Users\test\Videos\Research`): All exploratory and benchmark accounts MUST save reports to `C:\Users\test\Videos\Research\reports\`.
+- **Strict Guardrail**: NEVER output to or create files in legacy directories `TE-AI Agent`, `MY-AI Agent`, or `Freelance-AI`.

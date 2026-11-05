@@ -1,4 +1,4 @@
-"""
+﻿"""
 =============================================================================
 UNRESTRICTED GOOGLE KEYWORD SERP RANK TRACKER
 =============================================================================
@@ -492,7 +492,7 @@ class RankTracker:
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description="Unrestricted Google Keyword Rank Tracker")
-    parser.add_argument("--file", default=r"C:\Users\test\Videos\TE-AI Agent\data\Unrestricted_Google_Keyword_Rank_Tracker.xlsx", help="Path to Excel Tracker")
+    parser.add_argument("--file", default=r"C:\Users\test\Videos\Office\data\Unrestricted_Google_Keyword_Rank_Tracker.xlsx", help="Path to Excel Tracker")
     parser.add_argument("--serper-key", default=os.environ.get("SERPER_API_KEY", ""), help="Serper.dev API Key (optional)")
     parser.add_argument("--no-snapshot", action="store_true", help="Skip creating historical snapshot sheet")
     args = parser.parse_args()

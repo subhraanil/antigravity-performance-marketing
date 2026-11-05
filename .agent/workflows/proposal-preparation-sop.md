@@ -259,3 +259,13 @@ Before presenting the proposal to the client or sales team, verify:
 - [ ] Standard TechnoExponent T&Cs, billing rules, and discontinuation terms included.
 - [ ] Responsive UI verified on mobile, tablet, and desktop viewports.
 - [ ] "Download PDF" print test conducted to ensure zero awkward page breaks.
+
+---
+
+## 10. Workspace Proposal Output Routing
+
+When saving generated proposals, pitch decks, and financial models:
+- **Office Workspace** (`C:\Users\test\Videos\Office`): All agency/client proposals (e.g. RACube, IAOL, IHLS, Millie Coastal Accents, AB Universal Messaging) MUST be saved to `C:\Users\test\Videos\Office\reports\` or `C:\Users\test\Videos\Office\case-studies\<client>\`.
+- **Personal Workspace** (`C:\Users\test\Videos\Personal`): All owned venture proposals and personal projects MUST be saved to `C:\Users\test\Videos\Personal\reports\`.
+- **Research Workspace** (`C:\Users\test\Videos\Research`): All market pitch research MUST be saved to `C:\Users\test\Videos\Research\reports\`.
+- **Strict Guardrail**: NEVER output to or create files in legacy directories `TE-AI Agent`, `MY-AI Agent`, or `Freelance-AI`.

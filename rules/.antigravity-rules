@@ -114,3 +114,19 @@ The Antigravity agent loop delegates specialized tasks to dedicated subagents im
    - Scope: Attribution modeling (MMM, data-driven), GA4/GSC reporting, cohort retention, incremental ROAS analysis.
 6. **`brand_guardian`**:
    - Scope: EU AI Act Article 50 compliance, C2PA metadata, claims validation, brand voice governance, FTC disclosure review.
+
+---
+
+## 6. Workspace Directory Taxonomy & Report Output Routing
+
+When loading data, generating audits, executing scripts, or exporting deliverables, strictly observe workspace routing:
+- **Office Workspace** (`C:\Users\test\Videos\Office` — formerly `TE-AI Agent`):
+  - **Scope**: Agency deliverables, client account data, enterprise audits, Pet Mode, IAOL, IHLS, RACube, Kuri, Share Samadhan.
+  - **Outputs**: Save all client audit outputs and reports to `Office/reports/` or `Office/case-studies/<client>/`.
+- **Personal Workspace** (`C:\Users\test\Videos\Personal` — formerly `MY-AI Agent`):
+  - **Scope**: Owned digital publishing, PaidMediaWorld, personal blogs, internal marketing calculator tools, portfolio assets.
+  - **Outputs**: Save all owned media audits and outputs to `Personal/reports/` or `Personal/case-studies/`.
+- **Research Workspace** (`C:\Users\test\Videos\Research` — formerly `Freelance-AI` / `Freelance`):
+  - **Scope**: Market intelligence, competitor scraping, algorithmic benchmarking, R&D experiments, new venture audits.
+  - **Outputs**: Save all exploratory intelligence to `Research/reports/` or `Research/case-studies/`.
+- **Mandate**: NEVER reference, create, or output files to legacy paths `TE-AI Agent`, `MY-AI Agent`, or `Freelance-AI`. All paths must resolve dynamically to the active workspace root.

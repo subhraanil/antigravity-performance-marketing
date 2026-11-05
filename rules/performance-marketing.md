@@ -1,6 +1,6 @@
 ---
 trigger: always_on
-description: Performance marketing rules for campaign constraints, target CPAs, and Meta/Google Ads templates
+description: Performance marketing rules for campaign constraints, target CPAs, workspace routing, and Meta/Google Ads templates
 ---
 
 # Performance Marketing Rules & Guardrails
@@ -29,3 +29,16 @@ description: Performance marketing rules for campaign constraints, target CPAs, 
 - `seo_specialist`: Technical SEO, AEO/GEO (Google AI Mode, Perplexity), schema.
 - `analytics_analyst`: Attribution, MMM, GA4/GSC reporting, incrementality.
 - `brand_guardian`: Compliance, C2PA, EU AI Act Article 50, claims validation.
+
+## 5. Workspace Directory Taxonomy & Report Output Routing
+When loading input data, generating audits, executing scripts, or exporting deliverables, strictly observe workspace routing:
+- **Office Workspace** (`C:\Users\test\Videos\Office` — formerly `TE-AI Agent`):
+  - **Scope**: Agency deliverables, client account data, enterprise audits, Pet Mode, IAOL, IHLS, RACube, Kuri, Share Samadhan.
+  - **Outputs**: Save all client audit outputs and reports to `Office/reports/` or `Office/case-studies/<client>/`.
+- **Personal Workspace** (`C:\Users\test\Videos\Personal` — formerly `MY-AI Agent`):
+  - **Scope**: Owned digital publishing, PaidMediaWorld, personal blogs, internal marketing calculator tools, portfolio assets.
+  - **Outputs**: Save all owned media audits and outputs to `Personal/reports/` or `Personal/case-studies/`.
+- **Research Workspace** (`C:\Users\test\Videos\Research` — formerly `Freelance-AI` / `Freelance`):
+  - **Scope**: Market intelligence, competitor scraping, algorithmic benchmarking, R&D experiments, new venture audits.
+  - **Outputs**: Save all exploratory intelligence to `Research/reports/` or `Research/case-studies/`.
+- **Mandate**: NEVER reference, create, or output files to legacy paths `TE-AI Agent`, `MY-AI Agent`, or `Freelance-AI`. All paths must resolve dynamically to the active workspace root.
