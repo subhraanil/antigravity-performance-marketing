@@ -308,6 +308,7 @@ Standard runbooks in `workflows/`:
 ## 18. Real-World Client Audits & Field Case Studies (13 Verticals)
 
 Audited deliverables, field data, and forensic remediation plans in `case-studies/`:
+- **RACube Technologies** (`case-studies/racube/`): Enterprise CX modernization & Genesys Premier Partner based in Plano, TX. Screaming Frog crawl diagnostic of 24 core URLs (missing image dimensions on 100% of images causing Core Web Vitals CLS degradation, relative canonicals on 96% of pages, CSP header absence) and 6-month enterprise SEO/SMO growth plan.
 - **Millie Coastal Accents** (`case-studies/millie-coastal-accents/`): US DTC e-commerce home decor & coastal accents. 3-tier financial model, Meta Ads visual lifestyle creative testing, and Google Shopping PMax structure.
 - **AB Universal Messaging** (`case-studies/ab-universal-messaging/`): Global B2B SaaS in omnichannel communication infrastructure. Search Alpha/Beta structure, negative keyword lists, and LinkedIn ABM growth plan.
 - **IAOL** (`case-studies/iaol/`): International Academy of Ophthalmology. Surgical training fellowships (Phaco/Retina), MTD Google Ads performance triage, conversion ROI modeling, and negative keyword sculpting.

@@ -1,0 +1,30 @@
+{
+  "brand_id": "racube",
+  "brand_name": "RACube Technologies",
+  "domain": "https://racube.com/",
+  "vertical": "Enterprise CX Modernization / Contact Center CCaaS SaaS",
+  "target_market": "United States & Global Enterprise (Plano, TX Headquarters - Telecommunications, Healthcare, Banking, Logistics)",
+  "partner_credentials": "Official Genesys Premier Partner (Genesys Cloud CX, PureConnect, PureCloud)",
+  "core_offering": "Enterprise Contact Center Migration, CCaaS Cloud Transformations, and 9 Proprietary DevOps/SaaS Tools (RAautomiTe, RADash, Secure PAuse)",
+  "key_metrics": {
+    "enterprise_engagements": "25+",
+    "cloud_transformations": "40+",
+    "countries_delivered": "28+",
+    "average_handle_time_reduction": "42%",
+    "migration_speed_multiplier": "3.20x faster cutover"
+  },
+  "technical_audit_findings": {
+    "total_crawled_urls": 24,
+    "primary_issues": [
+      "Missing width and height dimension attributes on 100% of images (36 images) triggering Core Web Vitals CLS degradation",
+      "Relative canonical tags on 96% of pages (requiring absolute https:// canonicals)",
+      "Missing Content-Security-Policy (CSP) headers on 97.6% of URLs",
+      "10 images exceeding 100 kB (uncompressed PNGs requiring WebP format)"
+    ]
+  },
+  "deliverables": [
+    "case-studies/racube/RACube_Technologies_Website_SEO_Audit_and_Marketing_Plan.docx",
+    "case-studies/racube/RACube_Technologies_Website_SEO_Audit_and_Marketing_Plan.pdf",
+    "case-studies/racube/racube.com - issues_overview_report.csv"
+  ]
+}
