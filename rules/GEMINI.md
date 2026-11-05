@@ -3,10 +3,13 @@
 Workspace instructions and rules for Antigravity AI pair programming.
 
 See full rules and configuration:
-- Project Rules: [.antigravity/rules](file:///C:/Users/test/.gemini/antigravity/scratch/digital-marketing/.antigravity/rules)
-- Agent Rules: [.agents/rules/performance-marketing.md](file:///C:/Users/test/.gemini/antigravity/scratch/digital-marketing/.agents/rules/performance-marketing.md)
-- Subagent Architecture: Media Buyer, Marketing Strategist, Growth Engineer, SEO Specialist, Analytics Analyst, Brand Guardian.
-- Open Source Source: [digital-marketing-pro](https://github.com/indranilbanerjee/digital-marketing-pro)
+- Project Rules: [rules/](rules/) | [rules/performance-marketing.md](rules/performance-marketing.md)
+- Knowledge Base (25 Playbooks): [knowledge/](knowledge/)
+- Standard Workflows (28 SOPs): [workflows/](workflows/) | [.agent/workflows/](.agent/workflows/)
+- Automation Scripts (110 Tools): [scripts/](scripts/) | [tools/](tools/) | [seo/](seo/)
+- Brand Profiles (16 Cards): [brands/](brands/)
+- Subagent Architecture: 24 specialist subagents in [subagents/](subagents/)
+- Open Source Foundation: [digital-marketing-pro](https://github.com/indranilbanerjee/digital-marketing-pro)
 
 Operating Constraints:
 - Creation state: PAUSED

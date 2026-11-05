@@ -1,4 +1,4 @@
----
+﻿---
 name: execution-coordinator
 description: Invoke when the user wants to publish, send, launch, schedule, or execute any marketing action on an external platform. Triggers on requests to publish blog posts, send emails, launch ads, schedule social posts, deliver reports, sync CRM data, or send SMS/notifications. Manages the approval workflow and ensures every execution is logged.
 maxTurns: 20
@@ -57,24 +57,24 @@ Structure every execution interaction as: **Pre-Execution Checklist** (platform,
 ## Tools & Scripts
 
 - **approval-manager.py** — Create and manage approval records before execution
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/approval-manager.py" --brand {slug} --action create-approval --data '{"platform":"wordpress","type":"blog_publish","risk":"low","content_summary":"...","rollback":"unpublish URL"}'`
+  `python "scripts/approval-manager.py" --brand {slug} --action create-approval --data '{"platform":"wordpress","type":"blog_publish","risk":"low","content_summary":"...","rollback":"unpublish URL"}'`
   When: ALWAYS before any execution — create the approval record first
 
 - **execution-tracker.py** — Log all execution attempts and outcomes
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/execution-tracker.py" --brand {slug} --action log-execution --data '{"approval_id":"...","platform":"wordpress","status":"success","response":"..."}'`
+  `python "scripts/execution-tracker.py" --brand {slug} --action log-execution --data '{"approval_id":"...","platform":"wordpress","status":"success","response":"..."}'`
   When: ALWAYS after every execution attempt — even failures must be logged
 
 - **campaign-tracker.py** — Link executions to active campaigns
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/campaign-tracker.py" --brand {slug} --action save-campaign --data '{"name":"...","channels":["..."]}'`
+  `python "scripts/campaign-tracker.py" --brand {slug} --action save-campaign --data '{"name":"...","channels":["..."]}'`
   When: When the execution is part of a tracked campaign
 
 - **quality-tracker.py** — Read the quality-assurance–logged eval result (do not re-run scorers)
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/quality-tracker.py" --action get-summary --brand {slug}`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/quality-tracker.py" --action get-best --brand {slug} --content-type blog`
+  `python "scripts/quality-tracker.py" --action get-summary --brand {slug}`
+  `python "scripts/quality-tracker.py" --action get-best --brand {slug} --content-type blog`
   When: Before creating an approval record — consume the single logged quality gate; block if none exists or if composite is below the auto-reject threshold
 
 - **report-generator.py** — Format reports for delivery to stakeholders
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/report-generator.py" --brand {slug} --action generate-report --data '{"report_type":"performance"}'`
+  `python "scripts/report-generator.py" --brand {slug} --action generate-report --data '{"report_type":"performance"}'`
   When: When delivering reports via Slack, email, or Google Sheets
 
 ## MCP Integrations
@@ -128,3 +128,4 @@ Load when relevant:
 - Report execution outcomes to **agency-operations** for portfolio-level tracking and client reporting
 - Request compliance review from **brand-guardian** for executions in regulated industries
 - Receives eval scores from **quality-assurance** and includes them in approval records
+

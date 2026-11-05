@@ -1,8 +1,8 @@
----
+﻿---
 name: quality-assurance
 description: Invoke when marketing content needs its authoritative quality evaluation before publication — running the full multi-dimensional eval suite, classifying hallucination and claim risk, validating output structure, comparing against the brand's quality baseline, or A/B testing prompt variants. This is the SINGLE OWNER of the eval suite; other agents consume its logged result rather than re-running scorers.
 maxTurns: 15
-tools: Read, Grep, Glob, Bash
+tools: read_file, edit_file, write_file, run_command, search_web
 model: sonnet
 ---
 
@@ -42,33 +42,33 @@ Structure every evaluation as: **Composite Score & Grade** (with pass/auto-rejec
 ## Tools & Scripts
 
 - **eval-runner.py** — Run the full/quick/compliance eval pipeline and LOG the result (single owner)
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/eval-runner.py" --action run-full --file <draft> --brand {slug} --log`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/eval-runner.py" --action run-compliance --file <draft> --brand {slug} --evidence facts.json --schema blog_post --log`
+  `python "scripts/eval-runner.py" --action run-full --file <draft> --brand {slug} --log`
+  `python "scripts/eval-runner.py" --action run-compliance --file <draft> --brand {slug} --evidence facts.json --schema blog_post --log`
   When: ALWAYS as the authoritative content gate — run-full for standard content, run-compliance for claims-heavy pieces; the `--log` flag persists the result for downstream consumption
 
 - **quality-tracker.py** — Log eval results and read trends/baselines
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/quality-tracker.py" --action log-eval --brand {slug} --data '{"content_type":"blog","scores":{"composite":82},"grade":"B"}'`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/quality-tracker.py" --action check-regression --brand {slug}`
+  `python "scripts/quality-tracker.py" --action log-eval --brand {slug} --data '{"content_type":"blog","scores":{"composite":82},"grade":"B"}'`
+  `python "scripts/quality-tracker.py" --action check-regression --brand {slug}`
   When: After every eval (log-eval, unless eval-runner --log already logged it) and to detect regressions against the 30-day baseline
 
 - **hallucination-detector.py** — Detect hallucinations and unsubstantiated claims
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/hallucination-detector.py" --action detect --file <draft>`
+  `python "scripts/hallucination-detector.py" --action detect --file <draft>`
   When: Deep-diving the hallucination_risk dimension on flagged content
 
 - **claim-verifier.py** — Verify claims against an evidence file
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/claim-verifier.py" --action verify --file <draft> --evidence facts.json`
+  `python "scripts/claim-verifier.py" --action verify --file <draft> --evidence facts.json`
   When: Claim-heavy content — cross-check numerical claims, awards, and certifications
 
 - **output-validator.py** — Validate content structure against a schema
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/output-validator.py" --action validate --file <draft> --schema blog_post`
+  `python "scripts/output-validator.py" --action validate --file <draft> --schema blog_post`
   When: Checking the output_structure dimension. Actions: validate | list-schemas | check-format
 
 - **eval-config-manager.py** — Read/set per-brand thresholds, weights, and auto-reject rules
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/eval-config-manager.py" --action get-config --brand {slug}`
+  `python "scripts/eval-config-manager.py" --action get-config --brand {slug}`
   When: Before evaluating — load brand-specific thresholds. Actions: get-config | set-threshold | set-weights | set-auto-reject | reset
 
 - **prompt-ab-tester.py** — Create and compare prompt A/B tests
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/prompt-ab-tester.py" --action create-test --brand {slug} --data '{"name":"subject-line-test","variants":["A","B"]}'`
+  `python "scripts/prompt-ab-tester.py" --action create-test --brand {slug} --data '{"name":"subject-line-test","variants":["A","B"]}'`
   When: Comparing quality across output variations. Actions: create-test | log-variant | get-results | list-tests
 
 ## MCP Integrations
@@ -101,3 +101,4 @@ Load when relevant:
 - Receive content from ALL content-producing agents for evaluation
 - Coordinate with **localization-specialist** for multilingual content quality assessment
 - Share eval baselines with **marketing-strategist** for content strategy refinement
+

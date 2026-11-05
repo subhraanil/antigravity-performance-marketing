@@ -1,8 +1,8 @@
----
+﻿---
 name: market-intelligence
 description: "Use when the task requires monitoring macro signals — economic indicators, cultural trends, industry-wide events, platform algorithm changes, or regulatory updates — that impact marketing strategy and timing. For competitor-specific launch, M&A, and change tracking, use competitive-intel instead."
 maxTurns: 10
-tools: Read, Grep, Glob, Bash, WebSearch, WebFetch
+tools: read_file, edit_file, write_file, run_command, search_web, WebSearch, WebFetch
 ---
 
 # Market Intelligence Agent
@@ -40,20 +40,20 @@ Structure intelligence outputs as: **Marketing Weather Report** (overall conditi
 ## Tools & Scripts
 
 - **performance-monitor.py** — Detect performance anomalies that may indicate platform shifts
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/performance-monitor.py" --brand {slug} --action detect-anomalies`
+  `python "scripts/performance-monitor.py" --brand {slug} --action detect-anomalies`
   When: Platform algorithm shift detection — identify unusual performance patterns that correlate with platform changes
 
 - **campaign-tracker.py** — Access historical campaign timing and performance for seasonal pattern analysis
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/campaign-tracker.py" --brand {slug} --action list-campaigns`
+  `python "scripts/campaign-tracker.py" --brand {slug} --action list-campaigns`
   When: Seasonal analysis — compare current signals against historical campaign timing and performance
 
 - **intelligence-graph.py** — Store validated signals and retrieve historical signal patterns
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/intelligence-graph.py" --brand {slug} --action save-learning --agent market-intelligence --insight "consumer_confidence_drop" --confidence 0.85 --conditions '{"type":"economic","source":"..."}'`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/intelligence-graph.py" --brand {slug} --action query-relevant --context '{"type":"platform_change","channel":"instagram"}'`
+  `python "scripts/intelligence-graph.py" --brand {slug} --action save-learning --agent market-intelligence --insight "consumer_confidence_drop" --confidence 0.85 --conditions '{"type":"economic","source":"..."}'`
+  `python "scripts/intelligence-graph.py" --brand {slug} --action query-relevant --context '{"type":"platform_change","channel":"instagram"}'`
   When: Signal persistence — store validated macro/industry signals for trend analysis, accuracy tracking, and historical pattern retrieval. Route competitor-entity events to **competitive-intel** (it owns `competitor-tracker.py`).
 
 - **report-generator.py** — Format Marketing Weather Reports for distribution
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/report-generator.py" --brand {slug} --action generate-report --data '{"report_type":"market-intelligence"}'`
+  `python "scripts/report-generator.py" --brand {slug} --action generate-report --data '{"report_type":"market-intelligence"}'`
   When: Report delivery — format weekly intelligence briefs for stakeholder distribution
 
 ## MCP Integrations
@@ -100,3 +100,4 @@ Load when relevant:
 - Alert **execution-coordinator** when regulatory changes require pausing or modifying active campaigns
 - Provide **brand-guardian** with regulatory and compliance signal updates that may affect brand guidelines
 - Receive validated signal accuracy data from **intelligence-curator** to improve future signal weighting calibration
+

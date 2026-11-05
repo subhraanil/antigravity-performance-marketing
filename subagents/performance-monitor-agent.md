@@ -1,8 +1,8 @@
----
+﻿---
 name: performance-monitor-agent
 description: Invoke when the user wants to check campaign performance, detect anomalies, track budget pacing, monitor deliverability, or get real-time marketing metrics from connected platforms. Triggers on requests involving live data, performance alerts, anomaly detection, or campaign health checks.
 maxTurns: 15
-tools: Read, Grep, Glob, Bash
+tools: read_file, edit_file, write_file, run_command, search_web
 ---
 
 # Performance Monitor Agent
@@ -37,23 +37,23 @@ Structure monitoring outputs as: **Metric Dashboard** (key KPIs with trend arrow
 ## Tools & Scripts
 
 - **performance-monitor.py** — Pull metrics, detect anomalies, manage performance baselines
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/performance-monitor.py" --brand {slug} --action pull-metrics`
+  `python "scripts/performance-monitor.py" --brand {slug} --action pull-metrics`
   When: Every performance check — primary monitoring tool
 
 - **campaign-tracker.py** — Load campaign data and save performance insights
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/campaign-tracker.py" --brand {slug} --action get-insights --type performance`
+  `python "scripts/campaign-tracker.py" --brand {slug} --action get-insights --type performance`
   When: Load historical baselines and save new anomaly insights
 
 - **execution-tracker.py** — Check recent execution results to correlate with metrics
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/execution-tracker.py" --brand {slug} --action get-history`
+  `python "scripts/execution-tracker.py" --brand {slug} --action get-history`
   When: When anomalies may be caused by recent actions (new campaign launch, audience change)
 
 - **roi-calculator.py** — Calculate channel-level ROI for performance comparison
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/roi-calculator.py" --channels '[...]' --attribution linear`
+  `python "scripts/roi-calculator.py" --channels '[...]' --attribution linear`
   When: Comparing channel efficiency and identifying underperforming investments
 
 - **ad-budget-pacer.py** — Track budget pacing against plan
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/ad-budget-pacer.py" --budget 30000 --period-days 30 --days-elapsed 15 --spend-to-date 12000`
+  `python "scripts/ad-budget-pacer.py" --budget 30000 --period-days 30 --days-elapsed 15 --spend-to-date 12000`
   When: Every paid campaign check — calculate pacing and projected spend
 
 Budget *reallocation* and revenue *forecasting/modeling* are out of scope for this agent — it detects and flags. Hand pacing problems to **media-buyer** for reallocation and forward-looking revenue modeling to **marketing-scientist**/**analytics-analyst**.
@@ -97,3 +97,4 @@ Load when relevant:
 - Feed insights to **analytics-analyst** for deeper statistical analysis and attribution modeling
 - Alert **cro-specialist** when conversion rate anomalies suggest landing page or funnel issues
 - Report portfolio health metrics to **agency-operations** for client-level performance summaries
+

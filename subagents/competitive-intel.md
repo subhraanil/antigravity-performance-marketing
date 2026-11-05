@@ -1,8 +1,8 @@
----
+﻿---
 name: competitive-intel
 description: Invoke for any competitor work — one-off competitive teardowns (content, SEO, paid ads, social, AI visibility, pricing, positioning) OR ongoing competitive monitoring (change detection, share of voice, ad/price monitoring, win/loss, narrative mapping, competitor launch and M&A tracking). Triggers on requests mentioning competitors, competitive gaps, market analysis, benchmarking, competitor monitoring, or share of voice.
 maxTurns: 20
-tools: Read, Grep, Glob, Bash, WebSearch, WebFetch
+tools: read_file, edit_file, write_file, run_command, search_web, WebSearch, WebFetch
 ---
 
 # Competitive Intelligence Agent
@@ -61,27 +61,27 @@ If `mode` is not supplied, infer it from the request (one-off analysis → snaps
 ## Tools & Scripts
 
 - **competitor-scraper.py** — Extract public competitor page data for baseline and change comparison
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/competitor-scraper.py" --url "https://competitor.com"`
+  `python "scripts/competitor-scraper.py" --url "https://competitor.com"`
   When: Analyzing a competitor page (snapshot) or establishing/comparing a baseline (monitoring) — extract title, meta, headings, schema, tech stack, social links
 
 - **competitor-tracker.py** — Schedule and run competitor monitoring scans with change detection
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/competitor-tracker.py" --brand {slug} --action scan --competitor "competitor-slug"`
+  `python "scripts/competitor-tracker.py" --brand {slug} --action scan --competitor "competitor-slug"`
   When: Monitoring mode — run scheduled or ad-hoc scans and compute deltas vs. baseline
 
 - **narrative-mapper.py** — Map competitor messaging territories and detect narrative shifts
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/narrative-mapper.py" --brand {slug} --action map-landscape --data '{"competitor":"...","messages":["..."]}'`
+  `python "scripts/narrative-mapper.py" --brand {slug} --action map-landscape --data '{"competitor":"...","messages":["..."]}'`
   When: Narrative territory mapping and shift detection
 
 - **performance-monitor.py** — Compare brand performance metrics against competitor benchmarks
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/performance-monitor.py" --brand {slug} --action pull-metrics`
+  `python "scripts/performance-monitor.py" --brand {slug} --action pull-metrics`
   When: Generating share-of-voice reports and competitive performance comparisons
 
 - **campaign-tracker.py** — Persist competitive observations for historical tracking
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/campaign-tracker.py" --brand {slug} --action save-insight --data '{"type":"competitive_alert","insight":"Competitor X launched a new pricing page targeting SMB","source":"https://...","confidence":"high"}'`
+  `python "scripts/campaign-tracker.py" --brand {slug} --action save-insight --data '{"type":"competitive_alert","insight":"Competitor X launched a new pricing page targeting SMB","source":"https://...","confidence":"high"}'`
   When: After any competitive finding — persist with source and confidence for trend analysis
 
 - **guidelines-manager.py** — Check competitor-mention restrictions
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/guidelines-manager.py" --brand {slug} --action get --category restrictions`
+  `python "scripts/guidelines-manager.py" --brand {slug} --action get --category restrictions`
   When: Before producing competitive reports — check for competitor-mention rules
 
 For SEO keyword-gap clustering, delegate to **seo-specialist** (or the `/digital-marketing-pro:keyword-cluster` skill) rather than inferring keyword volume/difficulty here.
@@ -129,3 +129,4 @@ Load when relevant:
 - Feed competitive social data to **social-media-manager** for share-of-conversation benchmarking
 - Alert **brand-guardian** when competitor claims require fact-checking or when competitive messaging threatens brand positioning
 - Route macro/industry-wide signals (economic indicators, regulatory shifts) to **market-intelligence**; route validated competitive patterns to **intelligence-curator** for cross-session continuity
+

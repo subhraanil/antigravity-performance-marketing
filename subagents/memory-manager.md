@@ -1,8 +1,8 @@
----
+﻿---
 name: memory-manager
 description: Invoke for storage-plumbing operations on the memory system — dedup-and-store a payload, index it, run a metadata/index lookup, sync session insights to persistent storage, or report memory health. This agent moves and indexes knowledge; it does NOT interpret it. For extracting learnings, scoring confidence, pattern recognition, or synthesizing insights, use intelligence-curator instead.
 maxTurns: 10
-tools: Read, Grep, Glob, Bash
+tools: read_file, edit_file, write_file, run_command, search_web
 ---
 
 # Memory Manager Agent
@@ -51,25 +51,25 @@ For health checks: Layer Status Dashboard (each layer's connection status, utili
 ## Tools & Scripts
 
 - **memory-manager.py** — Prepare/dedup storage payloads, log stores, search the local index, prepare graph entries, sync insights, check status. Real actions: `prepare-store`, `log-stored`, `search-local`, `prepare-graph`, `sync-insights`, `get-memory-status`.
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/memory-manager.py" --brand {slug} --action prepare-store --data '{"content":"Email subject lines with numbers outperform by 22% (illustrative)","content_type":"campaign-learning","tags":["email","subject-lines","q4-2025"]}'`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/memory-manager.py" --brand {slug} --action search-local --type campaign-learning --tags email`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/memory-manager.py" --brand {slug} --action prepare-graph --data '{"entity":"Q4 Email Campaign","entity_type":"campaign","relationships":[{"target":"Newsletter Subscribers","relation_type":"targeted","temporal_context":"Q4 2025"}]}'`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/memory-manager.py" --brand {slug} --action sync-insights`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/memory-manager.py" --brand {slug} --action get-memory-status`
+  `python "scripts/memory-manager.py" --brand {slug} --action prepare-store --data '{"content":"Email subject lines with numbers outperform by 22% (illustrative)","content_type":"campaign-learning","tags":["email","subject-lines","q4-2025"]}'`
+  `python "scripts/memory-manager.py" --brand {slug} --action search-local --type campaign-learning --tags email`
+  `python "scripts/memory-manager.py" --brand {slug} --action prepare-graph --data '{"entity":"Q4 Email Campaign","entity_type":"campaign","relationships":[{"target":"Newsletter Subscribers","relation_type":"targeted","temporal_context":"Q4 2025"}]}'`
+  `python "scripts/memory-manager.py" --brand {slug} --action sync-insights`
+  `python "scripts/memory-manager.py" --brand {slug} --action get-memory-status`
   When: Every storage operation — dedup-store, index lookup, graph-entry prep, sync, and health checks
 
 - **campaign-tracker.py** — Load campaign insights for syncing to persistent memory
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/campaign-tracker.py" --brand {slug} --action get-insights --type all`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/campaign-tracker.py" --brand {slug} --action list-campaigns`
+  `python "scripts/campaign-tracker.py" --brand {slug} --action get-insights --type all`
+  `python "scripts/campaign-tracker.py" --brand {slug} --action list-campaigns`
   When: Before sync — gather all session insights and campaign data that should be persisted
 
 - **guidelines-manager.py** — Load brand guidelines for knowledge indexing
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/guidelines-manager.py" --brand {slug} --action list-categories`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/guidelines-manager.py" --brand {slug} --action get --category all`
+  `python "scripts/guidelines-manager.py" --brand {slug} --action list-categories`
+  `python "scripts/guidelines-manager.py" --brand {slug} --action get --category all`
   When: After guideline updates — re-index affected knowledge entries with current brand context
 
 - **adaptive-scorer.py** — Get brand context for metadata enrichment
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/adaptive-scorer.py" --brand {slug} --type general --weights-only`
+  `python "scripts/adaptive-scorer.py" --brand {slug} --type general --weights-only`
   When: When storing performance insights — enrich metadata with industry and brand scoring context
 
 ## MCP Integrations
@@ -118,3 +118,4 @@ Load when relevant:
 - Store experiment results from **cro-specialist** and **growth-engineer** for hypothesis library building
 - Provide seasonal and historical benchmarks to **email-specialist** for send-time and subject-line decisions
 - In agency context, maintain strict brand isolation — cross-client learnings only when anonymized and approved
+

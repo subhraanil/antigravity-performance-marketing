@@ -15,7 +15,13 @@ This skill empowers Antigravity with a unified, end-to-end performance marketing
 |---|---|---|---|
 | **Media Buying** | `/media-buying meta audit` | Run 5-dimensional Meta Ads forensic audit | `python workflows/meta-ads-mcp-audit.md` |
 | **Media Buying** | `/media-buying google audit` | PMax brand negatives & search query mining | `knowledge/google_ads_playbook.md` |
-| **Store Analytics** | `/store sku-audit` | Reconcile Shopify net SKU margins & city clusters | `knowledge/ecommerce_order_and_sku_forensics_playbook.md` |
+| **Budget Pacing** | `/media-buying pacing` | Ad spend pacing & 72-hour budget scaling safety audit | `python scripts/pacing_calculator.py --budget <bgt> --spent <spnt> --days-passed <d>` |
+| **Ad Copywriting**| `/copy score-headline` | Evaluate headline power words, emotional score, and sentiment | `python scripts/headline-analyzer.py --headline "<text>"` |
+| **Ad Copywriting**| `/copy score-content` | Flesch readability, CTA verb strength, and length checks | `python scripts/content-scorer.py --text "<text>" --type ad` |
+| **Email Marketing**| `/email score-subject` | Predict open-rate impact, spam triggers, and preview limits | `python scripts/email-subject-tester.py --subject "<text>"` |
+| **A/B Testing** | `/cro significance` | Two-proportion Z-test & Chi-squared statistical significance | `python scripts/significance-tester.py --control-visitors <c_v> --control-conversions <c_c> --variant-visitors <v_v> --variant-conversions <v_c>` |
+| **Brand Profiles**| `/brand list` | Inspect active brand profiles, target CPAs, and unit economics | `python scripts/brand_manager.py --list` |
+| **Store Analytics**| `/store sku-audit` | Reconcile Shopify net SKU margins & city clusters | `knowledge/ecommerce_order_and_sku_forensics_playbook.md` |
 | **GSC** | `/seo gsc cannibalization` | Detect query cannibalization & compute traffic loss | `python seo/seo-suite/gsc/gsc_analyzer.py --cannibalization` |
 | **GSC** | `/seo gsc quick-wins` | Extract Pos 11–20 striking distance opportunities | `python seo/seo-suite/gsc/gsc_analyzer.py --quick-wins` |
 | **GEO / AEO** | `/seo geo audit <url>` | Run 0–100 Citability Score & 9-dimension audit | `python seo/seo-suite/geo/geo_engine.py --file <file>` |
@@ -249,7 +255,7 @@ Resolves post-iOS 14.5 signal loss and cross-channel credit allocation:
 
 ---
 
-## 16. Master Knowledge Base Directory Index (23 Operational Playbooks)
+## 16. Master Knowledge Base Directory Index (25 Operational Playbooks)
 
 Consult detailed playbooks in `knowledge/`:
 1. [performance_marketing_frameworks.md](knowledge/performance_marketing_frameworks.md): 12-part flow, Two-Views model, Stone vs Opinion.
@@ -280,9 +286,9 @@ Consult detailed playbooks in `knowledge/`:
 
 ---
 
-## 17. Standard Operating Procedures (19 Workflows)
+## 17. Standard Operating Procedures (28 Workflows)
 
-Standard runbooks in `workflows/`:
+Standard runbooks in `workflows/` and `.agent/workflows/`:
 1. [meta-ads-mcp-audit.md](workflows/meta-ads-mcp-audit.md): 5-step automated Meta Ads MCP audit, placement waste recovery, and PAUSED staging.
 2. [proposal-preparation-sop.md](workflows/proposal-preparation-sop.md): Standard agency proposal preparation workflow, financial modeling, and executive deck generation.
 3. [technical-website-audit-sop.md](workflows/technical-website-audit-sop.md): 10-phase technical SEO & website audit protocol with "Issues-Only" client reporting standards.
@@ -302,6 +308,15 @@ Standard runbooks in `workflows/`:
 17. [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
 18. [continuous-improvement-loop.md](workflows/continuous-improvement-loop.md): Quarterly MER review and channel rebalancing.
 19. [engagement-12-part.md](workflows/engagement-12-part.md): Canonical 12-Part Strategy Flow across Four Core Documents.
+20. [check_and_index_sitemap.md](workflows/check_and_index_sitemap.md): Automated XML sitemap parser, URL health verifier, and IndexNow/Google submission.
+21. [gsc_performance.md](workflows/gsc_performance.md): Search Console API analytics extraction, CTR and click trend reporting.
+22. [linkedin_leads.md](workflows/linkedin_leads.md): LinkedIn intent lead scraping, qualification filtering, and outreach drafting.
+23. [market_report.md](workflows/market_report.md): Macro industry landscape, market weather, competitor share-of-voice analysis.
+24. [pagespeed.md](workflows/pagespeed.md): Fast CLI Core Web Vitals audit and diagnostic report generator.
+25. [paidmediaworld_blog_posting.md](workflows/paidmediaworld_blog_posting.md): End-to-end WordPress REST API publishing, category mapping, and auto-indexing pipeline.
+26. [submit_indexing.md](workflows/submit_indexing.md): Instant IndexNow and Search Console indexing batch dispatcher.
+27. [website-recreation.md](workflows/website-recreation.md): Complete website recreation, asset scraping, modern component redesign, and CRO hardening.
+28. [seo-drift-and-regression-monitoring_playbook.md](knowledge/seo_drift_and_regression_monitoring_playbook.md): DOM snapshots, hash verification, and automated regression alerts.
 
 ---
 

@@ -1,8 +1,8 @@
----
+﻿---
 name: agency-operations
 description: Invoke when the user needs to manage multiple client brands, view portfolio-level dashboards, generate client reports, manage SOPs, switch credential profiles, assign team tasks, configure regions, or generate executive summaries. Triggers on requests involving multi-client management, agency workflows, client onboarding, or portfolio oversight.
 maxTurns: 20
-tools: Read, Grep, Glob, Bash
+tools: read_file, edit_file, write_file, run_command, search_web
 ---
 
 # Agency Operations Agent
@@ -40,33 +40,33 @@ Varies by operation type. **Portfolio Dashboard**: client list with health score
 ## Tools & Scripts
 
 - **credential-manager.py** — Create, switch, and validate credential profiles
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/credential-manager.py" --action switch-profile --id {slug}`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/credential-manager.py" --action validate-profile --id {slug}`
+  `python "scripts/credential-manager.py" --action switch-profile --id {slug}`
+  `python "scripts/credential-manager.py" --action validate-profile --id {slug}`
   When: Every brand switch — always validate after switching
 
 - **team-manager.py** — Manage team members, roles, capacity, and task assignments
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/team-manager.py" --brand {slug} --action check-capacity`
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/team-manager.py" --brand {slug} --action assign-task --data '{"member_id":"...","task_description":"..."}'`
+  `python "scripts/team-manager.py" --brand {slug} --action check-capacity`
+  `python "scripts/team-manager.py" --brand {slug} --action assign-task --data '{"member_id":"...","task_description":"..."}'`
   When: Before assigning work — check capacity first
 
 - **campaign-tracker.py** — Load campaign data across brands for portfolio reporting
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/campaign-tracker.py" --brand {slug} --action list-campaigns`
+  `python "scripts/campaign-tracker.py" --brand {slug} --action list-campaigns`
   When: Building portfolio dashboards and client reports
 
 - **execution-tracker.py** — Check execution history for audit and compliance
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/execution-tracker.py" --brand {slug} --action get-history`
+  `python "scripts/execution-tracker.py" --brand {slug} --action get-history`
   When: SOP compliance checks and client activity audits
 
 - **performance-monitor.py** — Pull metrics for health scoring and reporting
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/performance-monitor.py" --brand {slug} --action pull-metrics`
+  `python "scripts/performance-monitor.py" --brand {slug} --action pull-metrics`
   When: Calculating per-client health scores for portfolio dashboard
 
 - **report-generator.py** — Generate formatted white-labeled client reports
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/report-generator.py" --brand {slug} --action generate-report --data '{"report_type":"client-report"}'`
+  `python "scripts/report-generator.py" --brand {slug} --action generate-report --data '{"report_type":"client-report"}'`
   When: Producing client-facing deliverables
 
 - **approval-manager.py** — Check pending approvals across brands
-  `python "${CLAUDE_PLUGIN_ROOT}/scripts/approval-manager.py" --brand {slug} --action list-pending`
+  `python "scripts/approval-manager.py" --brand {slug} --action list-pending`
   When: Portfolio-level approval queue review
 
 ## MCP Integrations
@@ -86,7 +86,7 @@ Always load:
 - `credentials/_active-profile.json` — current credential profile
 
 For portfolio operations:
-- Iterate over all brands in `~/.claude-marketing/brands/` for aggregate views
+- Iterate over all brands in `brands/` for aggregate views
 - Load per-brand: `profile.json`, `campaigns/`, `executions/`, `insights.json`
 
 Load when relevant:
@@ -111,3 +111,4 @@ Load when relevant:
 - Feed anonymized cross-client learnings to **growth-engineer** for experiment ideas
 - Coordinate with **brand-guardian** to ensure brand guidelines compliance across all clients
 - Receive content pipeline status from **content-creator** for portfolio content health tracking
+
