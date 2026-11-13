@@ -1,0 +1,36 @@
+{
+  "brand_id": "storiai",
+  "brand_name": "StoriAI",
+  "domain": "https://storiai.ai/",
+  "vertical": "AI SaaS / EdTech / Children & Family Entertainment",
+  "target_market": "United States, United Kingdom, and Global English-Speaking Families",
+  "core_offering": "AI-Powered Personalized Storytelling Platform for Children with Emotion-Aware Narrative Generation",
+  "technology_stack": "Client-Side Rendered (CSR) React SPA (Vite + Redux + MUI) on AWS / Nginx",
+  "unit_economics": {
+    "target_cpa": 18.00,
+    "target_cac": 24.00,
+    "monthly_subscription": 9.99,
+    "annual_subscription": 79.99,
+    "breakeven_roas": 2.2
+  },
+  "technical_audit_findings": {
+    "health_score": 22,
+    "audit_date": "November 2026",
+    "primary_issues": [
+      "Client-Side Rendering (CSR) architectural lockout: Raw HTML contains 0 crawlable links or story copy, rendering Google search indexing impossible without full JS rendering",
+      "Lighthouse Mobile LCP 19.4s and Speed Index 17.6s due to monolithic 1.52MB JavaScript bundle",
+      "Eager WebSocket connections (Ably Realtime, Engine.io, TTS socket) blocking main thread on initial page load",
+      "Missing XML sitemap and Nginx SPA catch-all rewrite returning 200 OK for /robots.txt and 404 routes",
+      "Unoptimized images without explicit width and height dimensions causing layout shifts"
+    ]
+  },
+  "deliverables": [
+    "case-studies/storiai/StoriAI_SEO_Audit_Report.docx",
+    "case-studies/storiai/StoriAI_SEO_Audit_Report.pdf",
+    "case-studies/storiai/01_url_inventory.csv",
+    "case-studies/storiai/02_page_data.csv",
+    "case-studies/storiai/04_issues_log.csv",
+    "case-studies/storiai/10_roadmap_30_60_90.md",
+    "case-studies/storiai/audit_data.json"
+  ]
+}

@@ -1,0 +1,14 @@
+URL,Title,Title Length,Meta Description,Meta Desc Length,H1,H1 Length,H2,H2 Count,Body Word Count (Raw),HTML Bytes,Cache-Control,Content-Encoding,Canonical Tag,Indexability Verdict
+https://storiai.ai/,StoriAI,7,,0,,0,,0,0,1123,None,None,Missing,Critical (100% CSR)
+https://storiai.ai/about,StoriAI (Raw HTML),7,,0,,0,,0,0,1123,None,None,Missing,Uncrawlable (CSR)
+https://storiai.ai/pricing,StoriAI (Raw HTML),7,,0,,0,,0,0,1123,None,None,Missing,Uncrawlable (CSR)
+https://storiai.ai/faq,StoriAI (Raw HTML),7,,0,,0,,0,0,1123,None,None,Missing,Uncrawlable (CSR)
+https://storiai.ai/contact,StoriAI (Raw HTML),7,,0,,0,,0,0,1123,None,None,Missing,Uncrawlable (CSR)
+https://storiai.ai/stories-across-languages,StoriAI (Raw HTML),7,,0,,0,,0,0,1123,None,None,Missing,Uncrawlable (CSR)
+https://storiai.ai/choose-plan,StoriAI (Raw HTML),7,,0,,0,,0,0,1123,None,None,Missing,Uncrawlable (CSR)
+https://storiai.ai/create-story,StoriAI (Raw HTML),7,,0,,0,,0,0,1123,None,None,Missing,Uncrawlable (CSR)
+https://storiai.ai/library,StoriAI (Raw HTML),7,,0,,0,,0,0,1123,None,None,Missing,Uncrawlable (CSR)
+https://storiai.ai/comic,StoriAI (Raw HTML),7,,0,,0,,0,0,1123,None,None,Missing,Uncrawlable (CSR)
+https://storiai.ai/event-gift,StoriAI (Raw HTML),7,,0,,0,,0,0,1123,None,None,Missing,Uncrawlable (CSR)
+https://storiai.ai/robots.txt,StoriAI (Improper HTML),7,,0,,0,,0,0,1123,None,None,Missing,Syntax Error
+https://storiai.ai/sitemap.xml,StoriAI (Improper HTML),7,,0,,0,,0,0,1123,None,None,Missing,Syntax Error

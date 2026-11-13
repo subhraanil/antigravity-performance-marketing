@@ -320,9 +320,10 @@ Standard runbooks in `workflows/` and `.agent/workflows/`:
 
 ---
 
-## 18. Real-World Client Audits & Field Case Studies (13 Verticals)
+## 18. Real-World Client Audits & Field Case Studies (14 Verticals)
 
 Audited deliverables, field data, and forensic remediation plans in `case-studies/`:
+- **StoriAI** (`case-studies/storiai/`): AI children's emotion-aware storytelling platform (`storiai.ai`). 22/100 baseline technical health score audit: Client-Side Rendering (CSR) architectural lockout remediation, 1.52MB React bundle code splitting, Nginx SPA catch-all 404/robots fixes, and 30-60-90 day performance roadmap.
 - **RACube Technologies** (`case-studies/racube/`): Enterprise CX modernization & Genesys Premier Partner based in Plano, TX. Screaming Frog crawl diagnostic of 24 core URLs (missing image dimensions on 100% of images causing Core Web Vitals CLS degradation, relative canonicals on 96% of pages, CSP header absence) and 6-month enterprise SEO/SMO growth plan.
 - **Millie Coastal Accents** (`case-studies/millie-coastal-accents/`): US DTC e-commerce home decor & coastal accents. 3-tier financial model, Meta Ads visual lifestyle creative testing, and Google Shopping PMax structure.
 - **AB Universal Messaging** (`case-studies/ab-universal-messaging/`): Global B2B SaaS in omnichannel communication infrastructure. Search Alpha/Beta structure, negative keyword lists, and LinkedIn ABM growth plan.
