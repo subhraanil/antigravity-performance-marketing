@@ -1,13 +1,13 @@
 ---
 name: wordpress-blog-publishing-sop
 description: >-
-  A production standard operating procedure to research, outline, write, format, publish via the WordPress REST API, and submit new articles for immediate Google Search Console indexing.
+  End-to-end SOP to research, outline, write, format, publish via WordPress REST API or Admin UI, and immediately submit articles for Google Search Console indexing across Paid Media World and client sites.
 ---
 
-# Workflow: Automated WordPress Blog Publishing & Indexing SOP
+# Automated WordPress Blog Publishing & Indexing SOP
 
 ## Overview
-A production standard operating procedure to research, outline, write, format, publish via the WordPress REST API, and submit new articles for immediate Google Search Console indexing.
+A production standard operating procedure to research, outline, write, format, publish via the WordPress REST API (or Admin UI fallback), and submit new articles for immediate Google Search Console indexing.
 
 ---
 
@@ -20,57 +20,68 @@ A production standard operating procedure to research, outline, write, format, p
 
 ## Step-by-Step SOP
 
-### Step 1: Trending Research & Topic Selection
+### Step 1: Trending Research & Topic Discovery
 1. **Source Discovery**: Audit recent posts and trending topics from industry RSS feeds and authoritative blogs:
    - Google Search Central Blog (`https://blog.google/rss/`)
    - Search Engine Land (`https://searchengineland.com/feed/`)
    - Search Engine Journal (`https://www.searchenginejournal.com/feed/`)
-2. **Information Gain Proposal**: Formulate 3–5 specific topic proposals addressing gaps in existing competitor coverage.
-3. **Keyword Mapping**: Define primary target keyword, 3–5 secondary semantic keywords, and search intent (Informational / Commercial).
+   - Ahrefs Blog (`https://ahrefs.com/blog/feed/`)
+2. **Information Gain Filter**: Propose 3–5 expert topic angles that add original data, fresh commentary, or proprietary workflows not already saturated in the SERP.
+3. **Keyword Selection**: Pair each concept with 1 primary intent keyword and 3–5 semantic secondary keywords.
 
-### Step 2: Competitor Reverse-Engineering & Content Depth
-1. Inspect the top 10 search results on Google for the primary keyword.
-2. Audit competitor content metrics:
-   - Average word count and reading grade level.
-   - Heading architecture (H2/H3 distribution).
-   - Media richness (diagrams, tables, infographics, original data).
-3. **Target Word Count**:
-   - *Low Competition*: $\ge 1,200$ words.
-   - *Medium Competition*: $\ge 2,000$ words.
-   - *High Competition*: $3,000 - 5,000+$ words.
-4. **Information Gain Standard**: Ensure article includes original data, verified case studies, or a proprietary framework not present on competing URLs.
+---
 
-### Step 3: Drafting & 2026 SEO Formatting Rules
-1. **Title Tag**: $< 60$ characters, front-loaded with primary keyword, high CTR modifier.
-2. **Meta Description**: 140–160 characters with primary keyword, core benefit, and action-oriented CTA.
-3. **Body Architecture**:
-   - Do NOT include an `<h1>` in the body HTML (the WordPress theme automatically renders the title as H1).
-   - Begin with a direct answer or problem summary within the first 60 words.
-   - Insert Table of Contents (TOC) with anchor jump links.
-   - Structure H2 sections following the flow: **Problem $\to$ Technical Explanation $\to$ Actionable Solution $\to$ Field Example $\to$ Expert Pro-Tip**.
-4. **HTML Hygiene**:
-   - Use `<strong>` and `<em>` tags instead of raw markdown `**`.
-   - Ensure `<p>`, `<li>`, `<td>`, and `<h2>` elements contain clean, continuous HTML strings.
-   - Add 5–15 internal links pointing to relevant cluster articles (1 link every 400–600 words).
-   - Embed 5–10 structured FAQs at the bottom with valid `FAQPage` JSON-LD schema.
+### Step 2: Content Architecture & Drafting
+1. **Structure & Formatting Requirements**:
+   - **Catchy, Keyword-Rich Title**: H1 containing the primary keyword.
+   - **Meta Description**: 150–160 characters, high-CTR hook with primary keyword.
+   - **Word Count**: Comprehensive long-form (1,200–2,500+ words) tailored to search intent.
+   - **Heading Hierarchy**: Semantic H2/H3 tags with direct answers placed in first 50 words under each H2.
+   - **Key Takeaways Box**: Placed directly after the introduction.
+   - **Comparison Table / Steps**: At least one Markdown table or ordered action checklist.
+   - **Call-to-Action (CTA)**: Contextual hyperlinked CTA pointing to contact or lead capture page.
+   - **Taxonomy**: 1–2 primary Categories and 5–8 relevant Tags.
 
-### Step 4: WordPress REST API Publishing
-1. Authenticate via Application Passwords or OAuth (stored in `.env` as `WP_APP_USER` and `WP_APP_PASSWORD`):
-   ```bash
-   python execution/wp_api_publisher.py \
-     --title "POST_TITLE" \
-     --slug "post-slug-url" \
-     --content-file "temp_blog_post.html" \
-     --categories "Digital Marketing,SEO" \
-     --tags "meta ads,performance marketing,growth" \
-     --featured-image "assets/featured_hero.png" \
-     --status "publish"
+---
+
+### Step 3: WordPress Publishing
+
+#### Method A: Headless REST API (Recommended)
+1. Read target credentials from environment (`WP_URL`, `WP_USER`, `WP_APP_PASSWORD`).
+2. Post article with proper JSON payload:
+   ```python
+   import requests
+   
+   headers = {'Content-Type': 'application/json'}
+   payload = {
+       'title': article_title,
+       'content': html_body,
+       'status': 'publish',
+       'categories': [category_id],
+       'tags': tag_ids,
+       'meta': {'_yoast_wpseo_metadesc': meta_description}
+   }
+   res = requests.post(f"{wp_url}/wp-json/wp/v2/posts", json=payload, auth=(wp_user, wp_app_pass), headers=headers)
+   live_url = res.json().get('link')
    ```
-2. Capture the returned live post URL.
 
-### Step 5: Immediate Search Console Indexing Submission
-1. Submit the new live URL directly to the Google Indexing API / Search Console:
-   ```bash
-   python tools/indexing/submit_indexing.py --url "https://domain.com/blog/new-post-slug/"
-   ```
-2. Confirm HTTP 200 response from Indexing API.
+#### Method B: Browser Subagent Admin UI (Fallback)
+1. Navigate to `/wp-admin/` and authenticate with user credentials.
+2. Go to **Posts > Add New**.
+3. Inject Title, Gutenberg/HTML content, Categories, and Tags.
+4. Set Featured Image and Meta Description via SEO plugin box (Yoast / RankMath).
+5. Click **Publish** and capture the live permalink URL.
+
+---
+
+### Step 4: Instant Google Indexing Submission
+Immediately push the new live post URL to Googlebot for instant crawling:
+```powershell
+python scripts/submit_indexing.py --url "LIVE_POST_URL"
+```
+
+---
+
+### Step 5: Verification & Social Syndication
+1. Verify live URL responds with HTTP 200 and schema renders cleanly.
+2. Queue snippet for LinkedIn lead generation and newsletter syndication.

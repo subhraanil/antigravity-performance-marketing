@@ -1,33 +1,41 @@
 ---
 name: linkedin-lead-generation
 description: >-
-  Daily LinkedIn Lead Generation & Connection Management
+  Automate daily B2B lead generation, connection management, and feed opportunity scouting for Google and Meta Ads services.
 ---
 
-This workflow automates the process of checking your LinkedIn for invitations and scouting the feed for Google/Meta Ads opportunities.
+# Daily LinkedIn Lead Generation & Connection Management
 
-### Steps:
+This workflow automates the process of checking your LinkedIn for invitations, scouting the feed for Google/Meta Ads intent opportunities, and queueing personalized outreach.
 
-1. **Check Prerequisites**:
-   - Ensure the `.env` file has a valid `GOOGLE_API_KEY`.
-   - Ensure `playwright` is installed (`pip install playwright`).
+---
 
-2. **Run the Automation**:
-// turbo
+### Prerequisites
+1. Ensure the `.env` file contains a valid `GOOGLE_API_KEY`.
+2. Ensure Playwright is installed:
+   ```powershell
+   pip install playwright
+   playwright install
+   ```
+
+### Execution Steps
+
+1. **Run the Automation Scout**:
    ```powershell
    python linkedin_leads.py
    ```
 
-3. **Handle First-Time Login**:
-   - If the script detects you are not logged in, it will open a browser window.
-   - **Log in manually** to your LinkedIn account.
-   - The script saves your session in the `.linkedin_profile` folder, so you won't need to log in again.
+2. **First-Time Authentication**:
+   - If not authenticated, a browser window will open automatically.
+   - Log in manually to your LinkedIn account.
+   - The session state is saved to `.linkedin_profile` for headless automated subsequent runs.
 
-4. **Review and Reach Out**:
-   - After the script finishing, open `linkedin_report.html` in your browser.
-   - Review the generated personalized messages.
-   - The script automatically "Likes" the posts it identifies as leads.
-   - You can manually click the links in the report to send the draft messages or verify the leads.
+3. **Lead Review & Outbound Engagement**:
+   - Once the scan finishes, open `linkedin_report.html` in your browser.
+   - Review personalized message drafts generated for high-intent posts.
+   - Posts identified as warm leads are automatically liked to initiate social proximity.
+   - Click links directly from the report to verify profiles and send curated outreach messages.
 
-### Safety Note:
-This script is designed to be low-volume (checking top results for 5 keywords) to respect LinkedIn's rate limits. Do not run it more than 1-2 times per day.
+### Safety Guardrails
+- **Rate-Limiting**: Low-volume execution (top results across 5 priority keywords) respecting LinkedIn terms of service.
+- **Cadence**: Maximum 1–2 automated runs per calendar day.

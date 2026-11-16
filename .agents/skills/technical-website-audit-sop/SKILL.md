@@ -125,6 +125,20 @@ For modern JavaScript web applications (Next.js, React, Vue, SvelteKit):
 
 ---
 
+
+---
+
+## Phase 5.1: Page-Wise Semantic Scoring Rubric
+
+When auditing specific high-priority landing pages, calculate the standardized Page-Wise Score (0–100):
+
+| Component | Weight | Evaluation Criteria | Scoring Bands |
+|---|---|---|---|
+| **Content Depth** | 25% | Word count & topical completeness | Thin (<300 words): 0 pts; Moderate (300-999 words): 15 pts; Comprehensive (1000+ words): 25 pts |
+| **Readability & Formatting** | 25% | Flesch Reading Ease, H2/H3 scanability, bullet points | Difficult/dense: 10 pts; Standard/Scanable: 20 pts; Easy & structured: 25 pts |
+| **Keyword Architecture** | 25% | Primary keyword in Title, H1, Meta Description, first 100 words | Missing in core tags: 0-10 pts; Partial coverage: 15-20 pts; Full semantic coverage: 25 pts |
+| **Technical & Speed** | 25% | Mobile CWV score & schema validation | CWV failing (<50): 5 pts; Needs Improvement (50-89): 15 pts; Passing (90+): 25 pts |
+
 ## 4. Automated Tooling & Scripts Reference
 
 ### 4.1 Crawl & Metric Extraction
@@ -226,15 +240,8 @@ When preparing audit data for automated generation, structure `audit_data.json` 
 
 ---
 
-## 6. Pre-Delivery Quality Assurance (QA) & Directory Routing
+## 6. Pre-Delivery Quality Assurance (QA) Checklist
 
-### Workspace Directory Routing Mandate:
-- **Office Workspace** (`C:\Users\test\Videos\Office`): All client accounts, agency audits, and client reports (e.g. RACube, Pet Mode, IAOL, IHLS, Share Samadhan, Kuri) MUST be output to `C:\Users\test\Videos\Office\reports\` or `C:\Users\test\Videos\Office\case-studies\<client>\`.
-- **Personal Workspace** (`C:\Users\test\Videos\Personal`): All owned brand audits (e.g. PaidMediaWorld, personal blogs) MUST be output to `C:\Users\test\Videos\Personal\reports\` or `C:\Users\test\Videos\Personal\case-studies\`.
-- **Research Workspace** (`C:\Users\test\Videos\Research`): All market intelligence, competitor scraping, and experimental audits MUST be output to `C:\Users\test\Videos\Research\reports\`.
-- **Strict Guardrail**: NEVER write or output to legacy directories `TE-AI Agent`, `MY-AI Agent`, or `Freelance-AI`.
-
-### QA Checklist:
 Before delivering the audit reports to the client or account lead, verify:
 - [ ] **No Speculative Code Dumps:** Ensure the executive DOCX and PDF do not contain unrequested developer implementation scripts.
 - [ ] **Evidence Attached:** Every issue specifies exact `URL(s)`, `Observed Defect`, `Severity`, and `Impact`.

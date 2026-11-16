@@ -1,50 +1,51 @@
 ---
 name: website-recreation-cro
 description: >-
-  Pixel-perfect website recreation and marketing page cloning
+  Pixel-perfect website recreation, marketing page cloning, design system extraction, and conversion rate optimization (CRO) UI teardown.
 ---
 
-Follow these steps to recreate any landing page or marketing URL with 100% accuracy and professional aesthetics.
+# Website Recreation & CRO Landing Page Cloning Playbook
+
+Follow this standard procedure to recreate any landing page or marketing URL with 100% visual fidelity, clean responsive code, and conversion-optimized structure.
+
+---
 
 ### 1. Visual & Structural Discovery
-// turbo
-1. Use the `browser_subagent` to perform a full-page scan. 
-   - Capture high-resolution screenshots of the **Hero**, **Features**, **Pricing**, **FAQ**, and **Footer**.
-   - Note the branding (Logo SVG), colors (using browser dev tools), and font families (Google Fonts).
+1. Use the `browser_subagent` to perform a full-page scan:
+   - Capture high-resolution screenshots of the **Hero**, **Social Proof / Logos**, **Features / Grid**, **Pricing**, **Testimonials**, **FAQ**, and **Footer**.
+   - Inspect branding: logo SVG, color palette (hex codes via dev tools), and typography (Google Fonts / Typekit).
 
-### 2. Deep Data Extraction
-// turbo
-2. Use `execute_browser_javascript` within the subagent to extract raw text content for complex sections:
-   - Extract FAQ pairs: `{question: string, answer: string}`.
-   - Extract Pricing details: `Tier, Price, Description, Features`.
-   - Extract Stats: `Numerical values and labels`.
+### 2. Deep Data & Content Extraction
+2. Extract complete textual and asset content:
+   - **FAQ Items**: Questions and direct answers.
+   - **Pricing Tiers**: Plan names, billing cadences, feature matrices, and CTA URLs.
+   - **Social Proof**: Statistics, client metrics, badge SVGs, and testimonial quotes.
 
-### 3. Foundation Building (HTML)
-3. Create an `index.html` file using semantic HTML5 elements.
-   - Organize content into modular `<section>` blocks.
-   - Use descriptive class names for styling (e.g., `.section-hero`, `.service-card`).
-   - Implement the navigation and footer structures based on the visual scan.
+### 3. Semantic HTML5 Foundation
+3. Build `index.html` using modular semantic HTML5 elements:
+   - Structure sections cleanly (`<header>`, `<main>`, `<section class="hero">`, `<section class="features">`, `<footer>`).
+   - Use BEM or utility-class naming conventions.
+   - Ensure semantic heading hierarchy (`h1` -> `h2` -> `h3`).
 
-### 4. Design System Implementation (CSS)
-4. Create a `styles.css` file and establish the design system:
-   - Define `:root` variables for brand colors (Primary, Accent, Backgrounds).
-   - Set up standard resets and typography using the identified Google Fonts.
-   - Build a consistent layout grid (using Flexbox or Grid) that matches the original spacing.
+### 4. Design System & CSS Implementation
+4. Construct `styles.css` with a unified CSS variable system:
+   - Define `:root` variables for brand colors, background surfaces, text contrasts, and spacing scales.
+   - Import necessary typography from Google Fonts.
+   - Build responsive layout grids using CSS Grid and Flexbox matching original pixel margins.
 
-### 5. Pixel-Perfect Refinement
-5. Iterate on the design by comparing local renders with original screenshots:
-   - Match specific design details: tilted backgrounds, offset shadows, unique gradients.
-   - Move any temporary styles to the CSS file—ensure zero inline CSS.
-   - Use `generate_image` for any complex assets or placeholders if required.
+### 5. Pixel-Perfect Refinement & CRO Hardening
+5. Compare local renders side-by-side with original screenshots:
+   - Match subtle styling details: backdrop filters (glassmorphism), box shadows, gradient borders, and border radii.
+   - Ensure zero inline CSS.
+   - Eliminate conversion friction: optimize CTA button contrast, simplify form fields, and establish clear visual hierarchy.
 
-### 6. Responsive Tuning
-6. Apply fluid design principles:
-   - Use `clamp()` for font sizes to ensure headlines scale perfectly on every screen.
-   - Test grid layouts on mobile and tablet views.
-   - Ensure the Hero section remains on a single line or follows the exact layout of the target.
+### 6. Fluid Responsive Tuning
+6. Apply responsive design principles:
+   - Use CSS `clamp()` for headline font sizes to eliminate awkward word wraps across mobile and desktop.
+   - Test layout breakpoints on Mobile (375px), Tablet (768px), and Desktop (1440px).
 
-### 7. Interactive Polish
-7. Add functional elements:
-   - FAQ accordions using JavaScript.
-   - Fixed/Scrolled header states.
-   - Subtle hover animations and button press effects for a "premium" feel.
+### 7. Interactive Polish & Microinteractions
+7. Add functional front-end interactivity:
+   - FAQ accordions with smooth CSS transitions.
+   - Sticky navigation header with blur on scroll.
+   - Hover and focus states on interactive buttons and cards for a premium feel.

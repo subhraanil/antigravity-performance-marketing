@@ -38,7 +38,7 @@ This skill empowers Antigravity with a unified, end-to-end performance marketing
 | **Backlinks** | `/backlinks verify` | Deterministic live DOM crawler verifying equity | `python seo/link-building/scripts/link_verifier.py` |
 | **Agency Growth**| `/agency proposal <client>`| 7-phase proposal architecture & 3-tier financial model | `workflows/proposal-preparation-sop.md` |
 | **Website Audit**| `/seo website-audit <url>` | 10-phase technical audit with "Issues-Only" report format | `workflows/technical-website-audit-sop.md` |
-| **B2B Outbound** | `/b2b linkedin-leads` | Low-volume, high-converting B2B intent scout | `workflows/linkedin-lead-generation.md` |
+| **B2B Outbound** | `/b2b linkedin-lead-generation` | Low-volume, high-converting B2B intent scout | `workflows/linkedin-lead-generation.md` |
 | **CRO & Design** | `/cro recreate-page <url>`| Pixel-perfect page recreation & conversion tuning | `workflows/website-recreation-cro.md` |
 | **Indexing** | `/seo index-sitemap <url>`| Batch sitemap validation & Search Console indexing | `workflows/sitemap-indexing-automation.md` |
 | **Publishing** | `/content publish-blog <topic>`| 2026 SEO blog drafting, WP REST API publish & index | `workflows/wordpress-blog-publishing-sop.md` |
@@ -302,7 +302,7 @@ Standard runbooks in `workflows/` and `.agent/workflows/`:
 11. [seo-geo-audit.md](workflows/seo-geo-audit.md): 0–100 GEO citability audit, AI crawler robots governance, and `llms.txt` generation SOP.
 12. [seo-backlinks-campaign.md](workflows/seo-backlinks-campaign.md): ApexLink Pro 745+ directory outreach, digital PR, and live verification SOP.
 13. [seo-sxo-audit.md](workflows/seo-sxo-audit.md): Search Experience Optimization, SERP intent reverse-engineering, and IST/SOLL wireframe SOP.
-14. [aeo-geo-audit.md](workflows/aeo-geo-audit.md): 5-phase generative AI search visibility audit.
+14. [seo-geo-audit.md](workflows/seo-geo-audit.md): 5-phase generative AI search visibility audit.
 15. [campaign-launch.md](workflows/campaign-launch.md): Zero-defect pre-flight launch checklist.
 16. [competitor-sweep.md](workflows/competitor-sweep.md): Competitor Ad Library, creative reverse-engineering, and backlink gaps.
 17. [client-onboarding.md](workflows/client-onboarding.md): 5-stage agency client onboarding from intake to launch.
@@ -312,10 +312,10 @@ Standard runbooks in `workflows/` and `.agent/workflows/`:
 21. [gsc_performance.md](workflows/gsc_performance.md): Search Console API analytics extraction, CTR and click trend reporting.
 22. [linkedin_leads.md](workflows/linkedin_leads.md): LinkedIn intent lead scraping, qualification filtering, and outreach drafting.
 23. [market_report.md](workflows/market_report.md): Macro industry landscape, market weather, competitor share-of-voice analysis.
-24. [pagespeed.md](workflows/pagespeed.md): Fast CLI Core Web Vitals audit and diagnostic report generator.
+24. [pagespeed-cwv-audit-sop.md](workflows/pagespeed-cwv-audit-sop.md): Fast CLI Core Web Vitals audit and diagnostic report generator.
 25. [paidmediaworld_blog_posting.md](workflows/paidmediaworld_blog_posting.md): End-to-end WordPress REST API publishing, category mapping, and auto-indexing pipeline.
 26. [submit_indexing.md](workflows/submit_indexing.md): Instant IndexNow and Search Console indexing batch dispatcher.
-27. [website-recreation.md](workflows/website-recreation.md): Complete website recreation, asset scraping, modern component redesign, and CRO hardening.
+27. [website-recreation-cro.md](workflows/website-recreation-cro.md): Complete website recreation, asset scraping, modern component redesign, and CRO hardening.
 28. [seo-drift-and-regression-monitoring_playbook.md](knowledge/seo_drift_and_regression_monitoring_playbook.md): DOM snapshots, hash verification, and automated regression alerts.
 
 ---

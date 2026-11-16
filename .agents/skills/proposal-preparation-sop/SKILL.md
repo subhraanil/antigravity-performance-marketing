@@ -252,6 +252,16 @@ Every proposal must be produced adhering strictly to the **TechnoExponent Design
 
 ---
 
+
+### 8.1 Format Standard: Responsive HTML Dashboard Proposal
+
+For interactive digital presentations, generate proposals following the **Responsive Dashboard Standard**:
+- **Layout Architecture**: 100% responsive width grid featuring a 280px sticky sidebar navigation on desktop paired with a full-width card content area.
+- **Executive Flow**: Avoid cover pages or generic company introductions. Start directly with the Executive Summary and Audit baseline scores.
+- **TechnoExponent Brand Tokens**: Primary headings in **TechnoExponent Blue** (`#2361a8`), accents in **Cyan** (`#00aeef`), neutral cards in clean white/slate (`#f8fafc`).
+- **Interactive Visual Gauges**: Pure CSS/SVG circular gauges for PageSpeed and conversion forecast progress bars.
+- **Delivery**: Standalone self-contained single `.html` document (embedded styles, zero external script dependencies, instant offline browser preview).
+
 ## 9. Proposal Preparation Checklist (Sign-Off Gate)
 
 Before presenting the proposal to the client or sales team, verify:
@@ -265,13 +275,3 @@ Before presenting the proposal to the client or sales team, verify:
 - [ ] Standard TechnoExponent T&Cs, billing rules, and discontinuation terms included.
 - [ ] Responsive UI verified on mobile, tablet, and desktop viewports.
 - [ ] "Download PDF" print test conducted to ensure zero awkward page breaks.
-
----
-
-## 10. Workspace Proposal Output Routing
-
-When saving generated proposals, pitch decks, and financial models:
-- **Office Workspace** (`C:\Users\test\Videos\Office`): All agency/client proposals (e.g. RACube, IAOL, IHLS, Millie Coastal Accents, AB Universal Messaging) MUST be saved to `C:\Users\test\Videos\Office\reports\` or `C:\Users\test\Videos\Office\case-studies\<client>\`.
-- **Personal Workspace** (`C:\Users\test\Videos\Personal`): All owned venture proposals and personal projects MUST be saved to `C:\Users\test\Videos\Personal\reports\`.
-- **Research Workspace** (`C:\Users\test\Videos\Research`): All market pitch research MUST be saved to `C:\Users\test\Videos\Research\reports\`.
-- **Strict Guardrail**: NEVER output to or create files in legacy directories `TE-AI Agent`, `MY-AI Agent`, or `Freelance-AI`.

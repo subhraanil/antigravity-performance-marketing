@@ -1,48 +1,70 @@
 ---
 name: sitemap-indexing-automation
 description: >-
-  Check GSC indexing status for all sitemap URLs and submit unindexed ones to Google Indexing API
+  Audit GSC indexing status for sitemap URLs, submit unindexed URLs in bulk, and instantly notify Google Indexing API for single or updated URLs.
 ---
 
-This workflow automates the process of checking which URLs from a sitemap are already indexed in Google Search Console and then submitting any unindexed URLs to the Google Indexing API for faster indexing.
+# Sitemap Indexing Audit & Google Indexing Automation
 
-### Prerequisites
+This unified skill automates Google indexing across two primary operational modes:
+1. **Mode A (Sitemap Bulk Audit & Sync)**: Audits all URLs in a sitemap against Google Search Console and submits all unindexed URLs in batches.
+2. **Mode B (Instant URL Notification & Removal)**: Immediately notifies the Google Indexing API of newly published or updated individual URLs (`URL_UPDATED`) or deleted URLs (`URL_DELETED`).
 
-1.  **Service Account**: You must have a Google Cloud Service Account with BOTH the "Indexing API" and the "Search Console API" enabled.
-2.  **Key File**: Download the JSON key file for your service account and place it in your project root (e.g., `service_account.json`).
-3.  **Search Console Verification**: 
-    - Verify ownership of your site in Google Search Console.
-    - Add the service account email (found in the JSON key file) as a **Temporary Owner** or **Owner** in Google Search Console to allow it to inspect URLs.
+---
 
-### How to run
+### Prerequisites & Google Cloud Setup
 
-Run the `check_and_index_sitemap.py` script.
+1. **Google Cloud Project**: Enable both the **Webmaster Tools / Search Console API** and the **Google Indexing API** in your Google Cloud Console.
+2. **Service Account Key**: Download your service account JSON key file and place it in the project root as `service_account.json` (or specify `--key-file`).
+3. **Search Console Delegated Ownership**:
+   - Open [Google Search Console](https://search.google.com/search-console).
+   - Navigate to **Settings > Users and permissions**.
+   - Add the service account email (from your JSON key) as an **Owner** or **Full User** for the target property.
 
-**Arguments:**
+---
 
-*   `--sitemap`: (Required) The full URL of the sitemap XML (e.g., `https://paidmediaworld.com/post-sitemap.xml`).
-*   `--site-url`: (Required) The GSC property URL (e.g., `https://paidmediaworld.com/`).
-*   `--key-file`: (Optional) Path to your service account JSON key file. Defaults to `service_account.json` in the current directory.
-*   `--dry-run`: (Optional) If set, the script will only check indexing status but will NOT submit to the Indexing API.
-*   `--delay`: (Optional) Seconds to wait between API calls to avoid rate-limiting. Default is 1.5.
+### Mode A: Sitemap Audit & Batch Indexing
 
-**Example Usage:**
+Scan a sitemap XML, check the live indexing status of each URL via the GSC URL Inspection API, and submit unindexed pages:
 
-To check and submit unindexed URLs:
-
-// turbo
-```bash
-python scripts/check_and_index_sitemap.py --sitemap "https://paidmediaworld.com/post-sitemap.xml" --site-url "https://paidmediaworld.com/"
+```powershell
+python scripts/check_and_index_sitemap.py \
+  --sitemap "https://example.com/sitemap.xml" \
+  --site-url "https://example.com/" \
+  --delay 1.5
 ```
 
-To just check status (dry-run):
+**CLI Arguments**:
+- `--sitemap`: (Required) Full URL to the sitemap XML (e.g. `https://example.com/post-sitemap.xml`).
+- `--site-url`: (Required) The verified GSC property URL (e.g. `https://example.com/`).
+- `--dry-run`: (Optional) Inspect and report indexing status without submitting to the Indexing API.
+- `--delay <seconds>`: Interval between API calls (default: `1.5`s) to avoid rate limits.
+- `--key-file <path>`: Path to service account JSON (default: `service_account.json`).
 
-```bash
-python scripts/check_and_index_sitemap.py --sitemap "https://paidmediaworld.com/post-sitemap.xml" --site-url "https://paidmediaworld.com/" --dry-run
+**Outputs**:
+- Console progress table: `[INDEXED]` vs `[NOT INDEXED]`.
+- Summary statistics: Total, Indexed, Unindexed, and Submitted counts.
+- Detailed JSON export: `reports/indexing_report.json`.
+
+---
+
+### Mode B: Direct URL Instant Notification & Removal
+
+Instantly push individual high-priority or newly published URLs to Googlebot for immediate crawling:
+
+**Submit or Update URL**:
+```powershell
+python scripts/submit_indexing.py --url "https://example.com/new-article"
 ```
 
-### Outputs
+**Remove Deleted URL from Index**:
+```powershell
+python scripts/submit_indexing.py --url "https://example.com/old-page" --action URL_DELETED
+```
 
-- **Console Output**: A live table showing each URL and its status (`[INDEXED]` or `[NOT INDEXED]`).
-- **Summary**: A count of total, indexed, and unindexed URLs.
-- **Report**: A detailed JSON report is saved to `reports/indexing_report.json`.
+---
+
+### Troubleshooting
+- **403 Permission Denied**: The service account email is not added as an Owner/Delegated Owner in Google Search Console for that property.
+- **404 Not Found**: Ensure the Indexing API is enabled in your Google Cloud Console project.
+- **Quota Exceeded**: Google Indexing API default quota is 200 URLs/day per project. Use `--delay` and prioritize high-intent URLs.
