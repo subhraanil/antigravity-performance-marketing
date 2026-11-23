@@ -267,12 +267,12 @@ Consult detailed playbooks in `knowledge/`:
 7. [attribution_modeling_and_mmm.md](knowledge/attribution_modeling_and_mmm.md): Modern attribution, Google Meridian MMM, Geo-lift testing.
 8. [retention_and_email_playbook.md](knowledge/retention_and_email_playbook.md): 6 core lifecycle flows, RFM segmentation, churn signals.
 9. [google_shopping_and_gmc_feed_playbook.md](knowledge/google_shopping_and_gmc_feed_playbook.md): GMC TSV/CSV feed specs, variants, custom labels.
-10. [search_terms_audit_and_query_mining.md](knowledge/search_terms_audit_and_query_mining.md): 4-tier query classification, negative keyword lists.
-11. [technical_seo_and_screaming_frog_remediation.md](knowledge/technical_seo_and_screaming_frog_remediation.md): Screaming Frog crawl fixes, 4xx/3xx redirect chains, IndexNow API.
+10. [google_ads_playbook.md](knowledge/google_ads_playbook.md): 4-tier query classification, negative keyword lists.
+11. [technical_seo_and_website_audit_playbook.md](knowledge/technical_seo_and_website_audit_playbook.md): Screaming Frog crawl fixes, 4xx/3xx redirect chains, IndexNow API.
 12. [advanced_schema_entity_templates.md](knowledge/advanced_schema_entity_templates.md): Production JSON-LD snippets (Organization, Product, FAQPage, LocalBusiness).
 13. [webinar_funnel_and_lead_generation_playbook.md](knowledge/webinar_funnel_and_lead_generation_playbook.md): Automated webinar funnels, WhatsApp/Email nurture, and show-up rate optimization.
-14. [webinar_funnel_reporting_playbook.md](knowledge/webinar_funnel_reporting_playbook.md): Lead tracking, attendee metrics, and sales conversion scorecards.
-15. [meta_ads_mcp_forensic_audit_and_optimization_playbook.md](knowledge/meta_ads_mcp_forensic_audit_and_optimization_playbook.md): Meta Ads MCP tool calling taxonomy, 5-phase forensic audit, Click-Tourist filtering, and placement recovery.
+14. [webinar_funnel_and_lead_generation_playbook.md](knowledge/webinar_funnel_and_lead_generation_playbook.md): Lead tracking, attendee metrics, and sales conversion scorecards.
+15. [meta_ads_playbook.md](knowledge/meta_ads_playbook.md): Meta Ads MCP tool calling taxonomy, 5-phase forensic audit, Click-Tourist filtering, and placement recovery.
 16. [ecommerce_order_and_sku_forensics_playbook.md](knowledge/ecommerce_order_and_sku_forensics_playbook.md): Shopify/store order reconciliations, contribution margins, and postcode density clustering.
 17. [digital_publishing_and_programmatic_growth_playbook.md](knowledge/digital_publishing_and_programmatic_growth_playbook.md): Digital publishing, programmatic yield optimization, Core Web Vitals, and Google Discover spikes.
 18. [offpage_link_building_and_apexlink_playbook.md](knowledge/offpage_link_building_and_apexlink_playbook.md): 745+ curated platforms, Penguin-safe anchor distributions, 30-pattern toxic link disavow, Digital PR pitch frameworks, zero-leak statistics pages, and live verification crawler.
