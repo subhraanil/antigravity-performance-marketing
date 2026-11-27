@@ -1,0 +1,913 @@
+=== PAGE 1 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+FABB6 Performance Marketing Strategy
+& Campaign Architecture
+Funnel-Wise Architecture, Monthly Budget Schedules & Unit Economics Blueprint
+Prepared for FABB6 (Glanzzkart Private Limited) · Planning Horizon: Dec 2026 – Feb 2027 · Governance: Budget, Orders & ROAS
+Prepared by Sarnendu Patra, Head of Marketing, Techno Exponent · Includes the Performance Audit, Search Engine Optimization, Social Media 
+Optimization and Conversion Rate Optimization plans
+1. Executive Summary & Three Strategic Plans
+This document articulates the performance marketing strategy, campaign architecture, and monthly budget execution schedules for FABB6 
+across Google Ads and Meta Ads for December 2026, January 2027, and February 2027. Following the forensic audit of account performance 
+(Sep 1 – Nov 18; see Section 6), this strategy restructures campaigns to eliminate wasteful spend on broken URLs and negative-margin items, 
+implements automated catalog sync tooling, and activates high-intent demand generation.
+All scenarios are governed strictly on a month-by-month basis by Total Media Budget (Spend), Total Store Orders (Order Volume), and 
+Shopify Confirmed Gross Sales ROAS. Below are the three strategic plans presented separately for clarity:
+Plan 1: Recommended Plan (Official Client Target Turnaround Model)
+Month Ad Budget (Spend) Google / Meta Split Paid Orders Others* Store Orders Gross Sales 
+Revenue
+Store 
+ROAS
+Dec 2026 ₹30.00L ₹19.00L / ₹11.00L 6,082 3,096 9,178 ₹93.06L 3.10x
+Jan 2027 ₹35.00L ₹22.00L / ₹13.00L 7,680 3,313 10,992 ₹121.25L 3.46x
+Feb 2027 ₹40.00L ₹25.00L / ₹15.00L 9,801 3,545 13,346 ₹164.42L 4.11x
+Plan 2: Moderate Plan (Accelerated Scale Scenario)
+Month Ad Budget (Spend) Google / Meta Split Paid Orders Others* Store Orders Gross Sales 
+Revenue
+Store 
+ROAS
+Dec 2026 ₹35.00L ₹22.00L / ₹13.00L 6,950 3,096 10,046 ₹103.50L 2.96x
+Jan 2027 ₹41.00L ₹26.00L / ₹15.00L 8,800 3,313 12,113 ₹136.50L 3.33x
+Feb 2027 ₹47.00L ₹29.50L / ₹17.50L 11,250 3,545 14,795 ₹184.20L 3.92x
+Plan 3: Aggressive Plan (High Scale / Market Dominance Scenario)
+Month Ad Budget (Spend) Google / Meta Split Paid Orders Others* Store Orders Gross Sales 
+Revenue
+Store 
+ROAS
+Dec 2026 ₹40.00L ₹25.00L / ₹15.00L 7,750 3,096 10,846 ₹113.20L 2.83x
+Jan 2027 ₹48.00L ₹30.50L / ₹17.50L 10,050 3,313 13,363 ₹151.20L 3.15x
+Feb 2027 ₹55.00L ₹34.50L / ₹20.50L 12,850 3,545 16,395 ₹204.50L 3.72x
+*Order From Others represents repeat customer purchases, organic search, direct store traffic, and automated retention flows compounding at +7% monthly.
+Confidential · Techno Exponent Performance Marketing Practice · Page 1
+
+=== PAGE 2 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+2. Unit Economics, Checkout Optimization & Retention Strategy
+To maintain complete financial clarity, this strategy articulates the exact contribution economics of customer acquisition. As an authorized 
+distributor for professional salon brands (Swiss Beauty, L'Oréal Professionnel, Matrix, Schwarzkopf, Floractive), FABB6 operates on gross 
+wholesale product margins of ~25% on ex-GST trade value. Assuming 18% GST, mathematical media break-even requires a 4.00x ROAS on ex-
+GST revenue (1 ÷ 0.25) and 4.72x ROAS on GST-inclusive total receipts (4.00x × 1.18). Front-end paid media acquires customers near first-
+order margin break-even, while sustainable profit is achieved through repeat replenishment that incurs zero incremental media cost.
+Low-Cost Retention Channel Architecture (Zero Incremental Media Spend)
+Repeat retention is driven primarily by automated WhatsApp and email replenishment workflows timed to hair spa, shampoo, and color 
+usage cycles (30, 45, and 60 days). While retention software and messaging incurs operational costs (~₹35,000–₹50,000/month), it requires 
+zero incremental media spend. This zero-media-cost retention engine unlocks 3,096 (Dec), 3,313 (Jan), and 3,545 (Feb) monthly 'Orders from 
+Others' in the Recommended Plan:
+Workflow / Trigger Stage Timing 
+Window
+Primary Messaging 
+Channel Target Product Category Replenishment Trigger & Offer Architecture
+W1: Core Shampoo & 
+Conditioner Day 25 – 35 WhatsApp Interactive Flow 
++ Email
+L'Oréal, Matrix, 
+Schwarzkopf Care
+Automated usage check-in; one-click re-order 
+with 5% replenishment loyalty discount.
+W2: Hair Spa & Intensive 
+Masques Day 40 – 50 WhatsApp Catalog + RCS 
+Message
+L'Oréal Deep Nourish, 
+Matrix Masque
+Reminder that 500g tubs reach half-volume; 
+salon combo upsell (Serum + Masque).
+W3: Salon Pro & Chemical 
+Treatments Day 60 – 75 Email VIP Concierge + 
+WhatsApp
+Floractive Nanoplastia, 
+Raaga De-Tan
+Professional salon replenishment cadence; bulk 
+volume tier pricing for repeat buyers.
+W4: VIP Retention & Cross-
+Sell Day 90+ Automated SMS / 
+WhatsApp Template
+Cross-Category Beauty / 
+Skincare
+Exclusive early access to seasonal combo kits; 
+dynamic store credit balance alerts.
+Required Technology Stack: GoKwik Checkout & Customer Notification Engine
+• GoKwik Checkout & Abandoned Cart Remarketing: We will integrate GoKwik (https://www.gokwik.co/) on Shopify to maximize 
+checkout conversion and remarketing: (1) 1-Click KwikCheckout with 100M+ pre-filled Indian shopper addresses, drastically reducing 
+checkout abandonment; (2) Automated WhatsApp and SMS abandoned cart remarketing sequences with personalized checkout 
+recovery links, recapturing 15–20% of lost carts; (3) AI RTO risk intelligence and COD-to-Prepaid conversion discounts to minimize failed 
+delivery costs.
+• Existing Customer Notification Subscriptions: To execute the W1–W4 replenishment flows, we deploy a dedicated WhatsApp Business 
+API & automated notification subscription (such as Interakt, Wati, or Bik.ai) paired with Klaviyo email CRM. This infrastructure triggers 
+timely replenishment notifications directly to existing customer phones based on purchase history, driving high repeat volume without 
+any media spend.
+Confidential · Techno Exponent Performance Marketing Practice · Page 2
+
+=== PAGE 3 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+3. Google Ads Architecture & Catalog Sync Tooling
+Google Ads spend (December ₹19.00L, January ₹22.00L, February ₹25.00L) is allocated across high-margin Performance Max asset groups 
+and high-intent Search campaigns to protect branded traffic and scale profitable professional salon categories:
+Campaign Name Funnel Level Budget 
+Share Dec Spend (Daily) Jan Spend (Daily) Feb Spend (Daily) Target ROAS / CPA 
+Guardrail
+G_PMAX_BOF_HighMargin_
+Heroes
+BOF 
+(Heroes) 60% ₹11.40L (₹36,774/d) ₹13.20L (₹42,581/d) ₹15.00L (₹53,571/d)
+tROAS 210%–260%. High-
+margin SKUs (>28% 
+margin): Floractive 
+Nanoplastia, Raaga 
+combos.
+G_PMAX_BOF_CoreVolume_
+Tier2 BOF (Core) 20% ₹3.80L (₹12,258/d) ₹4.40L (₹14,194/d) ₹5.00L (₹17,857/d)
+tROAS 180%–220%. Core 
+volume drivers (20–28% 
+margin): Dot & Key, Hair 
+Spa tubs, Matrix.
+G_SRC_MOF_Category_Hair
+Care
+MOF 
+(Category) 13% ₹2.47L (₹7,968/d) ₹2.86L (₹9,226/d) ₹3.25L (₹11,607/d)
+tCPA ₹407–₹480. High-
+intent non-brand phrase 
+search: 'best hair spa 
+cream', 'professional 
+shampoo'.
+G_SRC_BOF_Brand_FABB6_E
+xact BOF (Brand) 7% ₹1.33L (₹4,290/d) ₹1.54L (₹4,968/d) ₹1.75L (₹6,250/d)
+Target Impression Share ≥ 
+95%. Absolute brand 
+defense against 
+competitors.
+Total Google Ads Portfolio Combined 100% ₹19.00L (₹61,290/d) ₹22.00L (₹70,968/d) ₹25.00L (₹89,286/d)
+Target CPA: ₹480 → ₹451 
+→ ₹407 | Target ROAS: 
+2.11x → 2.45x → 3.03x
+Merchant Center Product Sync Tool Recommendation: Simprosys Google Shopping Feed
+To permanently eliminate wasted spend on 404 broken links (110 broken URLs identified in audit) and out-of-stock products, we recommend 
+deploying Simprosys Google Shopping Feed (Shopify App):
+• Real-Time Webhook Synchronization: Directly syncs Shopify inventory and price updates via Shopify webhooks to Google Content API in 
+minutes. When an item drops to 0 inventory, it is instantly suppressed from Google Shopping and PMax ads, halting click bleed.
+• Automated 404 Broken Link Detection: Continuously validates Shopify product URLs. Inactive, deleted, or draft products are 
+automatically removed from the active feed before Merchant Center disapproves them.
+• Automated Custom Label & Margin Tagging: Maps Shopify product tags (high_28plus, mid_20_28, EXCLUDE_lowmargin, single_sachet) 
+to custom_label_0 through custom_label_4 for automated campaign bid gating.
+• Low Cost & High ROI: Operational cost is ~$15–$25/month (~₹1,200–₹2,100/mo), paying for itself on day 1 by preventing broken URL 
+waste. Enterprise alternative: Feedonomics for advanced multi-channel rule engines.
+Confidential · Techno Exponent Performance Marketing Practice · Page 3
+
+=== PAGE 4 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+4. Meta Ads Architecture & Scaling Governance
+Meta Ads spend (December ₹11.00L, January ₹13.00L, February ₹15.00L) is consolidated from fragmented, overlapping campaigns into a 
+streamlined three-tier funnel to eliminate internal auction competition and bring runaway CPMs (+144% between August and November 
+2026) back under control:
+Campaign Name Funnel Level Budget 
+Share Dec Spend (Daily) Jan Spend (Daily) Feb Spend (Daily) Audience Targeting & 
+Creative Strategy
+M_ASC_TOF_MasterProspec
+ting
+TOF 
+(Prospecting
+)
+70% ₹7.70L (₹24,839/d) ₹9.10L (₹29,355/d) ₹10.50L (₹37,500/d)
+Advantage+ Shopping 
+Campaign. Broad open 
+targeting with 10 new UGC 
+problem-solution creator 
+videos. 15% existing 
+customer budget cap; 30-
+day purchaser exclusion.
+M_CBO_MOF_HeroCombos_
+Collection
+MOF 
+(Combos) 15% ₹1.65L (₹5,323/d) ₹1.95L (₹6,290/d) ₹2.25L (₹8,036/d)
+Engaged Instagram/FB 
+visitors (past 60d) and 3s+ 
+video viewers. Carousel & 
+collection ads featuring 
+high-value haircare combos 
+(>₹1,200).
+M_DPA_BOF_DynamicCatalo
+g_7d
+BOF 
+(Retargeting
+)
+15% ₹1.65L (₹5,323/d) ₹1.95L (₹6,290/d) ₹2.25L (₹8,036/d)
+Dynamic Product Ads for 
+ViewContent (3–7d) & 
+AddToCart (3–14d). Strict 
+30d/180d purchaser 
+exclusions. Frequency 
+capped ≤ 2.2x.
+Total Meta Ads Portfolio Combined 100% ₹11.00L (₹35,484/d) ₹13.00L (₹41,935/d) ₹15.00L (₹53,571/d)
+Target CPA: ₹518 → ₹464 
+→ ₹410 | Target ROAS: 
+1.96x → 2.38x → 3.00x
+Three-Tier Scaling Decision Governance (Weekly Performance Gates)
+Monthly budget scaling from December to January and February is strictly governed by trailing 7-day verified store performance:
+• Green Light (Scale): Trailing 7-day confirmed Gross ROAS ≥ 2.50x AND blended CPA within monthly target (Dec ≤ ₹480, Jan ≤ ₹450, Feb ≤ 
+₹410). Approve scheduled monthly budget increase, capped at ≤ 20% every 72 hours per campaign.
+• Yellow Light (Hold): Trailing 7-day Gross ROAS between 2.30x and 2.50x. Hold daily budgets completely flat. Analyze SKU-level 
+contribution, rotate creative fatigue, and allow Smart Bidding algorithms to consolidate.
+• Red Light (Rollback): Trailing 7-day Gross ROAS < 2.30x for 7 consecutive days (or blended CPA exceeds target by >25%). Immediately 
+roll back the last budget increase by 20% and pause any underperforming ad set.
+Confidential · Techno Exponent Performance Marketing Practice · Page 4
+
+=== PAGE 5 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+5. Daily Budget Schedules & Measurement Definitions
+The schedules below provide the exact campaign-level daily budgets for Plan 1 (Recommended Plan) across December, January, and February 
+(phased):
+Channel Campaign Name / Architecture Node Funnel Node Dec Daily 
+(₹30.0L)
+Jan Daily 
+(₹35.0L) Feb 1–14 Daily Feb 15–28 Daily
+Google Ads G_PMAX_BOF_HighMargin_Heroes BOF (Heroes 60%) ₹36,774 / day ₹42,581 / day ₹48,000 / day ₹59,143 / day
+Google Ads G_PMAX_BOF_CoreVolume_Tier2 BOF (Core 20%) ₹12,258 / day ₹14,194 / day ₹16,000 / day ₹19,714 / day
+Google Ads G_SRC_MOF_Category_HairCare MOF (Category 
+13%) ₹7,968 / day ₹9,226 / day ₹10,400 / day ₹12,814 / day
+Google Ads G_SRC_BOF_Brand_FABB6_Exact BOF (Brand 7%) ₹4,290 / day ₹4,968 / day ₹5,600 / day ₹6,900 / day
+Google 
+Total Combined Google Ads (63.3% / 62.5%) Google Portfolio ₹61,290 / day ₹70,968 / day ₹80,000 / day ₹98,571 / day
+Meta Ads M_ASC_TOF_MasterProspecting TOF (ASC 70%) ₹24,839 / day ₹29,355 / day ₹33,000 / day ₹42,000 / day
+Meta Ads M_CBO_MOF_HeroCombos_Collection MOF (Combos 15%) ₹5,323 / day ₹6,290 / day ₹7,071 / day ₹9,000 / day
+Meta Ads M_DPA_BOF_DynamicCatalog_7d BOF (DPA 15%) ₹5,323 / day ₹6,290 / day ₹7,071 / day ₹9,000 / day
+Meta Total Combined Meta Ads (36.7% / 37.5%) Meta Portfolio ₹35,484 / day ₹41,935 / day ₹47,143 / day ₹60,000 / day
+Total Media Combined Account Daily Spend Full Account ₹96,774 / day ₹1,12,903 / day ₹1,27,143 / day ₹1,58,571 / day
+Operational Measurement Definitions & KPI Hierarchy
+• Gross Sales Revenue: Total confirmed sales revenue recorded in Shopify before cancellations, discounts and returns. Primary top-line 
+metric evaluated weekly.
+• Shopify Gross ROAS: Total Gross Sales Revenue divided by total ad spend. Account targets: 3.10x Dec, 3.46x Jan, 4.11x Feb.
+• Spend per Store Order (Blended CPA): Total media spend divided by total Shopify store orders (₹326.87 Dec, ₹318.40 Jan, ₹299.72 Feb). 
+Primary governing business unit metric.
+• Platform Paid CPA: Ad spend divided by platform-reported orders (Google ₹480 → ₹407, Meta ₹518 → ₹410). Operational secondary 
+guardrail.
+• Bidding CPA Ceilings: Target cost ceilings entered in campaign bid settings (Search tCPA ₹407–₹480, Meta Cost Cap ₹410–₹518).
+• Agency Cadence: Daily tracking snapshot via Slack/WhatsApp, weekly gate reviews, and monthly Shopify financial reconciliation.
+Confidential · Techno Exponent Performance Marketing Practice · Page 5
+
+=== PAGE 6 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+6. Performance Audit Report
+6.1 Executive Summary of the Audit
+This section reviews Google Ads and Meta Ads performance from December 2025 to 18 November 2026, audits the state of the Google Ads 
+and Meta Ads accounts for the period September to November 2026, and sets out a stabilization plan and a forecast for December 2026 to 
+February 2027.
+What the numbers say
+• In August 2026, FABB6 recorded ₹74.76 Lakhs of Total Sales Revenue across 11,069 orders on ₹47.91 Lakhs of ad spend (1.56x Total 
+Sales ROAS).
+• Between 1 September and 18 November 2026, ad spend was ₹67.83 Lakhs (Google ₹34.84L, Meta ₹32.99L) against Total Sales Revenue 
+of ₹1.61 Cr.
+• Headline efficiency in October (2.14x Total Sales ROAS) and November to date (2.20x) was higher than June to August (1.56x–1.96x). 
+Paid CPA in October (₹582) was 33% above August (₹437), but AOV on Total Sales rose from ₹675 to ₹995 (+47%), compensating for the 
+CPA rise.
+• The most serious disruption was September: ad spend fell 87% against August (₹6.27L) and Shopify orders fell 72% to 3,112. The 
+contraction stemmed from campaign pauses during onboarding and billing verification, compounded by tracking deletion.
+What the audit found
+The problems are in account hygiene, tracking and structure rather than in a collapse of headline efficiency. Each is documented in the 
+change history and exports (Exhibits A–F):
+• The primary Google purchase conversion action ('Purchase-2026') was deleted on 18 September.
+• Live Performance Max asset groups contained copy referencing another brand.
+• 110 products pointed to unavailable (404) pages in Merchant Center.
+• Meta retargeting (DPA) ran more expensively than cold prospecting, three Advantage+ Shopping campaigns ran concurrently, and about 
+₹1.5 Lakhs was spent on campaigns with zero orders.
+Quantified waste: between ₹1.50 Lakhs (spend with zero orders, provable) and ₹7.47 Lakhs (total spend in the affected campaigns, upper 
+bound). Our central estimate of excess spend is about ₹5.9 Lakhs (Section 6.5).
+Forecast (Dec 2026 – Feb 2027): on a planned ad spend of ₹91.1 Lakhs, the forecast delivers about ₹3.56 Cr of Total Sales Revenue (3.91x 
+blended ROAS) across 31,574 store orders (₹288.53 blended CPA), with conservative (3.00x / ₹2.73 Cr) and stretch (4.20x / ₹3.82 Cr) 
+sensitivity scenarios. The forecast is built on Total Sales Revenue, the primary sales metric in the financial model (Section 8).
+6.2 Twelve-Month Performance Reconciliation
+August 2026 Google Ads spend had been overstated in earlier raw exports (₹67.07 Lakhs, caused by a reporting glitch). The reconciled figure 
+is ₹32.23 Lakhs. All figures below use the reconciled data and count Total Sales Revenue as the primary sales metric.
+Month Total spend Paid orders (platform) Paid CPA Shopify orders Total Sales Revenue Total Sales 
+ROAS
+Dec 2025 ₹4.21L 1,614 ₹261 3,307 ₹20.72L 4.92x
+Jan 2026 ₹12.17L 4,260 ₹286 7,850 ₹46.40L 3.81x
+Feb 2026 ₹17.97L 4,817 ₹373 8,250 ₹62.38L 3.47x
+Mar 2026 ₹27.84L 6,351 ₹438 11,285 ₹59.57L 2.14x
+Apr 2026 ₹32.55L 5,350 ₹608 10,551 ₹74.37L 2.28x
+May 2026 ₹40.21L 7,076 ₹568 12,215 ₹91.33L 2.27x
+Jun 2026 ₹42.86L 6,851 ₹626 12,877 ₹83.98L 1.96x
+Jul 2026 ₹43.62L 8,313 ₹525 13,420 ₹78.45L 1.80x
+Aug 2026 ₹47.91L 10,965 ₹437 11,069 ₹74.76L 1.56x
+Sep 2026 ₹6.27L 801 ₹783 3,112 ₹28.50L 4.54x
+Oct 2026 ₹42.47L 7,298 ₹582 9,143 ₹90.99L 2.14x
+Nov 2026 (to 18 Nov) ₹19.09L 4,310 ₹443 4,638 ₹42.00L 2.20x
+Confidential · Techno Exponent Performance Marketing Practice · Page 6
+
+=== PAGE 7 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+Total Sales ROAS = Total Sales Revenue ÷ total Google and Meta spend. Total Sales Revenue represents actual net recognized store revenue from Shopify (after 
+discounts and returns, including taxes and shipping).
+Three observations that shape the plan
+• 1. Efficiency adjusted as spend scaled: From December 2025 to August 2026, spend grew more than tenfold and Total Sales ROAS 
+adjusted from 4.92x to 1.56x. Some decline is the normal cost of scaling into colder audiences, and we treat 1.8x–2.5x as the realistic 
+operating baseline for ₹25–45 Lakhs of monthly spend.
+• 2. September's 4.54x is not an efficiency gain: Spend was cut by 87% due to campaign pauses and verification delays, so the ratio 
+reflects the organic and repeat demand that continued without paid support.
+• 3. October CPA was not a record: April (₹608) and June (₹626) were higher. October ROAS (2.14x) and November to date (2.20x) are 
+well above August (1.56x), driven by stronger order values.
+The Festival of Lights (Diwali) fell on 8 November in 2026, so the festive demand window straddles October and November. The November 
+run-rate therefore includes festive uplift and is not used as an unadjusted December baseline.
+6.3 Google Ads Audit
+Google Ads spend during the audit period (1 September – 18 November 2026) totaled ₹34.84 Lakhs. Findings from the change history, asset 
+group, product and search term reports:
+• 1. Primary purchase conversion deleted (18 Sep): The change history shows the 'Purchase-2026' conversion action was deleted by an 
+administrator account (Exhibit A). Smart Bidding lost its main learning signal. September Google spend was ₹3.18 Lakhs for 42 attributed 
+orders (₹7,569 CPA). Because 17 days of the month preceded the deletion and post-deletion sales may be unattributed, the true cost per 
+sale is likely lower than this figure, and we will validate it against Shopify UTM data.
+• 2. Another brand's copy in live Performance Max asset groups: Several asset groups (T4 Pro/Salon, T3 Premium, Pilgrim, YS24) 
+contained headlines and descriptions promoting a different brand name (Exhibit B). All were rated 'Poor' for Ad Strength.
+• 3. 110 broken product pages: Merchant Center shows 216 ineligible products: 110 with 'page unavailable' (404) and 70 with 
+promotional overlay violations. At least ₹80,285 was spent on affected products with zero conversions (for example, one serum SKU 
+spent ₹1,614 on 480 clicks into a 404 page).
+• 4. Frequent budget changes: Daily budgets were changed 140 times in under 60 days (74 increases, 66 decreases). We cannot isolate 
+the effect on delivery, but constant changes make Smart Bidding performance harder to read and slower to stabilize.
+• 5. Off-category search queries: A campaign named 'Search-Brand' used broad match and triggered queries unrelated to beauty (for 
+example, gym equipment and a badminton ankle support). The spend on these queries is not yet quantified; it will be after a full search 
+terms export.
+6.4 Meta Ads Audit
+Meta spend during the audit period (1 September – 18 November 2026) totaled ₹32.99 Lakhs.
+• 1. Retargeting more expensive than prospecting: 'Retargeting — DPA - Fabb6' spent ₹9.50 Lakhs for 1,850 purchases at ₹513.70 CPA 
+(peaking at ₹570.31 in October), against ₹479.53 for cold prospecting, with frequency of 3.21 and no past-purchaser exclusions. Excess 
+cost against the cold-prospecting CPA is about ₹63,000.
+• 2. Overlapping Advantage+ Shopping campaigns: Three Advantage+ Shopping campaigns ran at the same time without product 
+exclusions, so they competed in the same auctions. Account CPM rose from ₹56.15 in August to ₹104.17 in October (+85%) and ₹137.03 
+in November (+144%). Q4 festive demand raises CPMs for all advertisers, so part of this rise is seasonal. Consolidation to one master 
+Advantage+ campaign will let us measure the effect cleanly.
+• 3. 'IG-Traffic' link-click campaign: ₹50,214 across 8.32 million impressions produced 1,02,322 link clicks, 28 landing page views and 0 
+purchases (99.97% drop-off between click and page view).
+• 4. App install campaigns: The iOS campaign spent ₹19,161 at frequency 13.18 with 0 sales. The Android campaign spent about ₹1.38 
+Lakhs at ₹1,082 CPA.
+• 5. Click-to-landing-page gap: Meta reported 7,34,064 link clicks but only 3,01,798 landing page views on Shopify: a 58.9% gap (52.2% 
+excluding IG-Traffic). Likely causes are mobile page speed, accidental clicks, and pixel or Conversions API (CAPI) misfires. We will 
+diagnose these in the first two weeks.
+Confidential · Techno Exponent Performance Marketing Practice · Page 7
+
+=== PAGE 8 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+6.5 Avoidable Spend: A Range, Not a Single Number
+Measure Amount Basis
+Provable floor: spend with zero orders ₹1,49,660 404 products (₹80,285), IG-Traffic (₹50,214), iOS app campaign (₹19,161)
+Central estimate: excess spend versus 
+benchmark CPA about ₹5.87 Lakhs
+Floor, plus Google September excess against the August Google CPA of ₹480 
+(₹2.98L), Android app excess (about ₹0.77L), DPA excess against cold CPA (about 
+₹0.63L)
+Upper bound: total spend in affected 
+campaigns ₹7,46,558 Google September ₹3,17,895; 404 products ₹80,285; IG-Traffic ₹50,214; app 
+campaigns ₹1,57,302; DPA ₹1,40,862
+The upper bound counts all spend in affected campaigns, including spend that did produce some orders, and should not be read as pure loss. The Google 
+September figure may include sales that went unattributed after the conversion action was deleted.
+7. Turnaround Plan
+Admin access has been verified across Google Ads, Meta Business Suite, Google Merchant Center and Shopify. Shopify is the source of truth 
+for revenue and orders throughout.
+Phase 1: Immediate triage (hours 0 – 48)
+• Pause 'IG-Traffic' and the iOS and Android app install campaigns.
+• Remove foreign-brand copy from all Performance Max asset groups.
+• Exclude the 110 unavailable (404) products in Merchant Center and fix or remove the overlay violations.
+• Confirm a single primary Purchase conversion action is active in Google Ads and matches Shopify order counts. Verify Enhanced 
+Conversions, and test Meta CAPI deduplication.
+• Export search terms and add negative keywords for off-category queries.
+Phase 2: Restructure and stabilize (December 2026)
+• Segment Performance Max into Hero Best-Sellers (60% of budget), Long-Tail Catalog (20%) and Search/Brand (20%).
+• Consolidate Meta into one master Advantage+ Shopping campaign with a 20% existing-customer budget cap.
+• Add 30-day and 180-day purchaser exclusions to DPA, with frequency capped at 2.2 or below.
+• Launch 10 new creator (UGC) assets focused on winter skincare routines and gifting.
+• Diagnose the click-to-landing-page gap (page speed, pixel and CAPI audit).
+Phase 3: Profitable scaling (January – February 2027)
+• Increase budgets by no more than 20% every 72 hours per campaign.
+• Expand high-intent non-brand Google search for hero categories (serums, brightening, anti-aging).
+• Launch post-purchase replenishment flows (email and WhatsApp) at 30, 45 and 60 days. Retention revenue is treated as upside and is 
+not included in the forecast.
+Scaling decision rule: scale a step only if trailing seven-day Total Sales ROAS is at least 2.4x and CPA is within target. Hold spend between 2.2x 
+and 2.4x. Roll back the last increase if the ratio stays below 2.2x for seven days. All planned budget expansions in Section 8 are strictly 
+conditional on maintaining this performance threshold.
+Confidential · Techno Exponent Performance Marketing Practice · Page 8
+
+=== PAGE 9 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+8. Audit-Stage Forecast: December 2026 – February 2027
+This forecast was prepared at audit stage using data through 18 November 2026, on Total Sales Revenue (net recognized store revenue).
+8.1 Approach
+The forecast is built on Total Sales Revenue divided by ad spend (Total Sales ROAS), matching the primary financial metrics in the client's 
+master forecast model. Planned spend follows the agreed ramp: ₹26.0L in December, ₹31.0L in January and ₹34.1L in February (₹91.1L in 
+total). December spend is calibrated below the November run-rate (about ₹31.8L) because we are removing waste and restructuring before 
+scaling.
+Reference run-rate (1 – 18 November, extrapolated to 30 days): ₹31.8L spend, about 7,730 orders (258/day), ₹70.0L Total Sales Revenue, 
+2.20x Total Sales ROAS. This includes festive uplift.
+8.2 Master Turnaround Forecast (Total Sales Revenue)
+Month Ad spend (Google / Meta) Paid orders Orders from 
+others
+Total store 
+orders Total Sales Revenue Blended CPA Total Sales 
+ROAS
+Dec 2026 ₹26.0L (₹16.0L / ₹10.0L) 5,778 3,096 8,874 ₹89.98L ₹293.00 3.46x
+Jan 2027 ₹31.0L (₹20.0L / ₹11.0L) 7,334 3,313 10,647 ₹117.43L (₹1.17 Cr) ₹291.17 3.79x
+Feb 2027 ₹34.1L (₹22.0L / ₹12.1L) 8,509 3,545 12,053 ₹148.50L (₹1.48 Cr) ₹282.91 4.35x
+Total ₹91.1L 21,621 9,953 31,574 ₹355.91L (₹3.56 Cr) ₹288.53 3.91x
+Total Sales Revenue reflects actual net recognized store sales. Blended CPA across total store orders (₹282.91–₹293.00) confirms sustainable business unit 
+economics.
+8.3 Scenarios (Sensitivities on Total Sales Revenue)
+Scenario Total Sales ROAS (Dec / Jan / 
+Feb) Dec Total Sales Jan Total Sales Feb Total Sales Quarter Total Quarter ROAS
+Conservative 3.00x / 3.00x / 3.00x ₹78.0L ₹93.0L ₹102.3L ₹273.3L (₹2.73 Cr) 3.00x
+Target Plan 3.46x / 3.79x / 4.35x ₹89.98L ₹117.43L ₹148.50L ₹355.91L (₹3.56 Cr) 3.91x
+Stretch 3.70x / 4.10x / 4.65x ₹96.2L ₹127.1L ₹158.6L ₹381.9L (₹3.82 Cr) 4.19x
+The Target Plan reflects the verified financial model in the master forecast sheet. The conservative scenario establishes a 3.00x floor if creative refresh and 
+retention scaling take longer to ramp, while the stretch scenario models accelerated retention and catalog expansion.
+8.4 Channel-level guardrails (platform-attributed)
+Month Google spend Google CPA 
+target Google orders Meta spend Meta CPA target Meta orders Combined paid orders
+Dec 2026 ₹16.0L ₹450 3,556 ₹10.0L ₹450 2,222 5,778
+Jan 2027 ₹20.0L ₹430 4,651 ₹11.0L ₹410 2,683 7,334
+Feb 2027 ₹22.0L ₹410 5,366 ₹12.1L ₹385 3,143 8,509
+Historically, paid orders represented 49%–62% of total Shopify orders from Dec 2025 to Jul 2026, rising to 80%–99% only in Aug, Oct, and Nov due to 
+attribution overlap. Under the forecast, paid orders account for 65% (Dec), 69% (Jan) and 71% (Feb) of total store orders, with non-paid orders (organic, repeat, 
+referral) providing the remaining 29%–35%. Blended CPA on store orders (₹282.91–₹293.00) serves as the primary governing KPI, with platform CPA used 
+solely as an operational secondary guardrail.
+8.5 Key assumptions and risks
+• Total Sales Revenue represents net recognized revenue (after discounts, cancellations, and returns, including taxes and shipping).
+• Orders from Others incorporates organic, direct, referral, and repeat customer retention flows (starting at 3,096 in Dec and scaling by 
+7% monthly as CRM flows activate).
+• Higher spend lowers marginal efficiency. The scaling decision rule in Section 7 is the control.
+• Seasonal effects (winter, wedding season, post-festive slowdown) are absorbed within the conservative scenario floor.
+Confidential · Techno Exponent Performance Marketing Practice · Page 9
+
+=== PAGE 10 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+9. Operating Guardrails
+• 1. Paused-first creation: New campaigns, ad sets and creatives are created paused and go live only after tracking, UTM parameters and 
+margin review are confirmed.
+• 2. Budget pacing: Increases are capped at 20% every 72 hours per campaign.
+• 3. Audience hygiene: Prospecting campaigns exclude 30-day purchasers and customer lists. Retargeting excludes purchasers.
+• 4. Daily feed checks: Automated daily scans of Merchant Center and Shopify disapprove products with dead URLs or no stock.
+• 5. Reporting cadence: A daily pacing update by WhatsApp or Slack, a weekly performance review, and a monthly reconciliation against 
+Shopify net revenue.
+10. Search Engine Optimization (with Artificial Intelligence and 
+Generative Engine Optimization)
+10.1 Role in the plan
+Paid media in this strategy buys demand; Search Engine Optimization builds the owned demand that keeps compounding. The 'Orders from 
+Others' line in Section 1 (3,096 in December, 3,313 in January and 3,545 in February) includes organic search, and Search Engine Optimization 
+is one of the sources behind it, alongside repeat purchase and direct visits. It also protects the paid programme: the catalog fixes below 
+(unavailable product pages, accurate product data, structured product information) improve organic visibility and Google Shopping and 
+Performance Max efficiency at the same time.
+No separate numerical forecast is assigned to Search Engine Optimization in this document. Its contribution sits inside Orders from Others 
+and is tracked from Month 1, so that targets can be set on real baselines rather than assumptions.
+Market context for the organic opportunity. Online stores are the largest distribution channel for beauty and personal care in India, with a 
+30% share in 2025 according to IMARC Group. Redseer puts India's online beauty and personal care market at ₹56,000 Crore, growing about 
+35% year on year, and the India Brand Equity Foundation reports a projected 25% compound annual growth rate for beauty e-commerce. 
+Growth of this kind rewards stores that own search visibility for brand, category and concern queries (full source list in Appendix C).
+10.2 Storefront baseline (what we observed)
+Area What we observed What it means for the plan
+Catalog breadth
+Skincare, haircare, makeup, fragrance, supplements and combos. 
+Dozens of brands are listed on the homepage and the page 
+description claims 100+ brands.
+A large catalog supports dedicated brand and category pages, 
+each able to target its own purchase-intent searches.
+Crawl control
+The robots file blocks cart, checkout, account and order paths as 
+well as sorted and combined-filter paths, and it declares a 
+sitemap.
+A sound starting point. Index coverage and any pages excluded 
+by filter rules will be confirmed in Google Search Console once 
+access is shared.
+Sitemap structure
+The sitemap index lists separate sitemaps for products (two 
+files), collections, pages, blogs and articles, with Hindi and 
+Kannada versions of each.
+Language versions must be correctly labeled and carry 
+properly translated content, otherwise they can dilute rather 
+than add visibility. To be verified.
+Unavailable product 
+pages
+The audit (Section 6.3) found 110 products pointing to 
+unavailable pages and 70 promotional overlay violations in 
+Merchant Center.
+Retired products need a redirect or a replacement page. 
+Overlay violations affect free product listings as well as ads.
+Editorial content The homepage features the FABB6 Diaries blog with three 
+articles.
+Content depth is small relative to the catalog. A concern-led 
+content plan builds the informational layer the store currently 
+lacks.
+Review signals No customer ratings or reviews were visible in the homepage 
+content.
+Review-based search result enhancements cannot be earned 
+until reviews are collected and displayed (see Section 12).
+Search result promise The page description states free shipping above ₹999 while the 
+homepage banner states zero shipping charges.
+The promise shown in search results must match the live 
+policy. FABB6 to confirm which version is correct.
+Source: public pages of fabb6.com (homepage, robots file and sitemap index) reviewed on 22 November 2026; audit findings from Section 6. These are observations from 
+publicly visible pages and will be validated against Google Search Console, Google Analytics and Shopify data once access is shared.
+10.3 Strategy: seven workstreams
+• 1. Technical foundation and catalog hygiene (Month 1). Full crawl and index review of every page type (product, collection, brand, blog, 
+language versions). A redirect map for the 110 unavailable product pages, built in step with the Merchant Center clean-up in Phase 1 of 
+the Turnaround Plan (Section 7), sending each retired product to the closest live product or collection rather than the homepage. 
+Confidential · Techno Exponent Performance Marketing Practice · Page 10
+
+=== PAGE 11 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+Confirmation that each product has one canonical address. A mobile loading report (Largest Contentful Paint, Interaction to Next Paint 
+and Cumulative Layout Shift) for the homepage, collection and product templates, shared with Section 12.
+• 2. Keyword and page mapping aligned to paid campaigns. Keywords are mapped to brand, category and concern pages in three intent 
+tiers: brand and product searches (closest to purchase), category searches such as hair spa and professional shampoo (the same themes 
+used in G_SRC_MOF_Category_HairCare, Section 3), and concern-led informational searches. The Google Ads search terms export from 
+Phase 1 seeds the research, so organic effort follows queries that already convert.
+• 3. Collection, brand and product page optimization. Titles, descriptions, headings, introductory copy, internal links and image 
+descriptions. Work is ordered by margin and sales: high-margin hero products (above 28% margin) first, matching the custom labels in 
+Section 3. Product pages gain a benefit summary, usage guidance, ingredients, an authenticity statement, a delivery estimate and 
+frequently asked questions.
+• 4. Content. Concern-led guides built around the store's own concern groups (hairfall, dandruff, colour protection, sun protection, dull 
+skin), routine guides (hair spa at home, winter skincare) and 'how to choose' comparison pages for professional products. Every guide 
+links to the matching collection, and FABB6 Diaries is restructured so guides are easy to find from category pages.
+• 5. Structured data. Product and Offer information (price, availability, shipping and returns), breadcrumb trail, Organization details, 
+frequently asked questions where the content exists, and review information once reviews are collected. Google states that providing 
+both on-page structured data and a Merchant Center feed maximizes product visibility, and that structured data must match the values 
+shown to users. The Simprosys feed (Section 3) and the page markup are therefore reconciled so that price and availability agree 
+everywhere.
+• 6. Artificial Intelligence Optimization and Generative Engine Optimization. Making pages easy for AI answer engines to read, extract 
+and cite. Activities: answer-first summaries on category and guide pages, clear brand and product facts (including authorized distributor 
+status where FABB6 can evidence it), shipping and returns policies on dedicated pages, comparison tables and frequently asked 
+questions. Measurement uses a fixed panel of 30 target shopping questions tested monthly across the main AI answer engines and 
+Google AI features, recorded as cited, mentioned or absent. Results in these systems vary by user and by day, so visibility is tracked as a 
+trend and never promised.
+• 7. Language versions. Verification of the Hindi and Kannada versions: correct language labeling, translation quality, and indexed status. 
+Whether to expand, fix or retire each version is decided from organic data after Month 2.
+10.4 Monthly deliverables
+Deliverable Month 1 (December 2026) Month 2 (January 2027) Month 3 (February 2027)
+Technical audit and fix list
+Full crawl, index and Merchant Center 
+review; prioritized developer ticket list; 
+redirect map for the 110 unavailable pages
+Verify fixes; resolve open index 
+issues
+Re-crawl; confirm zero unavailable 
+product pages in the feed and 
+sitemap
+Keyword and page mapping Map priority brand, category and concern 
+pages; seed from Google Ads search terms
+Extend to the next set of collections; 
+add newly converting queries
+Refresh with Month 1 and 2 search 
+and sales data
+Collection and brand page 
+optimization
+Priority 15 pages (titles, descriptions, 
+headings, introductory copy, internal links) Next 15 pages Next 15 pages
+Product page optimization Priority set of up to 30 hero products, 
+highest margin first
+Template-level fixes; next priority 
+set where agreed
+Re-rank priority set by margin and 
+sales
+Structured data Specification for Product, Offer, 
+breadcrumb and Organization markup
+Validate in Search Console reports; 
+fix errors
+Add frequently asked questions and 
+review markup where content exists
+Content Content plan and briefs; 2 concern-led 
+guides 4 guides or comparison pages 4 guides or comparison pages
+Artificial Intelligence and 
+Generative Engine Optimization
+Baseline test of 30 target questions; 
+answer-first summary templates Apply to priority pages; retest Retest; report presence trend
+Reporting
+Monthly report: organic visits, organic 
+orders and revenue (Shopify), rankings, 
+indexed pages, feed health, next-month 
+plan
+Monthly report Monthly report and quarterly 
+review
+Volumes are indicative and are finalized together with the commercials. The product page set is sized to a priority group of up to 30 hero products, with the 
+rest of the catalog handled through template-level fixes. Content rows cover planning, briefs and editing; article writing volume is confirmed with the 
+commercials. Changes to Shopify theme templates, redirects and structured data are implemented by FABB6's developer or quoted separately (Section 15).
+Confidential · Techno Exponent Performance Marketing Practice · Page 11
+
+=== PAGE 12 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+10.5 Key performance indicators
+Metric Measured in Target
+Unavailable product pages in the feed and sitemap Merchant Center; sitemap 0 after Phase 1 triage, then monitored daily
+Valid indexed product and collection pages Google Search Console Baseline in Month 1; target agreed after baseline
+Merchant Center item disapprovals Merchant Center Baseline in Month 1; lower each month
+Non-brand organic clicks Google Search Console Baseline in Month 1; target agreed after baseline
+Organic visits and organic orders Google Analytics; Shopify Baseline in Month 1; reported inside Orders from 
+Others
+Share of the 30 test questions where FABB6 is cited or 
+mentioned Monthly question panel Baseline in Month 1; trend reported
+Shopify confirmed orders remain the source of truth for every revenue figure. Not included: outreach-based link building, public relations, bulk product 
+uploads, development implementation and catalog-wide product description writing.
+Sources: Google Search Central, Introduction to Product structured data and Merchant listing structured data; Google Merchant Center Help, Set up structured data for 
+Merchant Center; IMARC Group; Redseer; India Brand Equity Foundation (links in Appendix C).
+11. Social Media Optimization
+11.1 Role in the plan
+Organic social media supplies the paid programme. It is where creative angles are tested cheaply, where the engaged audience for the middle 
+of the funnel is built, and where buyers look for proof that FABB6 is genuine before they purchase.
+• Creative testing ground: Organic posts show which problem-solution angles earn saves and shares. Winners are promoted into Meta 
+campaigns, including the 10 new creator videos planned for M_ASC_TOF_MasterProspecting (Section 4).
+• Audience building: Engaged Instagram and Facebook visitors and video viewers feed the middle-of-funnel audience used by 
+M_CBO_MOF_HeroCombos_Collection (Section 4).
+• Trust: Genuine-product proof, packaging and batch detail, and delivery and returns clarity answer the questions that stop first-time 
+buyers.
+• Retention support: Usage-cycle education mirrors the timing of the W1 to W3 replenishment flows (Section 2).
+11.2 Channels
+Active channels: Instagram (fabb6_) and Facebook (FABBB6), both linked from the store footer. A YouTube channel (Fabb6-p7r) also exists; it 
+is not actively managed in this scope, and repurposing approved Reels as Shorts can be considered later. Follower counts, posting frequency 
+and engagement baselines were not part of this review; they are captured from native analytics in the first week.
+11.3 Content pillars
+Pillar What it covers Link to the commercial plan
+Concern-led routines Hairfall, dandruff, colour protection, sun protection and dull skin, 
+the same concern groups used in store navigation
+Feeds the problem-solution creative in 
+M_ASC_TOF_MasterProspecting
+Salon-grade education How to use hair spas, masques and serums; usage frequency; 
+common mistakes
+Supports the timing of the W1 to W3 replenishment 
+flows (Section 2)
+Combos and gifting Hero combos above ₹1,200, winter and wedding-season gifting, 
+festive edits
+Feeds M_CBO_MOF_HeroCombos_Collection; 
+supports Average Order Value
+Authenticity and trust Genuine-product proof, packaging and batch details, delivery and 
+returns clarity, customer stories shared with consent Addresses the absence of visible reviews (Section 12)
+Offers and app Prepaid offers and the app-only offer, stated exactly as the live 
+policy Supports prepaid and app order mix
+Confidential · Techno Exponent Performance Marketing Practice · Page 12
+
+=== PAGE 13 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+11.4 Cadence and workflow (indicative)
+Element Indicative monthly volume Notes
+Instagram Reels 8 Short problem-solution and how-to formats
+Carousels 6 Education, routines and combo explainers
+Single image or graphic posts 4 Offers, launches and announcements
+Stories 3 sets per week Polls, questions, behind-the-scenes and links
+Facebook Same content, captions adapted Published alongside Instagram
+Community management Replies within one business day Comments and messages; product questions passed to FABB6 
+support
+Calendar and approvals Monthly Calendar shared 5 working days before month start; approval 
+within 48 hours
+Paid amplification of organic winners As performance allows Funded from the Meta Ads budget in Section 4, not additional 
+spend
+Reporting Monthly Reach, engagement, link clicks and Shopify-tracked orders
+11.5 Sample first-week calendar (illustrative)
+Day Platform and format Topic Pillar
+Monday Instagram Reel Winter skincare routine in three steps Concern-led routines
+Tuesday Instagram carousel How to use a hair spa masque: frequency and common mistakes Salon-grade education
+Wednesday Story set on Instagram and Facebook Genuine-product check: what to look for on packaging Authenticity and trust
+Thursday Instagram Reel Colour-protect routine after a salon colour service Concern-led routines
+Friday Instagram carousel Gifting combos: what is inside and who they suit Combos and gifting
+Saturday Instagram Reel (creator style) Hairfall problem-solution routine Concern-led routines
+Sunday Story poll Which concern should we cover next? Engagement
+Sample only. Final topics follow client approval and a review of every product claim before publishing.
+11.6 Key performance indicators
+Metric Why it matters Target
+Reach and profile visits Shows whether content is finding new people Baseline in the first 30 days; targets agreed 
+after baseline
+Saves and shares Strongest early signal of creative worth promoting into 
+paid campaigns
+Baseline in the first 30 days; targets agreed 
+after baseline
+Engagement rate and follower growth Health of the audience feeding the middle of the funnel Baseline in the first 30 days; targets agreed 
+after baseline
+Link clicks and Shopify-tracked orders from 
+tagged links
+Links social effort to store outcomes; treated as directional 
+because attribution windows overlap
+Baseline in the first 30 days; reported 
+monthly
+Not included: influencer marketing, outdoor shoots and TikTok (not available in India). Creative assets are produced from product images, creator-supplied 
+footage and design work. Claims such as clinically approved or one hundred percent genuine are published only where FABB6 can supply supporting evidence.
+Sources: public pages of fabb6.com (footer social links, homepage), reviewed on 22 November 2026; campaign architecture from Sections 2 and 4 of this document.
+12. Conversion Rate Optimization
+12.1 Why it matters for this plan
+Every month of the forecast assumes a higher Return On Ad Spend than the month before. Three levers can deliver that without raising cost 
+per click: a higher share of visitors who become buyers, a higher order value, and more repeat purchases. This section works on the first two, 
+and on the checkout step that connects them. The audit points to the same place:
+• Only 41.1% of Meta link clicks became Shopify landing page views (a 58.9% gap, Section 6.4), so visitors are being lost before the page 
+even loads.
+Confidential · Techno Exponent Performance Marketing Practice · Page 13
+
+=== PAGE 14 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+• Average order value on Total Sales rose from ₹675 in August to ₹995 in October (Section 6.1), showing that order value responds when 
+combos and offers are right.
+• Unit economics (Section 2) require high repeat purchase and combo-led first orders to reach profit, so basket size is a direct margin 
+lever.
+Independent benchmarks. Baymard Institute's review of 50 studies puts the average documented cart abandonment rate at 70.22%, and its 
+testing indicates that the average large store could raise conversion by about 35% through checkout design alone. Google research shows the 
+probability of a mobile visitor leaving rises 32% as a page load time goes from one second to three seconds, and that 53% of mobile visits are 
+abandoned when a page takes longer than three seconds to load. These are published averages from other stores and older studies, not 
+predictions for FABB6.
+12.2 Storefront baseline and test hypotheses
+Area What we observed Hypothesis to test
+Hero area Eight rotating banner slides on the homepage. Fewer slides with one primary message for paid traffic may 
+increase clicks into products. Test against the current banner.
+Offers
+Three offers are shown: ₹100 off prepaid orders above 
+₹1,000 with code FN100 for first-time users, 5% off prepaid 
+orders above ₹2,000, and 12% off with code APP12 in the 
+app.
+A clear ladder tied to order value thresholds may lift Average Order 
+Value and prepaid share. Margin per tier is checked against the 
+break-even logic in Section 2.
+Shipping promise The banner states zero shipping charges while the page 
+description states free shipping above ₹999.
+Confirm the live policy and show one consistent message on 
+product, cart and checkout pages.
+Social proof No ratings or reviews were visible in the homepage content. Collect reviews after delivery and show ratings on product and 
+collection pages.
+Guided selling A 60-second Smart Beauty Advisor quiz and a Build Your 
+Own Beauty Regime tool are present.
+Placing the quiz on landing pages and letting results lead to combos 
+may raise Average Order Value.
+Payment options
+Cash on delivery, equated monthly instalments and Unified 
+Payments Interface are referenced, with a Shop Now, Pay 
+Later call to action.
+GoKwik checkout and prepaid incentives (Section 2) target 
+checkout drop-off and failed deliveries. Test incentive size by order 
+value.
+Page speed and click 
+quality
+Audit: 58.9% of Meta link clicks did not become landing 
+page views (Section 6.4).
+Diagnose mobile speed, accidental clicks and tracking misfires 
+before budgets are scaled.
+Source: public pages of fabb6.com reviewed on 22 November 2026; audit figures from Section 6. Observations come from publicly visible pages and will be checked 
+against session data once analytics access is shared.
+12.3 Programme by funnel stage
+Stage What we will optimize Primary measure
+Ad landing pages
+Dedicated landing pages for hero combos that match the Performance Max and Meta 
+combo creative; a clear offer above the fold; a mobile loading budget of three seconds or 
+less, following Google guidance.
+Landing page views per link click; 
+conversion rate by page
+Collection pages Filters by concern and brand, bestseller sorting, clear badges, and margin-aware ordering 
+so hero products appear first. Collection to product click rate
+Product pages
+Benefit-led summary, usage guidance, authenticity statement, delivery estimate by postal 
+code, offer block, sticky add-to-cart on mobile, rating display, and combo cross-sell such 
+as serum with masque.
+Add-to-cart rate; Average Order Value
+Cart A progress message towards the ₹1,000 and ₹2,000 offer thresholds and the ₹1,200 
+combo level; clearer combo upsell.
+Cart to checkout rate; Average Order 
+Value
+Checkout GoKwik one-click checkout and abandoned-cart recovery (Section 2); incentives that 
+move cash on delivery buyers to prepaid; one consistent shipping message.
+Checkout completion rate; prepaid 
+share
+Post-purchase WhatsApp consent captured at checkout so the W1 to W4 replenishment flows can run; 
+review request after delivery; reorder reminders. Consent rate; second-order rate
+12.4 Experimentation rules
+• The hypothesis backlog is scored on impact, confidence and ease. Month 1 is mostly diagnosis; from Month 2 two to three split tests run 
+each month.
+• Each split test runs for at least two full weeks and until the sample is large enough to read. One major change per page at a time.
+• Shopify confirmed orders are the source of truth. Results from any testing tool are checked against Shopify before a winner is rolled out.
+Confidential · Techno Exponent Performance Marketing Practice · Page 14
+
+=== PAGE 15 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+• Guardrails: blended cost per store order and order value must not worsen. No major test launches during a Red Light week under the 
+scaling rules in Sections 4 and 7.
+• Checkout behavior is controlled by GoKwik settings; any change there is agreed with FABB6 first.
+12.5 Monthly deliverables
+Deliverable Month 1 (December 2026) Month 2 (January 2027) Month 3 (February 2027)
+Funnel audit
+Mobile-first audit of homepage, collection, 
+product, cart and checkout; analytics event 
+check
+Fix list tracked Quarterly funnel review
+Click-to-landing-page diagnosis
+Pixel, Conversions API, speed and click-
+quality diagnosis within the first two weeks 
+(Section 7)
+Fixes verified Gap tracked weekly
+Behavior analysis
+Session recordings and heatmaps set up 
+(any paid tool subscription is at FABB6's 
+cost)
+Findings report Findings report
+Landing pages Layout and copy specifications for 2 hero-
+combo landing pages 2 further pages 2 further pages
+Experiments Hypothesis backlog; first 2 tests launched 3 tests 3 tests
+Offer and shipping message 
+alignment
+Recommendation once the live policy is 
+confirmed Test Roll out the winner
+Reporting Monthly conversion report with funnel 
+rates, tests and next-month plan Monthly report Monthly report and quarterly 
+review
+Volumes are indicative and are finalized together with the commercials. Building pages beyond what the Shopify theme editor allows, custom theme 
+development and app development are quoted separately (Section 15).
+12.6 Key performance indicators
+Metric Measured in Target
+Conversion rate (visits to orders) Shopify; Google Analytics Baseline in Month 1; target agreed after baseline
+Add-to-cart rate and checkout completion rate Shopify; Google Analytics; GoKwik Baseline in Month 1; target agreed after baseline
+Average Order Value Shopify Reference: ₹675 (August) to ₹995 (October) on 
+Total Sales; target agreed after baseline
+Prepaid share of orders Shopify; GoKwik Baseline in Month 1; target agreed after baseline
+Click-to-landing-page gap Meta link clicks versus Shopify landing page 
+views
+Baseline 58.9%; target set after the two-week 
+diagnosis
+Mobile loading (Largest Contentful Paint) Search Console; page speed tools Baseline in Month 1; three seconds or less on key 
+templates
+The three plans in Section 1 and the audit-stage forecast in Section 8 are unchanged by this section. Conversion rate, Average Order Value and repeat purchase 
+are the levers it works on.
+Sources: Baymard Institute (cart abandonment statistics and checkout usability research); Think with Google (page load time statistics and mobile page speed 
+benchmarks); public pages of fabb6.com; Sections 2 and 6 of this document (links in Appendix C).
+13. Commercials
+To be added
+Commercials for this engagement (investment, scope-wise fees, payment terms and billing schedule) will be added in the next revision of 
+this document.
+They will cover performance marketing management (Google Ads and Meta Ads), Search Engine Optimization with Artificial Intelligence 
+and Generative Engine Optimization, Social Media Optimization and Conversion Rate Optimization. Advertising spend continues to be 
+billed directly by FABB6 to the platforms, with no agency markup.
+Confidential · Techno Exponent Performance Marketing Practice · Page 15
+
+=== PAGE 16 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+14. Disclaimer
+The strategy, forecasts, scenarios and targets outlined in this document are based on industry benchmarks, current market trends, account 
+data supplied through 18 November 2026 and expected campaign behavior. Actual performance may vary due to a range of real-time factors, 
+including user behavior, competition, inventory changes, festive and seasonal demand, and platform algorithm updates.
+While Techno Exponent will implement best practices and continuously optimize your campaigns, we cannot guarantee the achievement of 
+specific performance targets, including revenue, return on ad spend, search rankings, or citations in Artificial Intelligence generated answers. 
+Audit figures are drawn from platform exports, change history, Merchant Center diagnostics and Shopify data supplied to us, and may be 
+refined as further data (for example, a complete search terms export) is received.
+However, we commit to providing transparent reporting, ongoing insights, and data-driven recommendations to help you understand 
+campaign results and guide future decisions.
+15. Terms and Conditions
+• The demo content mix is subject to change based on our discussions. Additionally, the quantity of content assets will be finalized after 
+further conversation. This proposal is intended to provide an estimated timeline for the required effort.
+• The number of ads in a month will depend upon discussions.
+• Triage actions listed in Section 7 begin within 48 hours of confirmed access to the Google Ads, Meta Business Suite, Google Merchant 
+Center and Shopify accounts. New campaigns, ad sets and creatives go live only after tracking, tracking parameters and margin review 
+are confirmed (Section 9).
+• Billing for the ad platforms will be done from your end only. We will not be responsible for it.
+• Email, text message and WhatsApp automation depends on the customer relationship management tool you use and the features 
+available in it. The scope of the replenishment workflows in Section 2 will be confirmed together with the commercials.
+• Subscription charges for tools and apps (including GoKwik, Simprosys Google Shopping Feed, the WhatsApp Business messaging 
+provider, Klaviyo, review and session-recording tools) are not included in the package and are paid from your end.
+• Landing page layout and copy specifications are part of the Conversion Rate Optimization deliverables. Building them beyond what the 
+Shopify theme editor allows, any custom theme development, and any website or app development work will cost extra. Prior to the 
+start of the development, an estimation will be shared.
+• Apart from the above stated deliverables, if you wish to create any marketing collaterals such as PDFs, brochures, signage, ID cards or 
+business cards, it will cost extra.
+• Influencer marketing, public relations, outreach-based link building and outdoor shoots are not part of this proposal. Fees for creators 
+who appear in videos, and the cost of products sent for content, are paid from your end.
+• Shopify is the source of truth for orders and revenue. Ownership of the Google Ads, Meta, Merchant Center, Shopify and analytics 
+accounts remains with FABB6.
+• FABB6 is responsible for the accuracy of product claims, authenticity and brand authorization documents, and policy information 
+(shipping, returns and offers) supplied for use in content and ads.
+• All work will be done with your approval, and you will not be charged without your knowledge.
+• Techno Exponent will be responsible for delivering the deliverables mentioned in the proposal. Nothing other than what is mentioned in 
+this proposal will be considered as a part of the deliverables.
+• Techno Exponent will consider the project start date only after the payment is cleared and an official confirmation email will be sent to 
+the client's email address.
+• The client is responsible for providing necessary access, data, and approvals in a timely manner. If there is a delay from the client's end 
+then Techno Exponent is not responsible for any delay of the project deliverables.
+Confidential · Techno Exponent Performance Marketing Practice · Page 16
+
+=== PAGE 17 ===
+FABB6 | Performance Marketing Strategy & Campaign Architecture (Dec 2026 – Feb 2027)
+Appendix A: Evidence Exhibits to Attach
+• Exhibit A: Google Ads change history showing deletion of 'Purchase-2026' (18 Sep).
+• Exhibit B: Performance Max asset group report showing foreign-brand copy and Ad Strength ratings.
+• Exhibit C: Merchant Center product diagnostics (404 and overlay violations).
+• Exhibit D: Google Ads budget change log and search terms report.
+• Exhibit E: Meta campaign exports (DPA, Advantage+ Shopping, IG-Traffic, app campaigns), with CPM and frequency by month.
+• Exhibit F: Meta link clicks versus Shopify landing page views.
+Appendix B: Definitions (Audit Stage)
+• Total Sales Revenue: Actual net recognized sales revenue from Shopify (after discounts and returns, including taxes and shipping). This is 
+the primary revenue metric used across the audit and forecast sections (Sections 6 to 8).
+• Total Sales ROAS: Total Sales Revenue divided by total Google and Meta ad spend for the period.
+• Blended CPA: Total ad spend divided by total Shopify store orders. This is the primary governing unit economics metric.
+• Paid orders and platform CPA: Ad-attributed orders and platform-specific acquisition cost. Attribution windows overlap, so these serve 
+as secondary operational guardrails.
+• November to date: 1 – 18 November 2026 (18 days), extrapolated to 30 days for reference run-rate comparison.
+Appendix C: Sources for Sections 10 to 12
+• FABB6 website (homepage, robots file, sitemap index), reviewed 22 November 2026: https://www.fabb6.com/ · 
+https://www.fabb6.com/robots.txt · https://www.fabb6.com/sitemap.xml
+• Baymard Institute, average documented cart abandonment rate of 70.22%, updated September 2025: 
+https://baymard.com/research/cart-abandonment-rate · checkout design conversion potential of about 35%: 
+https://baymard.com/blog/cart-abandonment-rate-statistics
+• Think with Google, bounce probability up 32% from one to three seconds of load time: https://thinkwithgoogle.com/data/page-load-
+time-statistics · 53% of mobile visits abandoned after three seconds (analysis of 900,000 mobile ad landing pages across 126 countries): 
+https://thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks
+• Google Search Central, Introduction to Product structured data: https://developers.google.com/search/docs/appearance/structured-
+data/product · Merchant listing structured data: https://developers.google.com/search/docs/appearance/structured-data/merchant-
+listing · Google Merchant Center Help, Set up structured data for Merchant Center: 
+https://support.google.com/merchants/answer/7331077
+• IMARC Group, India Beauty and Personal Care Market (online stores 30% share in 2025): https://www.imarcgroup.com/india-beauty-
+personal-care-market
+• Redseer, India's online beauty and personal care market of about ₹56,000 Crore growing about 35% year on year: 
+https://redseer.com/articles/habit-or-desire-whats-driving-indias-beauty-personal-care-market/
+• India Brand Equity Foundation, beauty e-commerce projected 25% compound annual growth rate: https://ibef.org/news/india-you-e-
+beauty-the-blush-and-glow-of-the-new-billion-dollar-boom
+Confidential · Techno Exponent Performance Marketing Practice · Page 17
+

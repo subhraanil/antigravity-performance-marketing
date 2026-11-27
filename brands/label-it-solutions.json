@@ -1,0 +1,48 @@
+{
+  "$schema": "brand-profile-v1",
+  "brand_name": "Label IT Solutions",
+  "slug": "label-it-solutions",
+  "website": "https://labelitsolutions.co.uk",
+  "business_model": "DTC_ECOMMERCE",
+  "industry_vertical": "Industrial Packaging, Direct Thermal & Shipping Labels",
+  "target_geos": ["UK"],
+  "currency": "GBP",
+  "primary_contacts": {
+    "client": "A Allana",
+    "agency_lead": "Sarnendu Patra",
+    "media_buyer": "Subhraanil Naskar",
+    "seo_specialist": "Arpita Shaw"
+  },
+  "unit_economics": {
+    "aov_or_acv": 45.0,
+    "gross_margin_pct": 60,
+    "target_cpa": 12.0,
+    "max_acceptable_cpa": 20.0,
+    "target_roas": 3.0,
+    "breakeven_roas": 1.67,
+    "target_monthly_budget": 150.0
+  },
+  "brand_voice": {
+    "tone": "Professional, reliable, UK manufacturing precision, B2B/DTC direct supplier",
+    "primary_angle": "Next-day dispatch UK labels, high-grade direct thermal & thermal transfer rolls with zero jam guarantee",
+    "forbidden_claims": ["Cheapest in the world", "Instant delivery in 1 hour"]
+  },
+  "channels": {
+    "google_ads": {
+      "active": true,
+      "budget_pct": 80,
+      "daily_budget_gbp": 5.0,
+      "campaign_types": ["GOOGLE_SHOPPING", "STANDARD_SEARCH", "DISPLAY_REMARKETING"],
+      "conversion_tracking": ["PURCHASE", "ADD_TO_CART"]
+    },
+    "seo_and_content": {
+      "active": true,
+      "budget_pct": 20,
+      "deliverables": ["METADATA_OPTIMIZATION", "TECHNICAL_SEO", "BLOG_CONTENT", "GBP_LOCAL_SEO"]
+    }
+  },
+  "compliance": {
+    "eu_ai_act_article_50": true,
+    "require_c2pa_metadata": true
+  }
+}
